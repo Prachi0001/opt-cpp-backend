@@ -38,3 +38,5 @@ Makefile
 
 valgrind-3.11.0/
 *.trace
+*.vgtrace
+*.exe
