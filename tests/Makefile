@@ -12,6 +12,8 @@ all-traces: basic.trace \
 						shadowing.trace \
 						pointers-gone-wild.trace \
 						number-types.trace \
+						quicksort.trace \
+						string-reverse-inplace.trace \
 						fjalar-ArraysInStructTest.trace \
 						fjalar-ArrayTest.trace \
 						fjalar-CoercePointerTest.trace \
@@ -46,7 +48,8 @@ all-traces: basic.trace \
 						cpp-class-date.trace \
 						cpp-exception.trace \
 						cpp-inheritance.trace \
-						cpp-stack-inline.trace
+						cpp-stack-inline.trace \
+						cpp-stackarraymini.trace
 
 
 #%: %.c
