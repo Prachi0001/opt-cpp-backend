@@ -27,8 +27,9 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /tmp/opt-cpp-backend
 ADD . /tmp/opt-cpp-backend
 
-# we need to compile Valgrind within the container to make it work
-RUN cd /tmp/opt-cpp-backend/valgrind-3.11.0 && ./autogen.sh && ./configure --prefix=`pwd`/inst && make && make install
+# we need to compile Valgrind from scratch within the container (hence
+# 'make clean' first) to make it work from within the container, ergh
+RUN cd /tmp/opt-cpp-backend/valgrind-3.11.0 && make clean && ./autogen.sh && ./configure --prefix=`pwd`/inst && make && make install
 
 RUN useradd netuser
 
