@@ -38,7 +38,7 @@
 /* #undef ENABLE_INNER */
 
 /* path to GDB */
-#define GDB_PATH "/usr/bin/gdb"
+#define GDB_PATH "/no/gdb/was/found/at/configure/time"
 
 /* Define to 1 if index() and strlen() have been optimized heavily (x86 glibc
    >= 2.12) */
