@@ -27,7 +27,9 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /tmp/opt-cpp-backend
 ADD . /tmp/opt-cpp-backend
 
-# compile Valgrind within the container
+# we need to compile Valgrind within the container to make it work
 RUN cd /tmp/opt-cpp-backend/valgrind-3.11.0 && ./autogen.sh && ./configure --prefix=`pwd`/inst && make && make install
 
 RUN useradd netuser
+
+RUN cd /tmp/ && find . | xargs chown netuser
