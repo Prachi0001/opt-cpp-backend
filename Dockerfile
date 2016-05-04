@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y \
   build-essential \
   autotools-dev \
   automake \
-  libc6-dbg
+  libc6-dbg \
+  python
 
 RUN mkdir /tmp/opt-cpp-backend
 ADD . /tmp/opt-cpp-backend
@@ -30,5 +31,3 @@ ADD . /tmp/opt-cpp-backend
 RUN cd /tmp/opt-cpp-backend/valgrind-3.11.0 && ./autogen.sh && ./configure --prefix=`pwd`/inst && make && make install
 
 RUN useradd netuser
-
-RUN apt-get install -y python
