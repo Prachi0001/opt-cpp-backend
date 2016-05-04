@@ -16,15 +16,19 @@ MAINTAINER Philip Guo <philip@pgbovine.net>
 # Uncomment the following line in /etc/default/docker DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
 # Restart the Docker service sudo service docker restart
 #
-# to get gcc and g++
+# to get gcc and g++, Valgrind needs libc6-dbg apparently
 RUN apt-get update && apt-get install -y \
   build-essential \
   autotools-dev \
-  automake
+  automake \
+  libc6-dbg
 
 RUN mkdir /tmp/opt-cpp-backend
-RUN mkdir /tmp/opt-cpp-backend/valgrind-3.11.0
+ADD . /tmp/opt-cpp-backend
 
-ADD valgrind-3.11.0 /tmp/opt-cpp-backend/valgrind-3.11.0
+# compile Valgrind within the container
+RUN cd /tmp/opt-cpp-backend/valgrind-3.11.0 && ./autogen.sh && ./configure --prefix=`pwd`/inst && make && make install
 
 RUN useradd netuser
+
+RUN apt-get install -y python
