@@ -22,4 +22,4 @@ ENDEND
 
 $CC -ggdb -O0 -fno-omit-frame-pointer -o usercode.exe $FN
 valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$FN --trace-filename=usercode.vgtrace ./usercode.exe
-#python vg_to_opt_trace.py --create_jsvar=trace usercode > usercode.trace
+python vg_to_opt_trace.py --create_jsvar=trace usercode > usercode.trace
