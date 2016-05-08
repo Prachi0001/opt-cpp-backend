@@ -23,5 +23,6 @@ $1
 ENDEND
 
 $CC -ggdb -O0 -fno-omit-frame-pointer -o $DN/usercode.exe $DN/$FN
-$DN/valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$DN/$FN --trace-filename=$DN/usercode.vgtrace $DN/usercode.exe
-python $DN/vg_to_opt_trace.py --create_jsvar=trace $DN/usercode > $DN/usercode.trace
+# tricky! --source-filename takes a basename only, not a dirname:
+$DN/valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$FN --trace-filename=$DN/usercode.vgtrace $DN/usercode.exe
+python $DN/vg_to_opt_trace.py --jsondump $DN/usercode

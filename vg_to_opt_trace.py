@@ -168,6 +168,11 @@ if __name__ == '__main__':
     parser = OptionParser(usage="Create an OPT trace from a Valgrind trace")
     parser.add_option("--create_jsvar", dest="js_varname", default=None,
                       help="Create a JavaScript variable out of the trace")
+    parser.add_option("--jsondump", dest="jsondump", action="store_true", default=False,
+                      help="Dump compact JSON as output")
+    parser.add_option("--prettydump", dest="prettydump", action="store_true", default=False,
+                      help="Dump pretty-printed JSON as output")
+
     (options, args) = parser.parse_args()
 
     basename = args[0]
@@ -319,8 +324,12 @@ if __name__ == '__main__':
     final_res = {'code': cod, 'trace': final_execution_points}
 
     # use sort_keys to get some sensible ordering on object keys
-    s = json.dumps(final_res, indent=2, sort_keys=True)
     if options.js_varname:
+        s = json.dumps(final_res, indent=2, sort_keys=True)
         print 'var ' + options.js_varname + ' = ' + s + ';'
+    elif options.jsondump:
+        print json.dumps(final_res, sort_keys=True)
+    elif options.prettydump:
+        print json.dumps(final_res, indent=2, sort_keys=True)
     else:
-        print s
+        assert False
