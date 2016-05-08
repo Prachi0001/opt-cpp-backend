@@ -32,5 +32,5 @@ then
   python $DN/vg_to_opt_trace.py --jsondump $DN/usercode
 else
   # TODO: report compiler errors gracefully here using $DN/gcc.errs
-  echo '{"code": "", trace :[{"event":"uncaught_exception","exception_msg":"COMPILER ERROR, UGH!"}]}';
+  echo '{"code": "", "trace": [{"event":"uncaught_exception","exception_msg":"COMPILER ERROR, UGH!"}]}';
 fi
