@@ -65,7 +65,7 @@ if gcc_retcode == 0:
     # code; no need to call it as an external script
     POSTPROCESS_EXE = os.path.join(DN, 'vg_to_opt_trace.py')
     postprocess_p = Popen(['python', POSTPROCESS_EXE,
-                           '--jsondump', os.path.join(DN, 'usercode')],
+                           '--jsondump', F_PATH],
                           stdout=PIPE, stderr=PIPE)
     (postprocess_stdout, postprocess_stderr) = postprocess_p.communicate()
     postprocess_retcode = postprocess_p.returncode

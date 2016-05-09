@@ -3,8 +3,9 @@
 
 # Created 2015-10-04 by Philip Guo
 
-# pass in the $basename of a program. assumes that the Valgrind-produced
-# trace is $basename.vgtrace and the source file is $basename.{c,cpp}
+# pass in full path name of a source file, which should end in '.c' or '.cpp'.
+# assumes that the Valgrind-produced trace is $basename.vgtrace
+# (without the '.c.' or '.cpp' extension)
 
 
 # this is pretty brittle and dependent on the user's gcc version and
@@ -175,7 +176,9 @@ if __name__ == '__main__':
 
     (options, args) = parser.parse_args()
 
-    basename = args[0]
+    fn = args[0]
+    basename, ext = os.path.splitext(fn)
+    assert ext in ('.c', '.cpp')
     cur_record_lines = []
 
     success = True
@@ -315,11 +318,7 @@ if __name__ == '__main__':
         print cur_event, cur_line, cur_frame_ids
     '''
 
-    if os.path.isfile(basename + '.c'):
-        cod = open(basename + '.c').read()
-    else:
-        cod = open(basename + '.cpp').read()
-
+    cod = open(fn).read()
     # produce the final trace, voila!
     final_res = {'code': cod, 'trace': final_execution_points}
 
