@@ -6,6 +6,7 @@
 import json
 import os
 from subprocess import Popen, PIPE
+import re
 import sys
 
 DN = os.path.dirname(sys.argv[0])
@@ -35,34 +36,63 @@ with open(F_PATH, 'w') as f:
 # compile it!
 p = Popen([CC, '-ggdb', '-O0', '-fno-omit-frame-pointer', '-o', EXE_PATH, F_PATH],
           stdout=PIPE, stderr=PIPE)
-(stdout, stderr) = p.communicate()
-retcode = p.returncode
+(gcc_stdout, gcc_stderr) = p.communicate()
+gcc_retcode = p.returncode
 
-if retcode == 0:
+if gcc_retcode == 0:
     # run it with Valgrind
-    pass
+    VALGRIND_EXE = os.path.join(DN, 'valgrind-3.11.0/inst/bin/valgrind')
+    # tricky! --source-filename takes a basename only, not a full pathname:
+    valgrind_p = Popen([VALGRIND_EXE,
+                        '--tool=memcheck',
+                        '--source-filename=' + FN,
+                        '--trace-filename=' + VGTRACE_PATH,
+                        EXE_PATH],
+                       stdout=PIPE, stderr=PIPE)
+    (valgrind_stdout, valgrind_stderr) = valgrind_p.communicate()
+    valgrind_retcode = valgrind_p.returncode
+
+    #print '=== Valgrind stdout ==='
+    #print valgrind_stdout
+    #print '=== Valgrind stderr ==='
+    #print valgrind_stderr
+
+    # TODO: gracefully handle Valgrind-produced errors
+
+    # convert vgtrace into an OPT trace
+
+    # TODO: integrate call into THIS SCRIPT since it's simply Python
+    # code; no need to call it as an external script
+    POSTPROCESS_EXE = os.path.join(DN, 'vg_to_opt_trace.py')
+    postprocess_p = Popen(['python', POSTPROCESS_EXE,
+                           '--jsondump', os.path.join(DN, 'usercode')],
+                          stdout=PIPE, stderr=PIPE)
+    (postprocess_stdout, postprocess_stderr) = postprocess_p.communicate()
+    postprocess_retcode = postprocess_p.returncode
+    print postprocess_stdout
 else:
-    print '==='
-    print stderr
-    print '==='
+    #print '==='
+    #print gcc_stderr
+    #print '==='
     # compiler error. parse and report gracefully!
-    exception_msg = 'boo'
-    lineno = 1
+
+    exception_msg = 'unknown compiler error'
+    lineno = None
+    column = None
+
+    # just report the FIRST line where you can detect a line and column
+    # number of the error.
+    for line in gcc_stderr.splitlines():
+        m = re.search('usercode.c:(\d+):(\d+):(.*$)', line)
+        if m:
+            lineno = int(m.group(1))
+            column = int(m.group(2))
+            exception_msg = m.group(3).strip()
+            break
+
     ret = {'code': USER_PROGRAM,
            'trace': [{'event': 'uncaught_exception',
                     'exception_msg': exception_msg,
                     'line': lineno}]}
     print json.dumps(ret)
 
-'''
-$CC -ggdb -O0 -fno-omit-frame-pointer -o $DN/usercode.exe $DN/$FN 2> $DN/gcc.errs
-if [ $? -eq 0 ]
-then
-  # tricky! --source-filename takes a basename only, not a dirname:
-  $DN/valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$FN --trace-filename=$DN/usercode.vgtrace $DN/usercode.exe > /dev/null # silence stdout
-  python $DN/vg_to_opt_trace.py --jsondump $DN/usercode
-else
-  # TODO: report compiler errors gracefully here using $DN/gcc.errs
-  echo '{"code": "", "trace": [{"event":"uncaught_exception","exception_msg":"COMPILER ERROR, UGH!"}]}';
-fi
-'''
