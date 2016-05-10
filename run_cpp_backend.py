@@ -75,6 +75,10 @@ if gcc_retcode == 0:
                           stdout=PIPE, stderr=PIPE)
     (postprocess_stdout, postprocess_stderr) = postprocess_p.communicate()
     postprocess_retcode = postprocess_p.returncode
+    print >> sys.stderr, '=== postprocess stderr ==='
+    print >> sys.stderr, postprocess_stderr
+    print >> sys.stderr, '==='
+
     print postprocess_stdout
 else:
     print >> sys.stderr, '=== gcc stderr ==='
@@ -89,7 +93,8 @@ else:
     # just report the FIRST line where you can detect a line and column
     # number of the error.
     for line in gcc_stderr.splitlines():
-        m = re.search('usercode.c:(\d+):(\d+): (error:.*$)', line)
+        # can be 'fatal error:' or 'error:' or probably other stuff too.
+        m = re.search(FN + ':(\d+):(\d+):.+?(error:.*$)', line)
         if m:
             lineno = int(m.group(1))
             column = int(m.group(2))

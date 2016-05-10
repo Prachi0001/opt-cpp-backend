@@ -48,18 +48,26 @@ def process_record(lines):
     if not lines:
         return True # 'nil success case to keep the parser going
 
-    rec = '\n'.join(lines)
+    err_lines = [e for e in lines if e.startswith('ERROR: ')]
+    non_err_lines = [e for e in lines if not e.startswith('ERROR: ')]
+    # some lines may start with 'ERROR: ' -- those are special run-time
+    # error messages produced by Valgrind. cut those out
+    rec = '\n'.join(non_err_lines)
     try:
         obj = json.loads(rec)
     except ValueError:
         print >> sys.stderr, "Ugh, bad record!"
         return False
-    x = process_json_obj(obj)
+
+    # take the first error only
+    err_str = err_lines[0] if err_lines else None
+
+    x = process_json_obj(obj, err_str)
     all_execution_points.append(x)
     return True
 
 
-def process_json_obj(obj):
+def process_json_obj(obj, err_str=None):
     #print '---'
     #pp.pprint(obj)
     #print
@@ -83,7 +91,12 @@ def process_json_obj(obj):
     ret['line'] = obj['line']
     ret['func_name'] = top_stack_entry['func_name'] # use the 'topmost' entry's name
 
-    ret['event'] = 'step_line'
+    if err_str:
+        ret['event'] = 'exception'
+        ret['exception_msg'] = err_str
+    else:
+        ret['event'] = 'step_line'
+
     ret['stdout'] = '' # TODO: handle this
 
     for g_var, g_val in obj['globals'].iteritems():
@@ -299,6 +312,13 @@ if __name__ == '__main__':
                     if cur_line == prev_line and cur_frame_ids == prev_frame_ids:
                         skip = True
 
+            # if there's a 'step_line' followed by an 'exception' on the SAME LINE,
+            # then skip the FIRST event since it's a redundant step_line. krazy!
+            if cur_event == 'exception' and prev_event == 'step_line':
+                if cur_line == prev_line and cur_frame_ids == prev_frame_ids:
+                    tmp.pop()
+
+            # append AFTER the potential tmp.pop() above
             if not skip:
                 tmp.append(elt)
 
