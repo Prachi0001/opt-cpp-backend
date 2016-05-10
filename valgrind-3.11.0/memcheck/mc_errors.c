@@ -449,6 +449,10 @@ void MC_(pp_Error) ( const Error* err )
          } else {
             /* Could also show extra->Err.Cond.otag if debugging origin
                tracking */
+            // pgbovine
+            VG_(fprintf)(trace_fp, "ERROR: Use of uninitialised value of size %lu\n",
+                         extra->Err.Value.szB );
+
             emit( "Use of uninitialised value of size %lu\n",
                   extra->Err.Value.szB );
             VG_(pp_ExeContext)( VG_(get_error_where)(err) );
@@ -471,6 +475,10 @@ void MC_(pp_Error) ( const Error* err )
          } else {
             /* Could also show extra->Err.Cond.otag if debugging origin
                tracking */
+            // pgbovine
+            VG_(fprintf)(trace_fp, "ERROR: Conditional jump or move depends"
+                                   " on uninitialised value(s)\n" );
+
             emit( "Conditional jump or move depends"
                   " on uninitialised value(s)\n" );
             VG_(pp_ExeContext)( VG_(get_error_where)(err) );
@@ -569,6 +577,9 @@ void MC_(pp_Error) ( const Error* err )
             VG_(pp_addrinfo_mc)( VG_(get_error_address)(err),
                                  &extra->Err.Free.ai, False );
          } else {
+            // pgbovine
+            VG_(fprintf)(trace_fp, "ERROR: Invalid free() / delete / delete[] / realloc()\n");
+
             emit( "Invalid free() / delete / delete[] / realloc()\n" );
             VG_(pp_ExeContext)( VG_(get_error_where)(err) );
             VG_(pp_addrinfo_mc)( VG_(get_error_address)(err),
@@ -584,6 +595,9 @@ void MC_(pp_Error) ( const Error* err )
             VG_(pp_addrinfo_mc)(VG_(get_error_address)(err),
                                 &extra->Err.FreeMismatch.ai, False);
          } else {
+            // pgbovine
+            VG_(fprintf)(trace_fp, "ERROR: Mismatched free() / delete / delete []\n");
+
             emit( "Mismatched free() / delete / delete []\n" );
             VG_(pp_ExeContext)( VG_(get_error_where)(err) );
             VG_(pp_addrinfo_mc)(VG_(get_error_address)(err),
@@ -603,6 +617,11 @@ void MC_(pp_Error) ( const Error* err )
                                  &extra->Err.Addr.ai,
                                  extra->Err.Addr.maybe_gcc );
          } else {
+            // pgbovine
+            VG_(fprintf)(trace_fp, "ERROR: Invalid %s of size %lu\n",
+                         extra->Err.Addr.isWrite ? "write" : "read",
+                         extra->Err.Addr.szB);
+
             emit( "Invalid %s of size %lu\n",
                   extra->Err.Addr.isWrite ? "write" : "read",
                   extra->Err.Addr.szB );
@@ -648,10 +667,21 @@ void MC_(pp_Error) ( const Error* err )
             VG_(pp_ExeContext)( VG_(get_error_where)(err) );
          } else {
             if (extra->Err.Overlap.szB == 0) {
+               // pgbovine
+               VG_(fprintf)(trace_fp, "ERROR: Source and destination overlap in %s(%#lx, %#lx)\n",
+                            VG_(get_error_string)(err),
+                            extra->Err.Overlap.dst, extra->Err.Overlap.src );
+
                emit( "Source and destination overlap in %s(%#lx, %#lx)\n",
                      VG_(get_error_string)(err),
                      extra->Err.Overlap.dst, extra->Err.Overlap.src );
             } else {
+               // pgbovine
+               VG_(fprintf)(trace_fp, "ERROR: Source and destination overlap in %s(%#lx, %#lx, %lu)\n",
+                                       VG_(get_error_string)(err),
+                                       extra->Err.Overlap.dst, extra->Err.Overlap.src,
+                                       extra->Err.Overlap.szB );
+
                emit( "Source and destination overlap in %s(%#lx, %#lx, %lu)\n",
                      VG_(get_error_string)(err),
                      extra->Err.Overlap.dst, extra->Err.Overlap.src,
