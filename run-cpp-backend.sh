@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "THIS FILE IS OBSOLETE AND HAS BEEN REPLACED WITH run_cpp_backend.py"
+exit 1
+
 DN=`dirname $0`
 
 # $1 is a string representing the C/C++ program to be run within Docker

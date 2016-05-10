@@ -1,5 +1,4 @@
 42
-rm fjalar-function-pointer.vgtrace
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n\nint apply(int (*fp)(const char *, ...), int val) {\n    (*fp)(\"%d\\n\", val);\n}\n\nint main() {\n    apply(printf, 42);\n    return 0;\n}\n", 
   "trace": [

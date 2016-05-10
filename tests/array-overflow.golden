@@ -1,5 +1,4 @@
 0
-rm array-overflow.vgtrace
 var trace = {
   "code": "#include <stdio.h>\n\nvoid foo(int* x) {\n  printf(\"%d\\n\", x[3]);\n}\n\nint main() {\n  int arr[3];\n  int overflow = 1000;\n  arr[0] = 10;\n  arr[1] = 20;\n  arr[2] = 30;\n  foo(arr);\n  return 0;\n}\n", 
   "trace": [

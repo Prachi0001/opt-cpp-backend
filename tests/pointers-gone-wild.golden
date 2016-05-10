@@ -1,4 +1,3 @@
-rm pointers-gone-wild.vgtrace
 var trace = {
   "code": "#include <stdlib.h>\nint* foo() {\n  int local_x = 42;\n  int* retval = &local_x; // uh oh\n  return retval;\n}\n\nint main() {\n  int* null_p = NULL;\n  int* random_p = (int*)123;\n\n  int* heap_p;\n  int** uninit_pp = &heap_p;\n\n  heap_p = malloc(5 * sizeof(*heap_p));\n  int* cur_p = heap_p;\n  cur_p++;\n  cur_p++;\n  cur_p++;\n  cur_p++;\n  cur_p++;\n  cur_p++;\n  cur_p++;\n  cur_p++;\n  free(heap_p);\n  heap_p = NULL;\n\n  int* stack_p = foo();\n}\n", 
   "trace": [

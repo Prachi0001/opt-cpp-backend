@@ -1,6 +1,5 @@
 ret = -444
 ret = -777
-rm basic.vgtrace
 var trace = {
   "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint bar(int, int, int, int);\n\nint foo(short a, unsigned int b, char* unused_str) {\n  int c = bar(a, b, -2 * a, -2 * b);\n  return c;\n}\n\nint bar(int x, int y, int z, int w) {\n  int qqq = x + y + z + w;\n  return qqq;\n}\n\nint main() {\n  int ret = foo(123, 321, \"hello world\"); // TODO: what do we do about 'global' string literals?!?\n  printf(\"ret = %d\\n\", ret);\n\n  char stack_str[10]; stack_str[0] = 'q'; stack_str[1] = 'z'; stack_str[2] = '!';\n  short stack_shorts[10];\n  stack_shorts[1] = 1;\n  stack_shorts[3] = 3;\n  stack_shorts[5] = 5;\n  stack_shorts[7] = 7;\n  stack_shorts[9] = 9;\n\n  char* heap_str = (char*)malloc(7);\n  heap_str[0] = 'B';\n  heap_str[1] = 'o';\n  heap_str[2] = 'b';\n  heap_str[3] = '\\0';\n\n  // point it to the middle\n  heap_str++;\n  heap_str++;\n  heap_str++;\n\n  unsigned short* heap_shorts = (unsigned short*)malloc(11 * sizeof(*heap_shorts));\n  heap_shorts[1] = 1;\n  heap_shorts[3] = 3;\n  heap_shorts[5] = 5;\n  heap_shorts[7] = 7;\n  heap_shorts[9] = 9;\n\n  // point it to the middle\n  heap_shorts++;\n  heap_shorts++;\n  heap_shorts++;\n\n  ret = foo(333, 444, stack_str);\n  printf(\"ret = %d\\n\", ret);\n  return 42;\n}\n", 
   "trace": [

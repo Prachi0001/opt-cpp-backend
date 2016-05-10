@@ -1,4 +1,3 @@
-rm cpp-object-array.vgtrace
 var trace = {
   "code": "// From: http://www.cprogramming.com/tutorial/lesson12.html\n\n#include <iostream>\n\nclass Computer {\npublic:\n  Computer();\n  ~Computer();\n  void setspeed ( int p );\n  int readspeed();\nprotected:\n  int processorspeed;\n};\n\nComputer::Computer() {\n  processorspeed = 0;\n}\n\nComputer::~Computer() {\n  //Destructors do not accept arguments\n}\n\nvoid Computer::setspeed ( int p ) {\n  processorspeed = p;\n}\n\nint Computer::readspeed()  {\n  return processorspeed;\n}\n\nint main() {\n  Computer* heapComputeArray = new Computer[5];\n  heapComputeArray[1].setspeed(1);\n  heapComputeArray[3].setspeed(3);\n  heapComputeArray[5].setspeed(5);\n\n  delete[] heapComputeArray;\n  return 0;\n}\n", 
   "trace": [

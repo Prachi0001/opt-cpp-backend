@@ -1,6 +1,5 @@
 hi
 50 - 100 - 10
-rm cpp-consts.vgtrace
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <iostream>\n\nusing namespace std;\n\nstatic const int static_const = 100;\nconst int global_const = 50;\n\nclass A {\npublic:\n  A() {}\n\n  int getInt() { return static_const_member;}\n  static const int static_const_member = 10;\n};\n\nint main(int argc, char** argv) {\n  cout << \"hi\" << endl;\n  A a;\n  cout << global_const << \" - \" << static_const << \" - \" << a.getInt() << endl;\n  return 0;\n}\n", 
   "trace": [

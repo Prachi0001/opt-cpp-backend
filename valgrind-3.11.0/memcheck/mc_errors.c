@@ -49,6 +49,7 @@
 
 #include "mc_include.h"
 
+extern VgFile* trace_fp; // pgbovine
 
 /*------------------------------------------------------------*/
 /*--- Error types                                          ---*/

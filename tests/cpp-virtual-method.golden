@@ -8,7 +8,6 @@ Shape 6 has 4 sides
 Shape 7 has 3 sides
 Shape 8 has 4 sides
 Shape 9 has 3 sides
-rm cpp-virtual-method.vgtrace
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/virtual-method\n\n#include <stdio.h>\n\nclass Shape {\npublic:\n    virtual int num_sides() = 0;\n\n    static bool compare(Shape *s1, Shape *s2);\n};\n\nbool Shape::compare(Shape *s1, Shape *s2) {\n    return s1->num_sides() == s2->num_sides();\n}\n\nclass Triangle : public Shape {\n    virtual int num_sides();\n};\n\nclass Square : public Shape {\n    virtual int num_sides();\n};\n\nint Triangle::num_sides() {\n    return 3;\n}\n\nint Square::num_sides() {\n    return 4;\n}\n\nint main(int argc, char **argv) {\n    Shape *shapes[10];\n    for (int i = 0; i < 10; i++) {\n  shapes[i] = (i & 1) ? (Shape*) new Triangle() : (Shape *) new Square();\n    }\n    for (int i = 0; i < 10; i++) {\n  printf(\"Shape %d has %d sides\\n\", i, shapes[i]->num_sides());\n    }\n    Shape::compare(shapes[0], shapes[1]);\n    Shape::compare(shapes[2], shapes[4]);\n}\n\n", 
   "trace": [

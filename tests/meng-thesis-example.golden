@@ -1,4 +1,3 @@
-rm meng-thesis-example.vgtrace
 var trace = {
   "code": "#include <stdlib.h>\n\n// from pg's meng thesis\nint globalInt = 42;\n\nint main() {\n  int localArray[10]; // contents uninitialized\n  int *a, *b, *c, i, j; // c and j uninitialized, *c is meaningless\n  a = &globalInt;\n  b = (int*)malloc(15*sizeof(int));\n  // Heap buffer overflow after i = 14\n  for (i = 1; i < 100; i+=2) {\n    b[i] = i; // Initialize only odd-indexed elements of b\n  }\n  return 0;\n}\n", 
   "trace": [

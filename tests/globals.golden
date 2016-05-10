@@ -1,4 +1,3 @@
-rm globals.vgtrace
 var trace = {
   "code": "// adapted from pg's meng thesis\n\nint globalInt = 42;\nchar* globalStr = \"hello\\nworld\\tagain!\\n\\n\\n\";\nchar globalChar = 'x';\ndouble globalDouble = 3.14159;\nint globalIntArray[7];\n\nint main() {\n  int *a = &globalInt;\n  char* aliasGlobalStr = globalStr;\n\n  globalIntArray[0] = 100;\n  globalIntArray[2] = 200;\n  globalIntArray[4] = 300;\n  globalIntArray[6] = 400;\n\n  // increment it!\n  aliasGlobalStr++;\n  aliasGlobalStr++;\n  aliasGlobalStr++;\n  aliasGlobalStr++;\n  aliasGlobalStr++;\n\n  return 0;\n}\n", 
   "trace": [

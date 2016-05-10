@@ -1,4 +1,3 @@
-rm fjalar-pointer-levels.vgtrace
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\nint **global;\n\nvoid f(int ***ppp) { return; }\n\nint main()\n{\n  long x = 1;\n  int *ptr;\n  int **ptrptr = &ptr;\n\n  global = (int **)&x;\n\n  f(&ptrptr);\n  return 0;\n}\n", 
   "trace": [

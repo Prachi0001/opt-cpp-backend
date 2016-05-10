@@ -1,4 +1,3 @@
-rm fjalar-NestedStructVarList.vgtrace
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n#include <stdlib.h>\n\n#define NUM_COUNTERS 10\n\ntypedef struct _counter {\n  int a;\n} counter;\n\ncounter* counters;\n\nint sum = 0;\n\n// The invariant sum = sum(counter.a[]) should\n// hold at every call to check()\nvoid check() {\n}\n\nint main() {\n  counters = calloc(1, NUM_COUNTERS*sizeof(counter));\n  check();\n\n  counters[0].a++;\n  sum++;\n  check();\n\n  counters[5].a++;\n  sum++;\n  check();\n\n  counters[9].a = 100;\n  sum += 100;\n  check();\n\n  counters[0].a+= 2;\n  sum+= 2;\n  check();\n\n  return 0;\n}\n\n", 
   "trace": [

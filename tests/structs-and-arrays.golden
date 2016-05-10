@@ -1,4 +1,3 @@
-rm structs-and-arrays.vgtrace
 var trace = {
   "code": "#include <stdlib.h>\n\ntypedef struct {\n   int account_number;\n   double balance;\n   unsigned long moneys[5];\n} Account;\n\nint main() {\n  Account my_account;\n  my_account.account_number = 42;\n  my_account.balance = 3.141592653589793238462643383279502884197169399375105820974944592307816406286;\n  my_account.moneys[1] = 123;\n  my_account.moneys[3] = 456;\n\n  Account stack_accounts_array[4];\n  stack_accounts_array[1].account_number = 1;\n  stack_accounts_array[1].moneys[1] = 111111;\n  stack_accounts_array[3].account_number = 3;\n  stack_accounts_array[3].moneys[3] = 333333;\n\n  Account* heap_accounts_array = malloc(5 * sizeof(*heap_accounts_array));\n  heap_accounts_array[1].account_number = 1;\n  heap_accounts_array[1].moneys[1] = 111111;\n  heap_accounts_array[3].account_number = 3;\n  heap_accounts_array[3].moneys[3] = 333333;\n}\n", 
   "trace": [

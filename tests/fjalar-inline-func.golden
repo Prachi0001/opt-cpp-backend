@@ -1,4 +1,3 @@
-rm fjalar-inline-func.vgtrace
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\ninline int foo(int x) {\n  return 5;\n}\n\nint main() {\n  foo(3);\n  return 0;\n}\n", 
   "trace": [

@@ -10,6 +10,8 @@ import re
 import sys
 
 DN = os.path.dirname(sys.argv[0])
+if not DN:
+    DN = '.' # so that we always have an executable path like ./usercode.exe
 USER_PROGRAM = sys.argv[1] # string containing the program to be run
 LANG = sys.argv[2] # 'c' for C or 'cpp' for C++
 
@@ -40,6 +42,10 @@ p = Popen([CC, '-ggdb', '-O0', '-fno-omit-frame-pointer', '-o', EXE_PATH, F_PATH
 gcc_retcode = p.returncode
 
 if gcc_retcode == 0:
+    print >> sys.stderr, '=== gcc stderr ==='
+    print >> sys.stderr, gcc_stderr
+    print >> sys.stderr, '==='
+
     # run it with Valgrind
     VALGRIND_EXE = os.path.join(DN, 'valgrind-3.11.0/inst/bin/valgrind')
     # tricky! --source-filename takes a basename only, not a full pathname:
@@ -52,10 +58,10 @@ if gcc_retcode == 0:
     (valgrind_stdout, valgrind_stderr) = valgrind_p.communicate()
     valgrind_retcode = valgrind_p.returncode
 
-    #print '=== Valgrind stdout ==='
-    #print valgrind_stdout
-    #print '=== Valgrind stderr ==='
-    #print valgrind_stderr
+    print >> sys.stderr, '=== Valgrind stdout ==='
+    print >> sys.stderr, valgrind_stdout
+    print >> sys.stderr, '=== Valgrind stderr ==='
+    print >> sys.stderr, valgrind_stderr
 
     # TODO: gracefully handle Valgrind-produced errors
 
@@ -71,9 +77,9 @@ if gcc_retcode == 0:
     postprocess_retcode = postprocess_p.returncode
     print postprocess_stdout
 else:
-    #print '==='
-    #print gcc_stderr
-    #print '==='
+    print >> sys.stderr, '=== gcc stderr ==='
+    print >> sys.stderr, gcc_stderr
+    print >> sys.stderr, '==='
     # compiler error. parse and report gracefully!
 
     exception_msg = 'unknown compiler error'
@@ -83,7 +89,7 @@ else:
     # just report the FIRST line where you can detect a line and column
     # number of the error.
     for line in gcc_stderr.splitlines():
-        m = re.search('usercode.c:(\d+):(\d+):(.*$)', line)
+        m = re.search('usercode.c:(\d+):(\d+): (error:.*$)', line)
         if m:
             lineno = int(m.group(1))
             column = int(m.group(2))

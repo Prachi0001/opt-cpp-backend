@@ -1,4 +1,3 @@
-rm typedef-test.vgtrace
 var trace = {
   "code": "typedef unsigned char BYTE;\ntypedef long long int LLI;\ntypedef int* INT_PTR;\ntypedef char* C_STRING;\n\nint main() {\n  LLI x = 1234567890;\n  BYTE y[5] = {10,20,30,40,50};\n  int foo = 42;\n  INT_PTR foo_ptr = &foo;\n  C_STRING name = \"Philip\\tGuo\\n\";\n}\n", 
   "trace": [

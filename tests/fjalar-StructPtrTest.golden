@@ -1,4 +1,3 @@
-rm fjalar-StructPtrTest.vgtrace
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n\nstruct tile {\n  int a;\n  char* b;\n  int c;\n};\n\nstruct map {\n  char* mapName;\n  struct tile * tiles;\n  int numTiles;\n};\n\nint fooTiles(struct tile* t)\n{\n  return 100;\n}\n\nint barMaps(struct map m)\n{\n  return 300;\n}\n\nint bazMapPtr(struct map* m)\n{\n  return 500;\n}\n\nint main()\n{\n  struct tile localTileArray[5] = {\n    {1, \"first\", 10},\n    {2, \"second\", 20},\n    {3, \"third\", 30},\n    {4, \"fourth\", 40},\n    {5, \"fifth\", 50}};\n\n  struct map localMap = {\"tiles map\", localTileArray, 5};\n\n  fooTiles(localTileArray);\n  fooTiles(localTileArray + 1);\n  fooTiles(localTileArray + 2);\n  fooTiles(localTileArray + 3);\n  fooTiles(localTileArray + 4);\n\n  barMaps(localMap);\n\n  bazMapPtr(&localMap);\n\n  return 0;\n}\n", 
   "trace": [
