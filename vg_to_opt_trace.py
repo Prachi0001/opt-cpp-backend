@@ -86,7 +86,11 @@ def process_json_obj(obj, err_str=None):
     ret['stack_to_render'] = stack
     ret['globals'] = enc_globals
 
-    ret['ordered_globals'] = obj['ordered_globals']
+    # sometimes there are no globals in a trace
+    if 'ordered_globals' in obj:
+        ret['ordered_globals'] = obj['ordered_globals']
+    else:
+        ret['ordered_globals'] = []
 
     ret['line'] = obj['line']
     ret['func_name'] = top_stack_entry['func_name'] # use the 'topmost' entry's name
@@ -99,8 +103,9 @@ def process_json_obj(obj, err_str=None):
 
     ret['stdout'] = '' # TODO: handle this
 
-    for g_var, g_val in obj['globals'].iteritems():
-        enc_globals[g_var] = encode_value(g_val, heap)
+    if 'globals' in obj:
+        for g_var, g_val in obj['globals'].iteritems():
+            enc_globals[g_var] = encode_value(g_val, heap)
 
     for e in obj['stack']:
         stack_obj = {}

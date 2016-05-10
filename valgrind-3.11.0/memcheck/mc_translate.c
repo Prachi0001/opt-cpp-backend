@@ -6315,44 +6315,48 @@ void pg_trace_inst(Addr a)
     // adapted from exp-sgcheck/sg_main.c acquire_globals()
     UWord di_handle = pg_get_di_handle_at_ip(top_ip);
 
-    XArray* /* of GlobalBlock */ gbs = VG_(di_get_global_blocks_from_dihandle)(di_handle, False);
-    Word n = VG_(sizeXA)( gbs );
     Word i;
     Bool first_elt = True;
+    if (di_handle) { // sometimes it's mysteriously null
 
-    VG_(fprintf)(trace_fp, "\n\"globals\": {");
-    for (i = 0; i < n; i++) {
-      GlobalBlock* gb = VG_(indexXA)( gbs, i );
-      tl_assert(gb->szB > 0);
+      XArray* /* of GlobalBlock */ gbs = VG_(di_get_global_blocks_from_dihandle)(di_handle, False);
+      Word n = VG_(sizeXA)( gbs );
 
-      if (first_elt) {
-        first_elt = False;
-      } else {
-        VG_(fprintf)(trace_fp, ",");
+      VG_(fprintf)(trace_fp, "\n\"globals\": {");
+      for (i = 0; i < n; i++) {
+        GlobalBlock* gb = VG_(indexXA)( gbs, i );
+        tl_assert(gb->szB > 0);
+
+        if (first_elt) {
+          first_elt = False;
+        } else {
+          VG_(fprintf)(trace_fp, ",");
+        }
+
+        Bool res = VG_(pg_traverse_global_var)(gb->fullname, gb->addr, is_mem_defined, pg_encoded_addrs, trace_fp);
+        tl_assert(res);
       }
+      VG_(fprintf)(trace_fp, "},\n");
 
-      Bool res = VG_(pg_traverse_global_var)(gb->fullname, gb->addr, is_mem_defined, pg_encoded_addrs, trace_fp);
-      tl_assert(res);
-    }
-    VG_(fprintf)(trace_fp, "},\n");
+      // print out an ordered list of globals since object keys have no order
+      VG_(fprintf)(trace_fp, "\"ordered_globals\": [");
+      first_elt = True;
+      for (i = 0; i < n; i++) {
+        GlobalBlock* gb = VG_(indexXA)( gbs, i );
+        tl_assert(gb->szB > 0);
 
-    // print out an ordered list of globals since object keys have no order
-    VG_(fprintf)(trace_fp, "\"ordered_globals\": [");
-    first_elt = True;
-    for (i = 0; i < n; i++) {
-      GlobalBlock* gb = VG_(indexXA)( gbs, i );
-      tl_assert(gb->szB > 0);
-
-      if (first_elt) {
-        first_elt = False;
-      } else {
-        VG_(fprintf)(trace_fp, ",");
+        if (first_elt) {
+          first_elt = False;
+        } else {
+          VG_(fprintf)(trace_fp, ",");
+        }
+        VG_(fprintf)(trace_fp, "\"%s\"", gb->fullname);
       }
-      VG_(fprintf)(trace_fp, "\"%s\"", gb->fullname);
-    }
-    VG_(fprintf)(trace_fp, "],\n");
+      VG_(fprintf)(trace_fp, "],\n");
 
-    VG_(deleteXA)( gbs );
+      VG_(deleteXA)( gbs );
+
+    }
 
     VG_(fprintf)(trace_fp, "\"stack\": [\n");
     Bool first_stack_entry = True;
