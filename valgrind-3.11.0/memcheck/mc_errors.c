@@ -500,6 +500,10 @@ void MC_(pp_Error) ( const Error* err )
                mc_pp_origin( extra->Err.RegParam.origin_ec,
                              extra->Err.RegParam.otag & 3 );
          } else {
+            // pgbovine
+            VG_(fprintf)(trace_fp, "ERROR: Syscall param %s contains uninitialised byte(s)\n",
+                         VG_(get_error_string)(err));
+
             emit( "Syscall param %s contains uninitialised byte(s)\n",
                   VG_(get_error_string)(err) );
             VG_(pp_ExeContext)( VG_(get_error_where)(err) );
@@ -526,6 +530,12 @@ void MC_(pp_Error) ( const Error* err )
                mc_pp_origin( extra->Err.MemParam.origin_ec,
                              extra->Err.MemParam.otag & 3 );
          } else {
+            // pgbovine
+            VG_(fprintf)(trace_fp, "ERROR: Syscall param %s points to %s byte(s)\n",
+                         VG_(get_error_string)(err),
+                         extra->Err.MemParam.isAddrErr 
+                           ? "unaddressable" : "uninitialised" );
+
             emit( "Syscall param %s points to %s byte(s)\n",
                   VG_(get_error_string)(err),
                   extra->Err.MemParam.isAddrErr 
@@ -728,6 +738,13 @@ void MC_(pp_Error) ( const Error* err )
             emit( "</what>");
             VG_(pp_ExeContext)( VG_(get_error_where)(err) );
          } else {
+             // pgbovine
+             VG_(fprintf)(trace_fp, "ERROR: Argument '%s' of function %s has a fishy "
+                          "(possibly negative) value: %ld\n",
+                          extra->Err.FishyValue.argument_name,
+                          extra->Err.FishyValue.function_name,
+                          (SSizeT)extra->Err.FishyValue.value);
+
             emit( "Argument '%s' of function %s has a fishy "
                   "(possibly negative) value: %ld\n",
                   extra->Err.FishyValue.argument_name,

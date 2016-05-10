@@ -5689,7 +5689,7 @@ static Bool mc_expensive_sanity_check ( void )
 Bool          MC_(clo_partial_loads_ok)       = True;
 Long          MC_(clo_freelist_vol)           = 20*1000*1000LL;
 Long          MC_(clo_freelist_big_blocks)    =  1*1000*1000LL;
-LeakCheckMode MC_(clo_leak_check)             = LC_Summary;
+LeakCheckMode MC_(clo_leak_check)             = LC_Off; // pgbovine - disabled for speed; original: LC_Summary;
 VgRes         MC_(clo_leak_resolution)        = Vg_HighRes;
 UInt          MC_(clo_show_leak_kinds)        = R2S(Possible) | R2S(Unreached);
 UInt          MC_(clo_error_for_leak_kinds)   = R2S(Possible) | R2S(Unreached);
