@@ -312,13 +312,6 @@ if __name__ == '__main__':
                     if cur_line == prev_line and cur_frame_ids == prev_frame_ids:
                         skip = True
 
-            # if there's a 'step_line' followed by an 'exception' on the SAME LINE,
-            # then skip the FIRST event since it's a redundant step_line. krazy!
-            if cur_event == 'exception' and prev_event == 'step_line':
-                if cur_line == prev_line and cur_frame_ids == prev_frame_ids:
-                    tmp.pop()
-
-            # append AFTER the potential tmp.pop() above
             if not skip:
                 tmp.append(elt)
 
