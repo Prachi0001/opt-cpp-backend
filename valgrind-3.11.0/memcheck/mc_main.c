@@ -52,6 +52,7 @@
 #include "memcheck.h"   /* for client requests */
 
 #include "pub_tool_vki.h" // pgbovine
+#include "pub_tool_libcfile.h" // pgbovine
 
 
 /* Set to 1 to enable handwritten assembly helpers on targets for
@@ -5714,6 +5715,7 @@ static const HChar * MC_(parse_leak_heuristics_tokens) =
 // pgbovine
 static Bool pg_source_filename_init = False;
 VgFile* trace_fp = NULL;
+int stdout_fd = 0;
 
 static Bool mc_process_cmd_line_options(const HChar* arg)
 {
@@ -7392,6 +7394,16 @@ static void mc_post_clo_init ( void )
    tl_assert(pg_source_filename_init); // pgbovine -- requires this!
    tl_assert(trace_fp); // pgbovine
 
+   // kinda gross hack. create a new file stdout.txt in read/write mode
+   // and redirect stdout to it. MAKE SURE TO RUN VALGRIND PREPENDED
+   // WITH THE "stdbuf -o0" COMMAND SO THAT STDOUT IS NOT BUFFERED.
+   // otherwise this trick won't work because of file buffering.
+   SysRes resW = VG_(open)("stdout.txt",
+                          VKI_O_CREAT|VKI_O_RDWR|VKI_O_TRUNC,
+                          VKI_S_IRUSR|VKI_S_IWUSR|VKI_S_IRGRP|VKI_S_IROTH);
+   stdout_fd = sr_Res(resW);
+   VG_(dup2)(stdout_fd, 1); // close the user's stdout and redirect it to file
+
    /* If we've been asked to emit XML, mash around various other
       options so as to constrain the output somewhat. */
    if (VG_(clo_xml)) {
@@ -7631,6 +7643,7 @@ static void mc_print_stats (void)
 static void mc_fini ( Int exitcode )
 {
    VG_(fclose)(trace_fp); // pgbovine - very important! TODO: what happens when program crashes?
+   VG_(close)(stdout_fd);
 
    MC_(print_malloc_stats)();
 

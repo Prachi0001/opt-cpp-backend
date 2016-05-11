@@ -48,26 +48,37 @@ def process_record(lines):
     if not lines:
         return True # 'nil success case to keep the parser going
 
-    err_lines = [e for e in lines if e.startswith('ERROR: ')]
-    non_err_lines = [e for e in lines if not e.startswith('ERROR: ')]
-    # some lines may start with 'ERROR: ' -- those are special run-time
-    # error messages produced by Valgrind. cut those out
-    rec = '\n'.join(non_err_lines)
+    err_lines = []
+    stdout_lines = []
+    regular_lines = []
+    for e in lines:
+        if e.startswith('ERROR: '):
+            err_lines.append(e)
+        elif e.startswith('STDOUT: '):
+            stdout_lines.append(e)
+        else:
+            regular_lines.append(e)
+
+    rec = '\n'.join(regular_lines)
     try:
         obj = json.loads(rec)
     except ValueError:
         print >> sys.stderr, "Ugh, bad record!"
         return False
 
+    assert len(stdout_lines) == 1 # always have one!
+    # it's encoded as JSON in a single line
+    stdout_str = json.loads(stdout_lines[0][len('STDOUT: '):])
+
     # take the first error only
     err_str = err_lines[0] if err_lines else None
 
-    x = process_json_obj(obj, err_str)
+    x = process_json_obj(obj, err_str, stdout_str)
     all_execution_points.append(x)
     return True
 
 
-def process_json_obj(obj, err_str=None):
+def process_json_obj(obj, err_str, stdout_str):
     #print '---'
     #pp.pprint(obj)
     #print
@@ -101,7 +112,7 @@ def process_json_obj(obj, err_str=None):
     else:
         ret['event'] = 'step_line'
 
-    ret['stdout'] = '' # TODO: handle this
+    ret['stdout'] = stdout_str
 
     if 'globals' in obj:
         for g_var, g_val in obj['globals'].iteritems():

@@ -49,7 +49,8 @@ if gcc_retcode == 0:
     # run it with Valgrind
     VALGRIND_EXE = os.path.join(DN, 'valgrind-3.11.0/inst/bin/valgrind')
     # tricky! --source-filename takes a basename only, not a full pathname:
-    valgrind_p = Popen([VALGRIND_EXE,
+    valgrind_p = Popen(['stdbuf', '-o0', # VERY IMPORTANT to disable stdout buffering so that stdout is traced properly
+                        VALGRIND_EXE,
                         '--tool=memcheck',
                         '--source-filename=' + FN,
                         '--trace-filename=' + VGTRACE_PATH,

@@ -52,25 +52,14 @@ all-traces: basic.trace \
 						cpp-stackarraymini.trace
 
 
-#%: %.c
-#	@gcc -ggdb -O0 -fno-omit-frame-pointer $< -o $@
-
-#%: %.cpp
-#	g++ -ggdb -O0 -fno-omit-frame-pointer $< -o $@
-
-# use '|| true' to always return success and keep 'make' running even on errors
-#%.vgtrace: % ../valgrind-3.11.0/inst/bin/valgrind
-#	../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$<.c --trace-filename=$<.vgtrace ./$< || true
-
-
 %.trace: %.c ../valgrind-3.11.0/inst/bin/valgrind
 	@gcc -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
-	@../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
+	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
 	@python ../vg_to_opt_trace.py --create_jsvar=trace $< > $(basename $<).trace || true
 
 %.trace: %.cpp ../valgrind-3.11.0/inst/bin/valgrind
 	@g++ -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
-	@../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
+	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
 	@python ../vg_to_opt_trace.py --create_jsvar=trace $< > $(basename $<).trace || true
 
 clean:

@@ -40,11 +40,13 @@
 #include "pub_tool_mallocfree.h"
 #include "pub_tool_libcbase.h"
 
+#include "pub_tool_libcfile.h" // pgbovine
 #include "pub_tool_debuginfo.h" // pgbovine
 #include "pub_tool_stacktrace.h" // pgbovine
 #include "pub_tool_threadstate.h" // pgbovine
 #include "pub_tool_oset.h" // pgbovine
 extern VgFile* trace_fp; // pgbovine
+extern int stdout_fd; // pgbovine
 
 #include "mc_include.h"
 
@@ -6260,6 +6262,8 @@ VG_REGPARM(1) void pg_trace_inst(Addr ad);
 // any addresses whose values have already been encoded FOR THIS STEP!
 // (remember to reset between steps)
 OSet* pg_encoded_addrs = NULL;
+#define USER_STDOUT_BUF_SIZE 10 * 1024 * 1024
+char user_stdout_buf[USER_STDOUT_BUF_SIZE]; // TODO: make this bigger?
 
 VG_REGPARM(1)
 void pg_trace_inst(Addr a)
@@ -6276,7 +6280,28 @@ void pg_trace_inst(Addr a)
                                             "pg_encoded_addrs",
                                             VG_(free));
 
+    // MAKE SURE TO RUN VALGRIND PREPENDED
+    // WITH THE "stdbuf -o0" COMMAND SO THAT STDOUT IS NOT BUFFERED.
+    // otherwise this trick won't work because of file buffering.
+
+    // rewind to beginning and read as much as possible
+    VG_(lseek)(stdout_fd, 0, VKI_SEEK_SET);
+    int nbytes = VG_(read)(stdout_fd, user_stdout_buf, USER_STDOUT_BUF_SIZE);
+    if (nbytes > 0) {
+      user_stdout_buf[nbytes-1] = '\0';
+    } else {
+      user_stdout_buf[0] = '\0';
+    }
+    //VG_(printf)("pg_trace_inst value: %d, %s\n", nbytes, user_stdout_buf);
+    char* json_buf = json_encode_string(user_stdout_buf);
+
+
     VG_(fprintf)(trace_fp, "=== pg_trace_inst ===\n");
+
+    // start by printing out current stdout as a JSON string in one line
+    VG_(fprintf)(trace_fp, "STDOUT: %s\n", json_buf);
+    VG_(free)(json_buf);
+
     VG_(fprintf)(trace_fp, "{\n");
 
     Vg_FnNameKind kind = VG_(get_fnname_kind_from_IP)(a);
