@@ -43,7 +43,7 @@ ONLY_ONE_REC_PER_LINE = True
 
 all_execution_points = []
 
-# True if successful parse, False if not
+# False if record isn't parsed properly or is an exception
 def process_record(lines):
     if not lines:
         return True # 'nil success case to keep the parser going
@@ -75,6 +75,10 @@ def process_record(lines):
 
     x = process_json_obj(obj, err_str, stdout_str)
     all_execution_points.append(x)
+    # it's a good idea to fail-fast on first exception since it's
+    # pedagogically bad to keep executing despite errors
+    if x['event'] == 'exception':
+        return False
     return True
 
 
@@ -108,7 +112,7 @@ def process_json_obj(obj, err_str, stdout_str):
 
     if err_str:
         ret['event'] = 'exception'
-        ret['exception_msg'] = err_str
+        ret['exception_msg'] = err_str + '\n(Stopped running after the first error. Please fix your code.)'
     else:
         ret['event'] = 'step_line'
 
@@ -299,16 +303,9 @@ if __name__ == '__main__':
                 if cur_frame_ids == prev_frame_ids[:-1]:
                     prev['event'] = 'return'
 
-        # super hack! what should we do about the LAST entry in the
-        # trace? if all went well with parsing all entries, then make it
-        # a 'return' (presumably from main) for proper closure. if
-        # something went wrong (!success), then make it an 'exception'
-        # with a cryptic message
+        # make the last statement a faux 'return', presumably from main
         if success:
             final_execution_points[-1]['event'] = 'return'
-        else:
-            final_execution_points[-1]['event'] = 'exception'
-            final_execution_points[-1]['exception_msg'] = 'Oh noes, your code just crashed!\nSend bug reports to philip@pgbovine.net'
 
     # only keep the FIRST 'step_line' event for any given line, to match what
     # a line-level debugger would do
