@@ -6288,7 +6288,7 @@ void pg_trace_inst(Addr a)
     VG_(lseek)(stdout_fd, 0, VKI_SEEK_SET);
     int nbytes = VG_(read)(stdout_fd, user_stdout_buf, USER_STDOUT_BUF_SIZE);
     if (nbytes > 0) {
-      user_stdout_buf[nbytes-1] = '\0';
+      user_stdout_buf[nbytes] = '\0';
     } else {
       user_stdout_buf[0] = '\0';
     }
