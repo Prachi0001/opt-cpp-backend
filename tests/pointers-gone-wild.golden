@@ -13,42 +13,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFEF8", 
+              "0xFFF0000B8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -62,7 +62,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -79,42 +79,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -128,7 +128,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -145,42 +145,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -194,7 +194,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -211,42 +211,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -260,7 +260,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -277,42 +277,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -326,7 +326,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -336,36 +336,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -378,42 +378,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -427,7 +427,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -437,36 +437,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -479,42 +479,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -528,7 +528,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -538,36 +538,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -580,42 +580,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC044"
+              "0x53FE044"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -629,7 +629,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -639,36 +639,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -681,42 +681,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC048"
+              "0x53FE048"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -730,7 +730,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -740,36 +740,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -782,42 +782,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC04C"
+              "0x53FE04C"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -831,7 +831,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -841,36 +841,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -883,42 +883,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC050"
+              "0x53FE050"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -932,7 +932,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -942,36 +942,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -984,42 +984,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC054"
+              "0x53FE054"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1033,7 +1033,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1043,36 +1043,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -1085,42 +1085,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC058"
+              "0x53FE058"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1134,7 +1134,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1144,36 +1144,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -1186,42 +1186,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC05C"
+              "0x53FE05C"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1235,7 +1235,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1245,36 +1245,36 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040", 
+          "0x53FE040", 
           [
             "C_DATA", 
-            "0x51FC040", 
+            "0x53FE040", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC044", 
+            "0x53FE044", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC048", 
+            "0x53FE048", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC04C", 
+            "0x53FE04C", 
             "int", 
             "<UNINITIALIZED>"
           ], 
           [
             "C_DATA", 
-            "0x51FC050", 
+            "0x53FE050", 
             "int", 
             "<UNINITIALIZED>"
           ]
@@ -1287,42 +1287,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1336,7 +1336,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1346,9 +1346,9 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 26, 
@@ -1358,42 +1358,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
-              "0x51FC040"
+              "0x53FE040"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1407,7 +1407,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1417,9 +1417,9 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 28, 
@@ -1429,42 +1429,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x0"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1478,7 +1478,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1488,9 +1488,9 @@ var trace = {
       "func_name": "foo", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 3, 
@@ -1500,42 +1500,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x0"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1549,24 +1549,24 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "local_x": [
               "C_DATA", 
-              "0xFFEFFFEE4", 
+              "0xFFF0000A4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "retval": [
               "C_DATA", 
-              "0xFFEFFFEE8", 
+              "0xFFF0000A8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFEF0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1576,7 +1576,7 @@ var trace = {
             "retval"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFEFFFEF0"
+          "unique_hash": "foo_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1586,9 +1586,9 @@ var trace = {
       "func_name": "foo", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 4, 
@@ -1598,42 +1598,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x0"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1647,24 +1647,24 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "local_x": [
               "C_DATA", 
-              "0xFFEFFFEE4", 
+              "0xFFF0000A4", 
               "int", 
               42
             ], 
             "retval": [
               "C_DATA", 
-              "0xFFEFFFEE8", 
+              "0xFFF0000A8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFEF0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1674,7 +1674,7 @@ var trace = {
             "retval"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFEFFFEF0"
+          "unique_hash": "foo_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1684,9 +1684,9 @@ var trace = {
       "func_name": "foo", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 5, 
@@ -1696,42 +1696,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x0"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1745,24 +1745,24 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "local_x": [
               "C_DATA", 
-              "0xFFEFFFEE4", 
+              "0xFFF0000A4", 
               "int", 
               42
             ], 
             "retval": [
               "C_DATA", 
-              "0xFFEFFFEE8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0xFFEFFFEE4"
+              "0xFFF0000A4"
             ]
           }, 
-          "frame_id": "0xFFEFFFEF0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1772,7 +1772,7 @@ var trace = {
             "retval"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFEFFFEF0"
+          "unique_hash": "foo_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1782,9 +1782,9 @@ var trace = {
       "func_name": "foo", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 6, 
@@ -1794,42 +1794,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x0"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1843,24 +1843,24 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "local_x": [
               "C_DATA", 
-              "0xFFEFFFEE4", 
+              "0xFFF0000A4", 
               "int", 
               42
             ], 
             "retval": [
               "C_DATA", 
-              "0xFFEFFFEE8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0xFFEFFFEE4"
+              "0xFFF0000A4"
             ]
           }, 
-          "frame_id": "0xFFEFFFEF0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1870,7 +1870,7 @@ var trace = {
             "retval"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFEFFFEF0"
+          "unique_hash": "foo_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1880,9 +1880,9 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 28, 
@@ -1892,42 +1892,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x0"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1941,7 +1941,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1951,9 +1951,9 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x51FC040": [
+        "0x53FE040": [
           "C_ARRAY", 
-          "0x51FC040"
+          "0x53FE040"
         ]
       }, 
       "line": 29, 
@@ -1963,42 +1963,42 @@ var trace = {
           "encoded_locals": {
             "cur_p": [
               "C_DATA", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0x51FC060"
+              "0x53FE060"
             ], 
             "heap_p": [
               "C_DATA", 
-              "0xFFEFFFF00", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x0"
             ], 
             "null_p": [
               "C_DATA", 
-              "0xFFEFFFF08", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x0"
             ], 
             "random_p": [
               "C_DATA", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "pointer", 
               "0x7B"
             ], 
             "stack_p": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "pointer", 
-              "0xFFEFFFEE4"
+              "0xFFF0000A4"
             ], 
             "uninit_pp": [
               "C_DATA", 
-              "0xFFEFFFF18", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFF00"
+              "0xFFF0000C0"
             ]
           }, 
-          "frame_id": "0xFFEFFFF30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2012,7 +2012,7 @@ var trace = {
             "stack_p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF30"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""

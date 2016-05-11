@@ -1,4 +1,4 @@
-100var trace = {
+var trace = {
   "code": "// From: http://www.cprogramming.com/tutorial/lesson12.html\n\n#include <iostream>\n\nusing namespace std;\n\nclass Computer // Standard way of defining the class\n{\npublic:\n  // This means that all of the functions below this(and any variables)\n  //  are accessible to the rest of the program.\n  //  NOTE: That is a colon, NOT a semicolon...\n  Computer();\n  // Constructor\n  ~Computer();\n  // Destructor\n  void setspeed ( int p );\n  int readspeed();\nprotected:\n  // This means that all the variables under this, until a new type of\n  //  restriction is placed, will only be accessible to other functions in the\n  //  class.  NOTE: That is a colon, NOT a semicolon...\n  int processorspeed;\n};\n// Do Not forget the trailing semi-colon\n\nComputer::Computer()\n{\n  //Constructors can accept arguments, but this one does not\n  processorspeed = 0;\n}\n\nComputer::~Computer()\n{\n  //Destructors do not accept arguments\n}\n\nvoid Computer::setspeed ( int p )\n{\n  // To define a function outside put the name of the class\n  //  after the return type and then two colons, and then the name\n  //  of the function.\n  processorspeed = p;\n}\nint Computer::readspeed()  \n{\n  // The two colons simply tell the compiler that the function is part\n  //  of the class\n  return processorspeed;\n}\n\nint main()\n{\n  Computer compute;  \n  // To create an 'instance' of the class, simply treat it like you would\n  //  a structure.  (An instance is simply when you create an actual object\n  //  from the class, as opposed to having the definition of the class)\n  compute.setspeed ( 100 ); \n  // To call functions in the class, you put the name of the instance,\n  //  a period, and then the function name.\n  cout<< compute.readspeed();\n  // See above note.\n}\n", 
   "trace": [
     {
@@ -22,14 +22,14 @@
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -55,31 +55,31 @@
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000AC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000A8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -89,7 +89,7 @@
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000D0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -115,31 +115,31 @@
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000AC", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000A8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -149,7 +149,7 @@
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000D0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -175,31 +175,31 @@
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000AC", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000A8", 
               "int", 
               65535
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -209,7 +209,7 @@
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000D0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -235,14 +235,14 @@
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -257,14 +257,14 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -279,14 +279,14 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -303,20 +303,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -325,18 +325,18 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000F0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -353,20 +353,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -375,18 +375,18 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000F0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -403,20 +403,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -425,18 +425,18 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000F0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -453,20 +453,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -475,7 +475,7 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -492,20 +492,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -514,24 +514,24 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -541,7 +541,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000F0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -558,20 +558,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -580,24 +580,24 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000100"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -607,7 +607,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000F0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -624,20 +624,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -646,24 +646,24 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000C4", 
               "int", 
               100
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000100"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -673,7 +673,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000F0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -690,20 +690,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -712,24 +712,24 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000C4", 
               "int", 
               100
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000100"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -739,7 +739,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000F0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -756,20 +756,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -778,7 +778,7 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -795,20 +795,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -817,18 +817,18 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -837,7 +837,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000F0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -854,20 +854,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -876,18 +876,18 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000100"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -896,7 +896,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000F0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -913,20 +913,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -935,18 +935,18 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000100"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -955,7 +955,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000F0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -972,20 +972,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -994,7 +994,7 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1011,20 +1011,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1033,21 +1033,21 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000F0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000D0"
         }
       ], 
-      "stdout": ""
+      "stdout": "100"
     }, 
     {
       "event": "return", 
@@ -1061,20 +1061,20 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF000100", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF000100", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1083,21 +1083,21 @@
             "compute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000F0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000D0"
         }
       ], 
-      "stdout": ""
+      "stdout": "100"
     }, 
     {
       "event": "step_line", 
@@ -1109,17 +1109,17 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "100"
     }, 
     {
       "event": "return", 
@@ -1131,17 +1131,17 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "100"
     }
   ]
 };

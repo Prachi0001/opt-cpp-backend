@@ -13,30 +13,30 @@ var trace = {
           "encoded_locals": {
             "bar": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "long unsigned int", 
               "<UNINITIALIZED>"
             ], 
             "baz": [
               "C_DATA", 
-              "0xFFEFFFF30", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "foo": [
               "C_DATA", 
-              "0xFFEFFFF24", 
+              "0xFFF0000E4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "rt_clk": [
               "C_DATA", 
-              "0xFFEFFFF38", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -48,7 +48,7 @@ var trace = {
             "rt_clk"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -65,30 +65,30 @@ var trace = {
           "encoded_locals": {
             "bar": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "long unsigned int", 
               "<UNINITIALIZED>"
             ], 
             "baz": [
               "C_DATA", 
-              "0xFFEFFFF30", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "foo": [
               "C_DATA", 
-              "0xFFEFFFF24", 
+              "0xFFF0000E4", 
               "int", 
               111
             ], 
             "rt_clk": [
               "C_DATA", 
-              "0xFFEFFFF38", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -100,7 +100,7 @@ var trace = {
             "rt_clk"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -117,30 +117,30 @@ var trace = {
           "encoded_locals": {
             "bar": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "long unsigned int", 
               222
             ], 
             "baz": [
               "C_DATA", 
-              "0xFFEFFFF30", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "foo": [
               "C_DATA", 
-              "0xFFEFFFF24", 
+              "0xFFF0000E4", 
               "int", 
               111
             ], 
             "rt_clk": [
               "C_DATA", 
-              "0xFFEFFFF38", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -152,7 +152,7 @@ var trace = {
             "rt_clk"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -169,30 +169,30 @@ var trace = {
           "encoded_locals": {
             "bar": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "long unsigned int", 
               222
             ], 
             "baz": [
               "C_DATA", 
-              "0xFFEFFFF30", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFEFFFF24"
+              "0xFFF0000E4"
             ], 
             "foo": [
               "C_DATA", 
-              "0xFFEFFFF24", 
+              "0xFFF0000E4", 
               "int", 
               111
             ], 
             "rt_clk": [
               "C_DATA", 
-              "0xFFEFFFF38", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -204,7 +204,7 @@ var trace = {
             "rt_clk"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -221,30 +221,30 @@ var trace = {
           "encoded_locals": {
             "bar": [
               "C_DATA", 
-              "0xFFEFFFF28", 
+              "0xFFF0000E8", 
               "long unsigned int", 
               222
             ], 
             "baz": [
               "C_DATA", 
-              "0xFFEFFFF30", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFEFFFF24"
+              "0xFFF0000E4"
             ], 
             "foo": [
               "C_DATA", 
-              "0xFFEFFFF24", 
+              "0xFFF0000E4", 
               "int", 
               111
             ], 
             "rt_clk": [
               "C_DATA", 
-              "0xFFEFFFF38", 
+              "0xFFF0000F8", 
               "pointer", 
-              "0xFFEFFFF28"
+              "0xFFF0000E8"
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -256,7 +256,7 @@ var trace = {
             "rt_clk"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""

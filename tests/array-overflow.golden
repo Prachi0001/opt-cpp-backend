@@ -1,4 +1,3 @@
-0
 var trace = {
   "code": "#include <stdio.h>\n\nvoid foo(int* x) {\n  printf(\"%d\\n\", x[3]);\n}\n\nint main() {\n  int arr[3];\n  int overflow = 1000;\n  arr[0] = 10;\n  arr[1] = 20;\n  arr[2] = 30;\n  foo(arr);\n  return 0;\n}\n", 
   "trace": [
@@ -14,34 +13,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000108", 
+              "0xFFF0000E8", 
               [
                 "C_DATA", 
-                "0xFFF000108", 
+                "0xFFF0000E8", 
                 "int", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF00010C", 
+                "0xFFF0000EC", 
                 "int", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 "<UNINITIALIZED>"
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF000104", 
+              "0xFFF0000E4", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -51,7 +50,7 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -68,34 +67,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 "<UNINITIALIZED>"
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -105,7 +104,7 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -122,34 +121,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 "<UNINITIALIZED>"
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -159,7 +158,7 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -176,34 +175,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 "<UNINITIALIZED>"
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -213,7 +212,7 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -230,34 +229,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 "<UNINITIALIZED>"
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -267,7 +266,7 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -284,34 +283,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 30
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -321,7 +320,7 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -338,34 +337,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 30
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -375,18 +374,18 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -395,7 +394,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000F0"
+          "unique_hash": "foo_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -412,34 +411,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 30
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -449,18 +448,18 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000110"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -469,7 +468,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000F0"
+          "unique_hash": "foo_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -487,34 +486,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 30
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -524,18 +523,18 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000110"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -544,7 +543,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000F0"
+          "unique_hash": "foo_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -561,34 +560,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 30
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -598,18 +597,18 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF000110"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -618,10 +617,10 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000F0"
+          "unique_hash": "foo_0xFFF0000D0"
         }
       ], 
-      "stdout": ""
+      "stdout": "0\n"
     }, 
     {
       "event": "step_line", 
@@ -635,34 +634,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 30
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -672,10 +671,10 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "0\n"
     }, 
     {
       "event": "return", 
@@ -689,34 +688,34 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_ARRAY", 
-              "0xFFF000110", 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
-                "0xFFF000110", 
+                "0xFFF0000F0", 
                 "int", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF000114", 
+                "0xFFF0000F4", 
                 "int", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF000118", 
+                "0xFFF0000F8", 
                 "int", 
                 30
               ]
             ], 
             "overflow": [
               "C_DATA", 
-              "0xFFF00010C", 
+              "0xFFF0000EC", 
               "int", 
               1000
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -726,10 +725,10 @@ var trace = {
             "overflow"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "0\n"
     }
   ]
 };

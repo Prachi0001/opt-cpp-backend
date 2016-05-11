@@ -1,4 +1,3 @@
-Caught 51
 var trace = {
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n#include <stdlib.h>\n\n\nvoid thrower(int a) {\n  throw 0x33;\n}\n\nvoid function(int a)\n{\n  try {\n    thrower(0x22);\n  } catch(int e) {\n    printf(\"Caught %d\\n\", e);\n  }\n}\n\nint main()\n{\n\n  function(0x11);\n  return 0;\n}\n", 
   "trace": [
@@ -12,14 +11,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -34,25 +33,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -61,7 +60,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -76,25 +75,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -103,7 +102,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -118,25 +117,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -145,7 +144,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -160,25 +159,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -187,18 +186,18 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000AC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFDF0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "thrower(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -207,7 +206,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "thrower(int)_0xFFEFFFDF0"
+          "unique_hash": "thrower(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -222,25 +221,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -249,18 +248,18 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000AC", 
               "int", 
               34
             ]
           }, 
-          "frame_id": "0xFFEFFFDF0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "thrower(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -269,7 +268,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "thrower(int)_0xFFEFFFDF0"
+          "unique_hash": "thrower(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -284,25 +283,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -311,18 +310,18 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000AC", 
               "int", 
               34
             ]
           }, 
-          "frame_id": "0xFFEFFFDF0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "thrower(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -331,7 +330,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "thrower(int)_0xFFEFFFDF0"
+          "unique_hash": "thrower(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -346,31 +345,31 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ], 
             "e": [
               "C_DATA", 
-              "0xFFEFFFE1C", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -380,7 +379,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -395,31 +394,31 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ], 
             "e": [
               "C_DATA", 
-              "0xFFEFFFE1C", 
+              "0xFFF0000DC", 
               "int", 
               51
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -429,7 +428,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -444,31 +443,31 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ], 
             "e": [
               "C_DATA", 
-              "0xFFEFFFE1C", 
+              "0xFFF0000DC", 
               "int", 
               51
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -478,10 +477,10 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
-      "stdout": ""
+      "stdout": "Caught 51\n"
     }, 
     {
       "event": "step_line", 
@@ -493,25 +492,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -520,10 +519,10 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
-      "stdout": ""
+      "stdout": "Caught 51\n"
     }, 
     {
       "event": "return", 
@@ -535,25 +534,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFEFFFE0C", 
+              "0xFFF0000CC", 
               "int", 
               17
             ]
           }, 
-          "frame_id": "0xFFEFFFE30", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "function(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -562,10 +561,10 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFEFFFE30"
+          "unique_hash": "function(int)_0xFFF0000F0"
         }
       ], 
-      "stdout": ""
+      "stdout": "Caught 51\n"
     }, 
     {
       "event": "step_line", 
@@ -577,17 +576,17 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "Caught 51\n"
     }, 
     {
       "event": "return", 
@@ -599,17 +598,17 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "Caught 51\n"
     }
   ]
 };

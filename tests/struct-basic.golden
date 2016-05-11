@@ -13,13 +13,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -28,7 +28,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   "<UNINITIALIZED>"
                 ]
@@ -37,7 +37,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "<UNINITIALIZED>"
                 ]
@@ -46,7 +46,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "<UNINITIALIZED>"
                 ]
@@ -54,13 +54,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -69,14 +69,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -86,7 +86,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -103,13 +103,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   42
                 ]
@@ -118,7 +118,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   "<UNINITIALIZED>"
                 ]
@@ -127,7 +127,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "<UNINITIALIZED>"
                 ]
@@ -136,7 +136,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "<UNINITIALIZED>"
                 ]
@@ -144,13 +144,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -159,14 +159,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -176,7 +176,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -193,13 +193,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   42
                 ]
@@ -208,7 +208,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   3.141593
                 ]
@@ -217,7 +217,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "<UNINITIALIZED>"
                 ]
@@ -226,7 +226,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "<UNINITIALIZED>"
                 ]
@@ -234,13 +234,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -249,14 +249,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -266,7 +266,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -330,13 +330,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   42
                 ]
@@ -345,7 +345,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   3.141593
                 ]
@@ -354,7 +354,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "0x4005B4"
                 ]
@@ -363,7 +363,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "<UNINITIALIZED>"
                 ]
@@ -371,13 +371,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -386,14 +386,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -403,7 +403,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -495,13 +495,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   42
                 ]
@@ -510,7 +510,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   3.141593
                 ]
@@ -519,7 +519,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "0x4005B4"
                 ]
@@ -528,7 +528,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "0x4005BB"
                 ]
@@ -536,13 +536,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -551,14 +551,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -568,7 +568,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -660,13 +660,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   42
                 ]
@@ -675,7 +675,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   3.141593
                 ]
@@ -684,7 +684,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "0x4005B4"
                 ]
@@ -693,7 +693,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "0x4005BB"
                 ]
@@ -701,13 +701,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   12345
                 ]
@@ -716,14 +716,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -733,7 +733,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -825,13 +825,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   42
                 ]
@@ -840,7 +840,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   3.141593
                 ]
@@ -849,7 +849,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "0x4005B4"
                 ]
@@ -858,7 +858,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "0x4005BB"
                 ]
@@ -866,13 +866,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   12345
                 ]
@@ -881,14 +881,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   54321
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -898,7 +898,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -990,13 +990,13 @@ var trace = {
           "encoded_locals": {
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFF20", 
+              "0xFFF0000E0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF20", 
+                  "0xFFF0000E0", 
                   "int", 
                   42
                 ]
@@ -1005,7 +1005,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF28", 
+                  "0xFFF0000E8", 
                   "double", 
                   3.141593
                 ]
@@ -1014,7 +1014,7 @@ var trace = {
                 "first_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF30", 
+                  "0xFFF0000F0", 
                   "pointer", 
                   "0x4005B4"
                 ]
@@ -1023,7 +1023,7 @@ var trace = {
                 "last_name", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF38", 
+                  "0xFFF0000F8", 
                   "pointer", 
                   "0x4005BB"
                 ]
@@ -1031,13 +1031,13 @@ var trace = {
             ], 
             "my_point": [
               "C_STRUCT", 
-              "0xFFEFFFF10", 
+              "0xFFF0000D0", 
               "Point", 
               [
                 "xxx", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF10", 
+                  "0xFFF0000D0", 
                   "int", 
                   12345
                 ]
@@ -1046,14 +1046,14 @@ var trace = {
                 "yyy", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFF14", 
+                  "0xFFF0000D4", 
                   "int", 
                   54321
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFF40", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1063,7 +1063,7 @@ var trace = {
             "my_point"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFF40"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""

@@ -7394,11 +7394,12 @@ static void mc_post_clo_init ( void )
    tl_assert(pg_source_filename_init); // pgbovine -- requires this!
    tl_assert(trace_fp); // pgbovine
 
-   // kinda gross hack. create a new file stdout.txt in read/write mode
-   // and redirect stdout to it. MAKE SURE TO RUN VALGRIND PREPENDED
+   // kinda gross hack. create a new file /tmp/stdout.txt in read/write
+   // mode and redirect stdout to it. MAKE SURE TO RUN VALGRIND PREPENDED
    // WITH THE "stdbuf -o0" COMMAND SO THAT STDOUT IS NOT BUFFERED.
    // otherwise this trick won't work because of file buffering.
-   SysRes resW = VG_(open)("stdout.txt",
+   // note that the user must have write permissions in /tmp
+   SysRes resW = VG_(open)("/tmp/stdout.txt",
                           VKI_O_CREAT|VKI_O_RDWR|VKI_O_TRUNC,
                           VKI_S_IRUSR|VKI_S_IWUSR|VKI_S_IRGRP|VKI_S_IROTH);
    stdout_fd = sr_Res(resW);

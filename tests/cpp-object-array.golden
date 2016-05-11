@@ -22,14 +22,14 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -55,31 +55,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF00009C", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF000098", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000A0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -89,7 +89,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000D0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000A0"
         }
       ], 
       "stdout": ""
@@ -115,31 +115,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF00009C", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF000098", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000A0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -149,7 +149,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000D0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000A0"
         }
       ], 
       "stdout": ""
@@ -175,31 +175,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF00009C", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF000098", 
               "int", 
               65535
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000A0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -209,7 +209,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000D0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000A0"
         }
       ], 
       "stdout": ""
@@ -235,14 +235,14 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000E0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -257,14 +257,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -279,14 +279,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -303,12 +303,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -317,18 +317,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -345,12 +345,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -359,18 +359,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -387,12 +387,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -401,18 +401,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -429,12 +429,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -443,7 +443,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -460,12 +460,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -474,18 +474,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -502,12 +502,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -516,18 +516,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -544,12 +544,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -558,18 +558,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -586,12 +586,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -600,7 +600,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -617,12 +617,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -631,18 +631,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -659,12 +659,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -673,18 +673,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -701,12 +701,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -715,18 +715,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -743,12 +743,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -757,7 +757,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -774,12 +774,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -788,18 +788,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -816,12 +816,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -830,18 +830,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -858,12 +858,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -872,18 +872,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -900,12 +900,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -914,7 +914,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -931,12 +931,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -945,18 +945,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -973,12 +973,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -987,18 +987,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1015,12 +1015,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1029,18 +1029,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1057,12 +1057,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1071,7 +1071,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1081,18 +1081,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -1100,13 +1100,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -1114,13 +1114,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -1128,13 +1128,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 0
               ]
@@ -1142,13 +1142,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -1156,13 +1156,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -1170,13 +1170,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -1191,12 +1191,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1205,7 +1205,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1215,18 +1215,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -1234,13 +1234,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -1248,13 +1248,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -1262,13 +1262,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 0
               ]
@@ -1276,13 +1276,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -1290,13 +1290,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -1304,13 +1304,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -1325,12 +1325,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1339,24 +1339,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1366,7 +1366,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1376,18 +1376,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -1395,13 +1395,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -1409,13 +1409,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -1423,13 +1423,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 0
               ]
@@ -1437,13 +1437,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -1451,13 +1451,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -1465,13 +1465,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -1486,12 +1486,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1500,24 +1500,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C04C"
+              "0x5C1E04C"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1527,7 +1527,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1537,18 +1537,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -1556,13 +1556,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -1570,13 +1570,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -1584,13 +1584,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 0
               ]
@@ -1598,13 +1598,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -1612,13 +1612,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -1626,13 +1626,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -1647,12 +1647,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1661,24 +1661,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               1
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C04C"
+              "0x5C1E04C"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1688,7 +1688,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1698,18 +1698,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -1717,13 +1717,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -1731,13 +1731,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -1745,13 +1745,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -1759,13 +1759,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -1773,13 +1773,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -1787,13 +1787,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -1808,12 +1808,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1822,24 +1822,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               1
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C04C"
+              "0x5C1E04C"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1849,7 +1849,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -1859,18 +1859,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -1878,13 +1878,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -1892,13 +1892,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -1906,13 +1906,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -1920,13 +1920,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -1934,13 +1934,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -1948,13 +1948,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -1969,12 +1969,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1983,7 +1983,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1993,18 +1993,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -2012,13 +2012,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -2026,13 +2026,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -2040,13 +2040,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -2054,13 +2054,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -2068,13 +2068,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -2082,13 +2082,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -2103,12 +2103,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2117,24 +2117,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2144,7 +2144,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -2154,18 +2154,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -2173,13 +2173,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -2187,13 +2187,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -2201,13 +2201,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -2215,13 +2215,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -2229,13 +2229,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -2243,13 +2243,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -2264,12 +2264,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2278,24 +2278,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C054"
+              "0x5C1E054"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2305,7 +2305,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -2315,18 +2315,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -2334,13 +2334,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -2348,13 +2348,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -2362,13 +2362,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -2376,13 +2376,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -2390,13 +2390,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 0
               ]
@@ -2404,13 +2404,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -2425,12 +2425,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2439,24 +2439,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               3
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C054"
+              "0x5C1E054"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2466,7 +2466,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -2476,18 +2476,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -2495,13 +2495,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -2509,13 +2509,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -2523,13 +2523,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -2537,13 +2537,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -2551,13 +2551,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -2565,13 +2565,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -2586,12 +2586,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2600,24 +2600,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               3
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C054"
+              "0x5C1E054"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2627,7 +2627,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -2637,18 +2637,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -2656,13 +2656,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -2670,13 +2670,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -2684,13 +2684,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -2698,13 +2698,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -2712,13 +2712,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -2726,13 +2726,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -2747,12 +2747,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2761,7 +2761,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -2771,18 +2771,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -2790,13 +2790,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -2804,13 +2804,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -2818,13 +2818,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -2832,13 +2832,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -2846,13 +2846,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -2860,13 +2860,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -2881,12 +2881,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2895,24 +2895,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2922,7 +2922,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -2932,18 +2932,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -2951,13 +2951,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -2965,13 +2965,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -2979,13 +2979,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -2993,13 +2993,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -3007,13 +3007,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -3021,13 +3021,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -3042,12 +3042,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3056,24 +3056,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C05C"
+              "0x5C1E05C"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3083,7 +3083,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -3093,18 +3093,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -3112,13 +3112,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -3126,13 +3126,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -3140,13 +3140,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -3154,13 +3154,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -3168,13 +3168,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -3182,13 +3182,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -3203,12 +3203,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3217,24 +3217,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               5
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C05C"
+              "0x5C1E05C"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3244,7 +3244,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -3255,18 +3255,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -3274,13 +3274,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -3288,13 +3288,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -3302,13 +3302,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -3316,13 +3316,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -3330,13 +3330,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -3344,13 +3344,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -3365,12 +3365,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3379,24 +3379,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               5
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C05C"
+              "0x5C1E05C"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3406,7 +3406,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -3416,18 +3416,18 @@ var trace = {
       "func_name": "Computer::setspeed(int)", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -3435,13 +3435,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -3449,13 +3449,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -3463,13 +3463,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -3477,13 +3477,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -3491,13 +3491,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -3505,13 +3505,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -3526,12 +3526,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3540,24 +3540,24 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000A4", 
               "int", 
               5
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000A8", 
               "pointer", 
-              "0x5A1C05C"
+              "0x5C1E05C"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3567,7 +3567,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000E0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -3577,18 +3577,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -3596,13 +3596,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -3610,13 +3610,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -3624,13 +3624,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -3638,13 +3638,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -3652,13 +3652,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -3666,13 +3666,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -3687,12 +3687,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3701,7 +3701,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -3711,18 +3711,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -3730,13 +3730,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -3744,13 +3744,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -3758,13 +3758,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -3772,13 +3772,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -3786,13 +3786,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -3800,13 +3800,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -3821,12 +3821,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3835,18 +3835,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -3856,18 +3856,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -3875,13 +3875,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -3889,13 +3889,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -3903,13 +3903,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -3917,13 +3917,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -3931,13 +3931,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -3945,13 +3945,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -3966,12 +3966,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3980,18 +3980,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -4001,18 +4001,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -4020,13 +4020,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -4034,13 +4034,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -4048,13 +4048,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -4062,13 +4062,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -4076,13 +4076,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -4090,13 +4090,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -4111,12 +4111,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4125,7 +4125,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -4135,18 +4135,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -4154,13 +4154,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -4168,13 +4168,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -4182,13 +4182,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -4196,13 +4196,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -4210,13 +4210,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -4224,13 +4224,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -4245,12 +4245,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -4259,18 +4259,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -4280,18 +4280,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -4299,13 +4299,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -4313,13 +4313,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -4327,13 +4327,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -4341,13 +4341,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -4355,13 +4355,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -4369,13 +4369,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -4390,12 +4390,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -4404,18 +4404,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -4425,18 +4425,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -4444,13 +4444,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -4458,13 +4458,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -4472,13 +4472,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -4486,13 +4486,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -4500,13 +4500,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -4514,13 +4514,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -4535,12 +4535,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4549,7 +4549,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -4559,18 +4559,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -4578,13 +4578,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -4592,13 +4592,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -4606,13 +4606,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -4620,13 +4620,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -4634,13 +4634,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -4648,13 +4648,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -4669,12 +4669,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -4683,18 +4683,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -4704,18 +4704,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -4723,13 +4723,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -4737,13 +4737,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -4751,13 +4751,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -4765,13 +4765,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -4779,13 +4779,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -4793,13 +4793,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -4814,12 +4814,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -4828,18 +4828,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -4849,18 +4849,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -4868,13 +4868,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -4882,13 +4882,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -4896,13 +4896,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -4910,13 +4910,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -4924,13 +4924,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -4938,13 +4938,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -4959,12 +4959,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4973,7 +4973,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -4983,18 +4983,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -5002,13 +5002,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -5016,13 +5016,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -5030,13 +5030,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -5044,13 +5044,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -5058,13 +5058,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -5072,13 +5072,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -5093,12 +5093,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -5107,18 +5107,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -5128,18 +5128,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -5147,13 +5147,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -5161,13 +5161,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -5175,13 +5175,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -5189,13 +5189,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -5203,13 +5203,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -5217,13 +5217,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -5238,12 +5238,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -5252,18 +5252,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -5273,18 +5273,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -5292,13 +5292,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -5306,13 +5306,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -5320,13 +5320,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -5334,13 +5334,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -5348,13 +5348,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -5362,13 +5362,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -5383,12 +5383,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5397,7 +5397,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -5407,18 +5407,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -5426,13 +5426,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -5440,13 +5440,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -5454,13 +5454,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -5468,13 +5468,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -5482,13 +5482,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -5496,13 +5496,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -5517,12 +5517,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -5531,18 +5531,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -5552,18 +5552,18 @@ var trace = {
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -5571,13 +5571,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -5585,13 +5585,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -5599,13 +5599,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -5613,13 +5613,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -5627,13 +5627,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -5641,13 +5641,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -5662,12 +5662,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -5676,18 +5676,18 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000E0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -5697,18 +5697,18 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040", 
+          "0x5C1E040", 
           [
             "C_STRUCT", 
-            "0x5A1C040", 
+            "0x5C1E040", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C040", 
+                "0x5C1E040", 
                 "int", 
                 5
               ]
@@ -5716,13 +5716,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C044", 
+            "0x5C1E044", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C044", 
+                "0x5C1E044", 
                 "int", 
                 0
               ]
@@ -5730,13 +5730,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C048", 
+            "0x5C1E048", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C048", 
+                "0x5C1E048", 
                 "int", 
                 0
               ]
@@ -5744,13 +5744,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C04C", 
+            "0x5C1E04C", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C04C", 
+                "0x5C1E04C", 
                 "int", 
                 1
               ]
@@ -5758,13 +5758,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C050", 
+            "0x5C1E050", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C050", 
+                "0x5C1E050", 
                 "int", 
                 0
               ]
@@ -5772,13 +5772,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C054", 
+            "0x5C1E054", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C054", 
+                "0x5C1E054", 
                 "int", 
                 3
               ]
@@ -5786,13 +5786,13 @@ var trace = {
           ], 
           [
             "C_STRUCT", 
-            "0x5A1C058", 
+            "0x5C1E058", 
             "Computer", 
             [
               "processorspeed", 
               [
                 "C_DATA", 
-                "0x5A1C058", 
+                "0x5C1E058", 
                 "int", 
                 0
               ]
@@ -5807,12 +5807,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5821,7 +5821,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -5831,9 +5831,9 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040"
+          "0x5C1E040"
         ]
       }, 
       "line": 38, 
@@ -5843,12 +5843,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5857,7 +5857,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -5867,9 +5867,9 @@ var trace = {
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x5A1C040": [
+        "0x5C1E040": [
           "C_ARRAY", 
-          "0x5A1C040"
+          "0x5C1E040"
         ]
       }, 
       "line": 39, 
@@ -5879,12 +5879,12 @@ var trace = {
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0x5A1C048"
+              "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5893,7 +5893,7 @@ var trace = {
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -5908,14 +5908,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""

@@ -1,5 +1,3 @@
-This program was written on 1-9-1999
-This program was modified on 5-10-1999
 var trace = {
   "code": "// From: http://www.inference.phy.cam.ac.uk/teaching/comput/C++/examples/SimpleClass.shtml\n\n// DateClass.cc\n// Program to demonstrate the definition of a simple class\n// and member functions\n\n#include <iostream>\nusing namespace std;\n\n\n// Declaration of Date class\nclass Date {\n\npublic:  \n  Date(int, int, int);\n  void set(int, int, int);\n  void print();\n\nprivate:\n  int year;\n  int month;\n  int day;\n};\n\n\nint main()\n{\n   // Declare today to be object of class Date\n   // Values are automatically intialised by calling constructor function\n   Date today(1,9,1999);\n\n   cout << \"This program was written on \";\n   today.print(); \n\n   cout << \"This program was modified on \";\n   today.set(5,10,1999);\n   today.print();\n\n   return 0;\n}\n\n// Date constructor function definition\nDate::Date(int d, int m, int y)\n{\n  if(d>0 && d<31) day = d;\n  if(m>0 && m<13) month = m;\n  if(y>0) year =y;\n}\n\n// Date member function definitions\nvoid Date::set(int d, int m, int y)\n{\n  if(d>0 && d<31) day = d;\n  if(m>0 && m<13) month = m;\n  if(y>0) year =y;\n}\n\nvoid Date::print()\n{\n  cout << day << \"-\" << month << \"-\" << year << endl;\n}\n", 
   "trace": [
@@ -24,14 +22,14 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFDE0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I_main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I_main_0xFFEFFFDE0"
+          "unique_hash": "_GLOBAL__sub_I_main_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -57,31 +55,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFDE0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I_main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I_main_0xFFEFFFDE0"
+          "unique_hash": "_GLOBAL__sub_I_main_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFEFFFDCC", 
+              "0xFFF0000AC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFEFFFDC8", 
+              "0xFFF0000A8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFDD0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -91,7 +89,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFEFFFDD0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -117,31 +115,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFDE0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I_main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I_main_0xFFEFFFDE0"
+          "unique_hash": "_GLOBAL__sub_I_main_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFEFFFDCC", 
+              "0xFFF0000AC", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFEFFFDC8", 
+              "0xFFF0000A8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFDD0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -151,7 +149,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFEFFFDD0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -177,31 +175,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFDE0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I_main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I_main_0xFFEFFFDE0"
+          "unique_hash": "_GLOBAL__sub_I_main_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFEFFFDCC", 
+              "0xFFF0000AC", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFEFFFDC8", 
+              "0xFFF0000A8", 
               "int", 
               65535
             ]
           }, 
-          "frame_id": "0xFFEFFFDD0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -211,7 +209,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFEFFFDD0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -237,14 +235,14 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFDE0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I_main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I_main_0xFFEFFFDE0"
+          "unique_hash": "_GLOBAL__sub_I_main_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -259,14 +257,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -283,13 +281,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -298,7 +296,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -307,14 +305,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -323,18 +321,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::Date(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::Date(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::Date(int, int, int)_0xFFF0000E0"
         }
       ], 
       "stdout": ""
@@ -351,13 +349,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -366,7 +364,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -375,14 +373,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -391,18 +389,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::Date(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::Date(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::Date(int, int, int)_0xFFF0000E0"
         }
       ], 
       "stdout": ""
@@ -419,13 +417,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -434,7 +432,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -443,14 +441,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -459,18 +457,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::Date(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::Date(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::Date(int, int, int)_0xFFF0000E0"
         }
       ], 
       "stdout": ""
@@ -487,13 +485,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -502,7 +500,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -511,14 +509,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -527,18 +525,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::Date(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::Date(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::Date(int, int, int)_0xFFF0000E0"
         }
       ], 
       "stdout": ""
@@ -555,13 +553,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -570,7 +568,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -579,14 +577,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -595,18 +593,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::Date(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::Date(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::Date(int, int, int)_0xFFF0000E0"
         }
       ], 
       "stdout": ""
@@ -623,13 +621,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -638,7 +636,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -647,14 +645,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -663,18 +661,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::Date(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::Date(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::Date(int, int, int)_0xFFF0000E0"
         }
       ], 
       "stdout": ""
@@ -691,13 +689,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -706,7 +704,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -715,14 +713,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -731,7 +729,7 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -748,13 +746,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -763,7 +761,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -772,14 +770,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -788,10 +786,10 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on "
     }, 
     {
       "event": "call", 
@@ -805,13 +803,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -820,7 +818,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -829,14 +827,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -845,18 +843,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -865,10 +863,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on "
     }, 
     {
       "event": "step_line", 
@@ -882,13 +880,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -897,7 +895,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -906,14 +904,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -922,18 +920,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -942,10 +940,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on "
     }, 
     {
       "event": "step_line", 
@@ -959,13 +957,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -974,7 +972,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -983,14 +981,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -999,18 +997,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1019,10 +1017,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on "
     }, 
     {
       "event": "step_line", 
@@ -1036,13 +1034,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1051,7 +1049,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1060,14 +1058,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1076,18 +1074,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1096,10 +1094,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\n"
     }, 
     {
       "event": "return", 
@@ -1113,13 +1111,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1128,7 +1126,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1137,14 +1135,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1153,18 +1151,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1173,10 +1171,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\n"
     }, 
     {
       "event": "step_line", 
@@ -1190,13 +1188,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1205,7 +1203,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1214,14 +1212,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1230,10 +1228,10 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\n"
     }, 
     {
       "event": "step_line", 
@@ -1247,13 +1245,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1262,7 +1260,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1271,14 +1269,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1287,10 +1285,10 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "call", 
@@ -1304,13 +1302,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1319,7 +1317,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1328,14 +1326,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1344,36 +1342,36 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "d": [
               "C_DATA", 
-              "0xFFEFFFDF4", 
+              "0xFFF0000D4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "m": [
               "C_DATA", 
-              "0xFFEFFFDF0", 
+              "0xFFF0000D0", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFF0000D8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000CC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::set(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1385,10 +1383,10 @@ var trace = {
             "y"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::set(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::set(int, int, int)_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -1402,13 +1400,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1417,7 +1415,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1426,14 +1424,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1442,36 +1440,36 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "d": [
               "C_DATA", 
-              "0xFFEFFFDF4", 
+              "0xFFF0000D4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "m": [
               "C_DATA", 
-              "0xFFEFFFDF0", 
+              "0xFFF0000D0", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000CC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::set(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1483,10 +1481,10 @@ var trace = {
             "y"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::set(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::set(int, int, int)_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -1500,13 +1498,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1515,7 +1513,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1524,14 +1522,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   1
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1540,36 +1538,36 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "d": [
               "C_DATA", 
-              "0xFFEFFFDF4", 
+              "0xFFF0000D4", 
               "int", 
               5
             ], 
             "m": [
               "C_DATA", 
-              "0xFFEFFFDF0", 
+              "0xFFF0000D0", 
               "int", 
               10
             ], 
             "this": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000CC", 
               "int", 
               1999
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::set(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1581,10 +1579,10 @@ var trace = {
             "y"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::set(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::set(int, int, int)_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -1598,13 +1596,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1613,7 +1611,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   9
                 ]
@@ -1622,14 +1620,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1638,36 +1636,36 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "d": [
               "C_DATA", 
-              "0xFFEFFFDF4", 
+              "0xFFF0000D4", 
               "int", 
               5
             ], 
             "m": [
               "C_DATA", 
-              "0xFFEFFFDF0", 
+              "0xFFF0000D0", 
               "int", 
               10
             ], 
             "this": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000CC", 
               "int", 
               1999
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::set(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1679,10 +1677,10 @@ var trace = {
             "y"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::set(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::set(int, int, int)_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -1696,13 +1694,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1711,7 +1709,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -1720,14 +1718,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1736,36 +1734,36 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "d": [
               "C_DATA", 
-              "0xFFEFFFDF4", 
+              "0xFFF0000D4", 
               "int", 
               5
             ], 
             "m": [
               "C_DATA", 
-              "0xFFEFFFDF0", 
+              "0xFFF0000D0", 
               "int", 
               10
             ], 
             "this": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000CC", 
               "int", 
               1999
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::set(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1777,10 +1775,10 @@ var trace = {
             "y"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::set(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::set(int, int, int)_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "return", 
@@ -1794,13 +1792,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1809,7 +1807,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -1818,14 +1816,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1834,36 +1832,36 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "d": [
               "C_DATA", 
-              "0xFFEFFFDF4", 
+              "0xFFF0000D4", 
               "int", 
               5
             ], 
             "m": [
               "C_DATA", 
-              "0xFFEFFFDF0", 
+              "0xFFF0000D0", 
               "int", 
               10
             ], 
             "this": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFF0000D8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFEFFFDEC", 
+              "0xFFF0000CC", 
               "int", 
               1999
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::set(int, int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1875,10 +1873,10 @@ var trace = {
             "y"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::set(int, int, int)_0xFFEFFFE00"
+          "unique_hash": "Date::set(int, int, int)_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -1892,13 +1890,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1907,7 +1905,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -1916,14 +1914,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1932,10 +1930,10 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "call", 
@@ -1949,13 +1947,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -1964,7 +1962,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -1973,14 +1971,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1989,18 +1987,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2009,10 +2007,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -2026,13 +2024,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -2041,7 +2039,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -2050,14 +2048,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2066,18 +2064,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2086,10 +2084,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -2103,13 +2101,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -2118,7 +2116,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -2127,14 +2125,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2143,18 +2141,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2163,10 +2161,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on "
     }, 
     {
       "event": "step_line", 
@@ -2180,13 +2178,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -2195,7 +2193,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -2204,14 +2202,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2220,18 +2218,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2240,10 +2238,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on 5-10-1999\n"
     }, 
     {
       "event": "return", 
@@ -2257,13 +2255,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -2272,7 +2270,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -2281,14 +2279,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2297,18 +2295,18 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFEFFFE10"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFF0000E0", 
           "func_name": "Date::print()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2317,10 +2315,10 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Date::print()_0xFFEFFFE00"
+          "unique_hash": "Date::print()_0xFFF0000E0"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on 5-10-1999\n"
     }, 
     {
       "event": "step_line", 
@@ -2334,13 +2332,13 @@ var trace = {
           "encoded_locals": {
             "today": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFF0000F0", 
               "Date", 
               [
                 "year", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFF0000F0", 
                   "int", 
                   1999
                 ]
@@ -2349,7 +2347,7 @@ var trace = {
                 "month", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFF0000F4", 
                   "int", 
                   10
                 ]
@@ -2358,14 +2356,14 @@ var trace = {
                 "day", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE18", 
+                  "0xFFF0000F8", 
                   "int", 
                   5
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2374,10 +2372,10 @@ var trace = {
             "today"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on 5-10-1999\n"
     }, 
     {
       "event": "return", 
@@ -2389,17 +2387,17 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFEFFFE20", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFEFFFE20"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
-      "stdout": ""
+      "stdout": "This program was written on 1-9-1999\nThis program was modified on 5-10-1999\n"
     }
   ]
 };
