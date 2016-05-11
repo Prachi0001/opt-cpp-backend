@@ -17,9 +17,11 @@ LANG = sys.argv[2] # 'c' for C or 'cpp' for C++
 
 if LANG == 'c':
     CC = 'gcc'
+    DIALECT = '-std=c11'
     FN = 'usercode.c'
 else:
     CC = 'g++'
+    DIALECT = '-std=c++11'
     FN = 'usercode.cpp'
 
 F_PATH = os.path.join(DN, FN)
@@ -36,7 +38,7 @@ with open(F_PATH, 'w') as f:
     f.write(USER_PROGRAM)
 
 # compile it!
-p = Popen([CC, '-ggdb', '-O0', '-fno-omit-frame-pointer', '-o', EXE_PATH, F_PATH],
+p = Popen([CC, DIALECT, '-ggdb', '-O0', '-fno-omit-frame-pointer', '-o', EXE_PATH, F_PATH],
           stdout=PIPE, stderr=PIPE)
 (gcc_stdout, gcc_stderr) = p.communicate()
 gcc_retcode = p.returncode
