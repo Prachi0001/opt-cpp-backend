@@ -47,6 +47,8 @@
 #include "pub_tool_oset.h" // pgbovine
 extern VgFile* trace_fp; // pgbovine
 extern int stdout_fd; // pgbovine
+static int n_steps = 0; // pgbovine
+const int MAX_STEPS = 5000; // pgbovine -- overbook a bit since the trace gets shortened in postprocessing anyhow
 
 #include "mc_include.h"
 
@@ -6279,6 +6281,15 @@ void pg_trace_inst(Addr a)
     pg_encoded_addrs = VG_(OSetWord_Create)(VG_(malloc),
                                             "pg_encoded_addrs",
                                             VG_(free));
+
+    // bail if necessary!
+    n_steps++;
+    if (n_steps > MAX_STEPS) {
+      VG_(fprintf)(trace_fp, "MAX_STEPS_EXCEEDED\n");
+      VG_(fclose)(trace_fp);
+      VG_(close)(stdout_fd);
+      VG_(exit)(0);
+    }
 
     // MAKE SURE TO RUN VALGRIND PREPENDED
     // WITH THE "stdbuf -o0" COMMAND SO THAT STDOUT IS NOT BUFFERED.
