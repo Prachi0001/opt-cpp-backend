@@ -39,6 +39,7 @@ pp = pprint.PrettyPrinter(indent=2)
 RECORD_SEP = '=== pg_trace_inst ==='
 
 
+MAX_STEPS = 1000
 ONLY_ONE_REC_PER_LINE = True
 
 all_execution_points = []
@@ -56,6 +57,8 @@ def process_record(lines):
             err_lines.append(e)
         elif e.startswith('STDOUT: '):
             stdout_lines.append(e)
+        elif e.startswith('MAX_STEPS_EXCEEDED'):
+            pass # oof
         else:
             regular_lines.append(e)
 
@@ -334,6 +337,11 @@ if __name__ == '__main__':
 
         final_execution_points = tmp # the ole' switcheroo
 
+    if len(final_execution_points) > MAX_STEPS:
+      # truncate to MAX_STEPS entries
+      final_execution_points = final_execution_points[:MAX_STEPS]
+      final_execution_points[-1]['event'] = 'instruction_limit_reached'
+      final_execution_points[-1]['exception_msg'] = 'Stopped after running ' + str(MAX_STEPS) + ' steps. Please shorten your code,\nsince Python Tutor is not designed to handle long-running code.'
 
     '''
     for elt in final_execution_points:
