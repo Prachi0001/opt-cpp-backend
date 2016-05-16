@@ -1,0 +1,221 @@
+var trace = {
+  "code": "typedef struct {\n  int foo_int;\n  char* foo_str;\n  double foo_double;\n  void* foo_baz; // This should be observed as type baz\n} foo;\n\ntypedef struct {\n  int baz_int;\n  char baz_str[10];\n} baz;\n\nint main() {\n  foo* f = (foo*)malloc(sizeof(*f));\n  f->foo_double = 2.718;\n  f->foo_baz = (void*)malloc(sizeof(baz));\n  return 0;\n}\n", 
+  "trace": [
+    {
+      "event": "step_line", 
+      "func_name": "main", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 13, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_DATA", 
+              "0xFFF0000E0", 
+              "pointer", 
+              "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF0000F0", 
+          "func_name": "main", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "ordered_varnames": [
+            "f"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF0000F0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "step_line", 
+      "func_name": "main", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 14, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_DATA", 
+              "0xFFF0000E0", 
+              "pointer", 
+              "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF0000F0", 
+          "func_name": "main", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "ordered_varnames": [
+            "f"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF0000F0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "step_line", 
+      "func_name": "main", 
+      "globals": {}, 
+      "heap": {
+        "0x53FE040": [
+          "C_ARRAY", 
+          "0x53FE040", 
+          [
+            "C_STRUCT", 
+            "0x53FE040", 
+            "foo", 
+            [
+              "foo_int", 
+              [
+                "C_DATA", 
+                "0x53FE040", 
+                "int", 
+                "<UNINITIALIZED>"
+              ]
+            ], 
+            [
+              "foo_str", 
+              [
+                "C_DATA", 
+                "0x53FE048", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ], 
+            [
+              "foo_double", 
+              [
+                "C_DATA", 
+                "0x53FE050", 
+                "double", 
+                "<UNINITIALIZED>"
+              ]
+            ], 
+            [
+              "foo_baz", 
+              [
+                "C_DATA", 
+                "0x53FE058", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 15, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_DATA", 
+              "0xFFF0000E8", 
+              "pointer", 
+              "0x53FE040"
+            ]
+          }, 
+          "frame_id": "0xFFF0000F0", 
+          "func_name": "main", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "ordered_varnames": [
+            "f"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF0000F0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "step_line", 
+      "func_name": "main", 
+      "globals": {}, 
+      "heap": {
+        "0x53FE040": [
+          "C_ARRAY", 
+          "0x53FE040", 
+          [
+            "C_STRUCT", 
+            "0x53FE040", 
+            "foo", 
+            [
+              "foo_int", 
+              [
+                "C_DATA", 
+                "0x53FE040", 
+                "int", 
+                "<UNINITIALIZED>"
+              ]
+            ], 
+            [
+              "foo_str", 
+              [
+                "C_DATA", 
+                "0x53FE048", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ], 
+            [
+              "foo_double", 
+              [
+                "C_DATA", 
+                "0x53FE050", 
+                "double", 
+                2.718
+              ]
+            ], 
+            [
+              "foo_baz", 
+              [
+                "C_DATA", 
+                "0x53FE058", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 16, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_DATA", 
+              "0xFFF0000E8", 
+              "pointer", 
+              "0x53FE040"
+            ]
+          }, 
+          "frame_id": "0xFFF0000F0", 
+          "func_name": "main", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "ordered_varnames": [
+            "f"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF0000F0"
+        }
+      ], 
+      "stdout": ""
+    }
+  ]
+};
