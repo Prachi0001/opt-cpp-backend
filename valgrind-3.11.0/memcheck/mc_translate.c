@@ -6358,18 +6358,13 @@ void pg_trace_inst(Addr a)
       XArray* /* of GlobalBlock */ gbs = VG_(di_get_global_blocks_from_dihandle)(di_handle, False);
       Word n = VG_(sizeXA)( gbs );
 
+      Bool* inds_to_skip = (Bool*)VG_(malloc)("inds_to_skip", n * sizeof(*inds_to_skip)); // should we skip this global var?
       VG_(fprintf)(trace_fp, "\n\"globals\": {");
       for (i = 0; i < n; i++) {
         GlobalBlock* gb = VG_(indexXA)( gbs, i );
         tl_assert(gb->szB > 0);
 
-        if (first_elt) {
-          first_elt = False;
-        } else {
-          VG_(fprintf)(trace_fp, ",");
-        }
-
-        Bool res = VG_(pg_traverse_global_var)(gb->fullname, gb->addr, is_mem_defined, pg_encoded_addrs, trace_fp);
+        Bool res = VG_(pg_traverse_global_var)(gb->fullname, gb->addr, is_mem_defined, pg_encoded_addrs, !first_elt, trace_fp);
         if (!res) {
           // pgbovine: res != True for static vars defined inside of functions
           // right now we just ignore these variables and don't display
@@ -6381,8 +6376,14 @@ void pg_trace_inst(Addr a)
           // int main() {
           //   static int x = 0;
           // }
+          inds_to_skip[i] = True;
         } else {
           tl_assert(res); // common case
+          inds_to_skip[i] = False;
+
+          if (first_elt) {
+            first_elt = False;
+          }
         }
       }
       VG_(fprintf)(trace_fp, "},\n");
@@ -6391,6 +6392,11 @@ void pg_trace_inst(Addr a)
       VG_(fprintf)(trace_fp, "\"ordered_globals\": [");
       first_elt = True;
       for (i = 0; i < n; i++) {
+        // do this as the very first thing in the loop ...
+        if (inds_to_skip[i]) { // don't print here if we didn't find a global above
+          continue;
+        }
+
         GlobalBlock* gb = VG_(indexXA)( gbs, i );
         tl_assert(gb->szB > 0);
 
@@ -6405,6 +6411,7 @@ void pg_trace_inst(Addr a)
 
       VG_(deleteXA)( gbs );
 
+      VG_(free)(inds_to_skip);
     }
 
     VG_(fprintf)(trace_fp, "\"stack\": [\n");

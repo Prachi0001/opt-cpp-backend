@@ -5644,7 +5644,7 @@ UWord pg_get_di_handle_at_ip(Addr ip)
 
 Bool VG_(pg_traverse_global_var)(const HChar* varname, Addr data_addr,
                                  int is_mem_defined_func(Addr, SizeT, Addr*, UInt*),
-                                 OSet* encoded_addrs, VgFile* trace_fp) {
+                                 OSet* encoded_addrs, Bool prefix_with_comma, VgFile* trace_fp) {
   // adapted from VG_(get_data_description)
 
   /* First, see if data_addr is (or is part of) a global variable.
@@ -5705,6 +5705,9 @@ Bool VG_(pg_traverse_global_var)(const HChar* varname, Addr data_addr,
       if (data_address_is_in_var( &offset, di->admin_tyents, var,
                                   NULL/* RegSummary* */,
                                   data_addr, di )) {
+        if (prefix_with_comma) { // only do this on a successful print!
+          VG_(fprintf)(trace_fp, ",");
+        }
         VG_(fprintf)(trace_fp, "  \"%s\": ", varname);
         ML_(pg_pp_varinfo)(di->admin_tyents, var->typeR, data_addr,
                            is_mem_defined_func, encoded_addrs, trace_fp);

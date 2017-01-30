@@ -66,7 +66,7 @@ def process_record(lines):
     try:
         obj = json.loads(rec)
     except ValueError:
-        print >> sys.stderr, "Ugh, bad record!"
+        print >> sys.stderr, "Ugh, bad record!", rec
         return False
 
     assert len(stdout_lines) == 1 # always have one!

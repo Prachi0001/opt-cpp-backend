@@ -1,6 +1,8 @@
 Small-ish broken tests as of 2017-01-29
 
-// yay fixed! but wtf it doesn't print out "abc" when there's a const
+TODO: make these into regression test cases in tests/
+
+// yay fixed!
 python run_cpp_backend.py 'int main() {
   const char* x = "abc";
 }' c
@@ -14,7 +16,7 @@ int main() {
   static int x = 0;
 }' c
 
-// TODO: investigate this
+// harder test case ...
 static int x = 0;
 int main() {
   static int x = 0;

@@ -124,7 +124,7 @@ Bool VG_(get_data_description)(
 // pgbovine
 Bool VG_(pg_traverse_global_var)(const HChar* varname, Addr data_addr,
                                  int is_mem_defined_func(Addr, SizeT, Addr*, UInt*),
-                                 OSet* encoded_addrs, VgFile* trace_fp);
+                                 OSet* encoded_addrs, Bool prefix_with_comma, VgFile* trace_fp);
 
 Bool VG_(pg_traverse_local_var) (const HChar* varname, Addr data_addr,
                                  Addr ip, Addr sp, Addr fp,
