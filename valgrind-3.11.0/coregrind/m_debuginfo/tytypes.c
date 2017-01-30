@@ -633,6 +633,13 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
              TyEnt* element_ent = ML_(TyEnts__index_by_cuOff)(tyents, NULL, ent->Te.TyPorR.typeR);
              SizeT element_size = pg_get_elt_size(tyents, ent->Te.TyPorR.typeR);
 
+             // strip all type qualifiers from element before
+             // dereferencing it, so that we can print values like:
+             // const char* = "abc";
+             while (element_ent->tag == Te_TyQual) {
+               element_ent = ML_(TyEnts__index_by_cuOff)(tyents, NULL, element_ent->Te.TyQual.typeR);
+             }
+
              // only try to print out string literals like "hello world"
              // since there's a clear null-terminator boundary. other
              // values don't have clear boundaries, so we can't just
