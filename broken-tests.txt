@@ -16,15 +16,19 @@ int main() {
   static int x = 0;
 }' c
 
-// harder test case ...
+// harder test case ... add to test suite
 static int x = 0;
 int main() {
   static int x = 0;
   int y = 0;
 }
 
+// compiler errors; need better error messages
 python run_cpp_backend.py 'int main() {
   unknownFunc();
+}' c
+
+python run_cpp_backend.py 'int mian() {
 }' c
 
 python run_cpp_backend.py 'int main() {
@@ -71,9 +75,6 @@ python run_cpp_backend.py "int main() {
         }
     }
 }" c
-
-python run_cpp_backend.py 'int mian() {
-}' c
 
 // void* has issues
 python run_cpp_backend.py 'void* foo() {
