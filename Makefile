@@ -1,7 +1,12 @@
+# build and install the latest Valgrind with my custom pgbovine code
+all:
+	cd valgrind-3.11.0/ && make install
+
+
 # Docker-specific targets
 
 # build a docker container
-all:
+docker:
 	docker build -t="pgbovine/opt-cpp-backend:v1" .
 
 test:
@@ -13,7 +18,6 @@ regtest:
 bash:
 	docker run -t -i --rm --user=netuser --net=none --cap-drop all pgbovine/opt-cpp-backend:v1 bash
 
-
 # older targets
 
 build:
@@ -21,3 +25,6 @@ build:
 
 rawtest:
 	python $(HOME)/opt-cpp-backend/run_cpp_backend.py "int main() {int x=12345;}" c
+
+valgrindtest:
+	stdbuf -o0 valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=usercode.c --trace-filename=usercode.vgtrace ./usercode.exe

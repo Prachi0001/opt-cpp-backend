@@ -6370,7 +6370,20 @@ void pg_trace_inst(Addr a)
         }
 
         Bool res = VG_(pg_traverse_global_var)(gb->fullname, gb->addr, is_mem_defined, pg_encoded_addrs, trace_fp);
-        tl_assert(res);
+        if (!res) {
+          // pgbovine: res != True for static vars defined inside of functions
+          // right now we just ignore these variables and don't display
+          // them; the right thing to do is to actually find them, but i
+          // can't figure out where they're located right now :/
+          //
+          // small example:
+          //
+          // int main() {
+          //   static int x = 0;
+          // }
+        } else {
+          tl_assert(res); // common case
+        }
       }
       VG_(fprintf)(trace_fp, "},\n");
 

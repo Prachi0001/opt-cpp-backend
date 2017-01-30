@@ -368,6 +368,8 @@ SizeT pg_get_elt_size(const XArray* /* of TyEnt */ ents,
       return ent->Te.TyStOrUn.szB;
     case Te_TyTyDef:
       return pg_get_elt_size(ents, ent->Te.TyTyDef.typeR); // recurse!
+    case Te_TyQual: // qualifier such as 'const', 'volatile', and 'restrict'
+      return pg_get_elt_size(ents, ent->Te.TyQual.typeR); // recurse!
 
     // TODO: handle these in the future
     case Te_EMPTY:
@@ -380,7 +382,6 @@ SizeT pg_get_elt_size(const XArray* /* of TyEnt */ ents,
     case Te_TyRvalRef:
     case Te_TyArray:
     case Te_TyFn:
-    case Te_TyQual:
     case Te_TyVoid:
       VG_(printf)("ent->tag: %d", ent->tag);
       vg_assert(0); // unhandled
