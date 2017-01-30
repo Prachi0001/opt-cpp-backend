@@ -7,7 +7,7 @@ python run_cpp_backend.py 'int main() {
 
 python run_cpp_backend.py 'int main() {
   static int x = 0;
-}'
+}' c
 
 python run_cpp_backend.py 'int main() {
   unknownFunc();
@@ -69,4 +69,4 @@ python run_cpp_backend.py 'void* foo() {
 int main() {
   void *x = foo(); // memory reappears here
   free(x);
-}'
+}' c
