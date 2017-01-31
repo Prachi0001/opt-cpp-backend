@@ -120,3 +120,27 @@ int main() {
   void *x = foo(); // memory reappears here
   free(x);
 }' c
+
+---
+this works but i want to understand why:
+
+python run_cpp_backend.py 'int x[] = {1,2,3,4,5};
+
+void foo(int* a) {
+}
+
+int main() {
+  foo(x);
+}' c > out 2> err
+
+
+doesn't work as well:
+
+python run_cpp_backend.py 'void foo(int* a) {
+}
+
+int main() {
+  static int x[] = {1,2,3,4,5};
+  foo(x);
+}' c > out 2> err
+
