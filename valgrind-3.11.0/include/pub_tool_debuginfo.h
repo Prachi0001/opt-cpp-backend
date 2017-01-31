@@ -128,8 +128,9 @@ Bool VG_(pg_traverse_global_var)(const HChar* varname, Addr data_addr,
 
 Bool VG_(pg_traverse_local_var) (const HChar* varname, Addr data_addr,
                                  Addr ip, Addr sp, Addr fp,
+                                 Bool is_static, /* True if this is a static var declared within a function */
                                  int is_mem_defined_func(Addr, SizeT, Addr*, UInt*),
-                                 OSet* encoded_addrs, VgFile* trace_fp);
+                                 OSet* encoded_addrs, Bool prefix_with_comma, VgFile* trace_fp);
 
 /* Succeeds if the address is within a shared object or the main executable.
    It doesn't matter if debug info is present or not. */

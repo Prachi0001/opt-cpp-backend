@@ -5043,8 +5043,9 @@ Bool consider_vars_in_frame ( /*MOD*/XArray* /* of HChar */ dname1,
 // pgbovine - copied and pasted from consider_vars_in_frame above
 Bool VG_(pg_traverse_local_var) (const HChar* varname, Addr data_addr,
                                  Addr ip, Addr sp, Addr fp,
+                                 Bool is_static, /* True if this is a static var declared within a function */
                                  int is_mem_defined_func(Addr, SizeT, Addr*, UInt*),
-                                 OSet* encoded_addrs, VgFile* trace_fp)
+                                 OSet* encoded_addrs, Bool prefix_with_comma, VgFile* trace_fp)
 {
    Word       i;
    DebugInfo* di;
@@ -5142,10 +5143,23 @@ Bool VG_(pg_traverse_local_var) (const HChar* varname, Addr data_addr,
             VG_(printf)("QQQQ:    var:name=%s %#lx-%#lx %#lx\n",
                         var->name,arange->aMin,arange->aMax,ip);
          if (data_address_is_in_var( &offset, di->admin_tyents,
-                                     var, &regs,
+                                     var,
+                                     // super tricky! if is_static, then don't
+                                     // pass anything as RegSummary, which will
+                                     // force a lookup in GLOBAL scope, which is
+                                     // correct since static vars are 'global' (#tricky)
+                                     is_static ? NULL : &regs,
                                      data_addr, di )) {
             // pgbovine
-            VG_(fprintf)(trace_fp, "  \"%s\": ", varname);
+            if (prefix_with_comma) { // only do this on a successful print!
+              VG_(fprintf)(trace_fp, ",");
+            }
+
+            if (is_static) {
+              VG_(fprintf)(trace_fp, "  \"%s (static %p)\": ", varname, data_addr);
+            } else {
+              VG_(fprintf)(trace_fp, "  \"%s\": ", varname);
+            }
             ML_(pg_pp_varinfo)(di->admin_tyents, var->typeR, data_addr,
                                is_mem_defined_func, encoded_addrs, trace_fp);
             VG_(fprintf)(trace_fp, "\n");

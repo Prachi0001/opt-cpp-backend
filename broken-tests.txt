@@ -2,6 +2,8 @@ Small-ish broken tests as of 2017-01-29
 
 TODO: make these into regression test cases in tests/
 
+TODO: investigate https://github.com/pgbovine/opt-cpp-backend/issues/29
+
 // yay fixed!
 python run_cpp_backend.py 'int main() {
   const char* x = "abc";
@@ -22,6 +24,32 @@ int main() {
   static int x = 0;
   int y = 0;
 }
+
+// or try this:
+void foo() {
+  static int wxyz = 123;
+}
+
+void main() {
+  static int wxyz = 456;
+  foo();
+}
+
+
+// uber-tricky!
+python run_cpp_backend.py 'void foo() {
+  static int wxyz = 42;
+}
+
+void main() {
+  foo();
+  static int wxyz = 12345;
+  if (1) {
+  static int wxyz = 54321;
+  printf("%d\n", wxyz);
+}
+}' c > out 2> err
+
 
 // compiler errors; need better error messages
 python run_cpp_backend.py 'int main() {

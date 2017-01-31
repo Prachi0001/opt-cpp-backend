@@ -6359,31 +6359,52 @@ void pg_trace_inst(Addr a)
       Word n = VG_(sizeXA)( gbs );
 
       Bool* inds_to_skip = (Bool*)VG_(malloc)("inds_to_skip", n * sizeof(*inds_to_skip)); // should we skip this global var?
+      Bool* inds_for_static_vars = (Bool*)VG_(malloc)("inds_for_static_vars", n * sizeof(*inds_for_static_vars)); // should we skip this global var?
       VG_(fprintf)(trace_fp, "\n\"globals\": {");
       for (i = 0; i < n; i++) {
+        inds_to_skip[i] = False;
+        inds_for_static_vars[i] = False;
+
         GlobalBlock* gb = VG_(indexXA)( gbs, i );
         tl_assert(gb->szB > 0);
 
         Bool res = VG_(pg_traverse_global_var)(gb->fullname, gb->addr, is_mem_defined, pg_encoded_addrs, !first_elt, trace_fp);
         if (!res) {
           // pgbovine: res != True for static vars defined inside of functions
-          // right now we just ignore these variables and don't display
-          // them; the right thing to do is to actually find them, but i
-          // can't figure out where they're located right now :/
           //
           // small example:
           //
           // int main() {
           //   static int x = 0;
           // }
-          inds_to_skip[i] = True;
-        } else {
-          tl_assert(res); // common case
-          inds_to_skip[i] = False;
 
-          if (first_elt) {
-            first_elt = False;
+          // if we have a 'local static' var (i.e., one defined inside
+          // of a function, then we have to look within that function
+          // using pg_traverse_local_var, BUT set is_static to True so
+          // that we can find the variable in global memory, #tricky
+
+          // only take the TOP of the stack, since we can access only
+          // static vars in scope at the top of the stack anyways (right?)
+          tl_assert(stack_depth > 0);
+          Addr cur_ip = ips[0];
+          Addr cur_sp = sps[0];
+          Addr cur_fp = fps[0];
+
+          res = VG_(pg_traverse_local_var)(gb->fullname, gb->addr, cur_ip, cur_sp, cur_fp,
+                                           True, /* is_static=True; YES this is a static var declared within a function #tricky */
+                                           is_mem_defined, pg_encoded_addrs, !first_elt, trace_fp);
+          if (res) {
+            inds_for_static_vars[i] = True;
+          } else {
+            // if we still can't find it, just give up and skip displaying it:
+            inds_to_skip[i] = True;
           }
+        } else {
+          tl_assert(res); // common case, we really found the global!
+        }
+
+        if (!inds_to_skip[i] && first_elt) {
+          first_elt = False;
         }
       }
       VG_(fprintf)(trace_fp, "},\n");
@@ -6405,13 +6426,19 @@ void pg_trace_inst(Addr a)
         } else {
           VG_(fprintf)(trace_fp, ",");
         }
-        VG_(fprintf)(trace_fp, "\"%s\"", gb->fullname);
+        if (inds_for_static_vars[i]) {
+          // must match exact wording in VG_(pg_traverse_local_var)
+          VG_(fprintf)(trace_fp, "\"%s (static %p)\"", gb->fullname, gb->addr);
+        } else {
+          VG_(fprintf)(trace_fp, "\"%s\"", gb->fullname);
+        }
       }
       VG_(fprintf)(trace_fp, "],\n");
 
       VG_(deleteXA)( gbs );
 
       VG_(free)(inds_to_skip);
+      VG_(free)(inds_for_static_vars);
     }
 
     VG_(fprintf)(trace_fp, "\"stack\": [\n");
@@ -6458,15 +6485,14 @@ void pg_trace_inst(Addr a)
           //VG_(printf)("  sb %d: %s | base: %d, szB: %d, spRel: %d, isVec: %d | %p\n", j, sb->name,
           //            sb->base, sb->szB, sb->spRel, sb->isVec,
           //            (void*)var_addr);
+          bool res = VG_(pg_traverse_local_var)(sb->fullname, var_addr, cur_ip, cur_sp, cur_fp,
+                                                False, /* is_static=False; it's a regular local var, not a static one */
+                                                is_mem_defined, pg_encoded_addrs, !first_elt, trace_fp);
+          tl_assert(res);
+
           if (first_elt) {
             first_elt = False;
-          } else {
-            VG_(fprintf)(trace_fp, ",");
           }
-
-          bool res = VG_(pg_traverse_local_var)(sb->fullname, var_addr, cur_ip, cur_sp, cur_fp,
-                                                is_mem_defined, pg_encoded_addrs, trace_fp);
-          tl_assert(res);
         }
         VG_(fprintf)(trace_fp, "}");
 
