@@ -9,20 +9,17 @@ python run_cpp_backend.py 'int main() {
   const char* x = "abc";
 }' c
 
-// ergh, can't seem to find 'x' in globals table, even though it's
-// supposedly a 'global'. so now instead of crashing, i just don't
-// display those variables; it's still not fixed, but at least the code
-// doesn't straight-up crash with an error
+// works:
 python run_cpp_backend.py 'int y = 42;
 int main() {
   static int x = 0;
 }' c
 
 // harder test case ... add to test suite
-static int x = 0;
+static int x = 123;
 int main() {
-  static int x = 0;
-  int y = 0;
+  static int x = 456;
+  int y = 789;
 }
 
 // or try this:
@@ -33,6 +30,15 @@ void foo() {
 void main() {
   static int wxyz = 456;
   foo();
+}
+
+// even harder:
+void foo (int* a) {
+}
+
+int main() {
+  static int static_x[] = {10, 20, 30};
+  foo(static_x);
 }
 
 
