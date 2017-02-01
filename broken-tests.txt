@@ -4,6 +4,20 @@ TODO: make these into regression test cases in tests/
 
 TODO: investigate https://github.com/pgbovine/opt-cpp-backend/issues/29
 
+
+// current test i'm working on ... the trick is to display local static
+// vars WITHIN their respective stack frames even though they're globals; #tricky
+python run_cpp_backend.py 'void foo(int* a) {
+}
+
+int main() {
+  static int x[] = {1,2,3,4,5};
+  foo(x);
+}' c > out 2> err
+
+---
+
+
 // yay fixed!
 python run_cpp_backend.py 'int main() {
   const char* x = "abc";

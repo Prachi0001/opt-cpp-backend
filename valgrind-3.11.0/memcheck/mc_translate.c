@@ -6351,19 +6351,21 @@ void pg_trace_inst(Addr a)
     // adapted from exp-sgcheck/sg_main.c acquire_globals()
     UWord di_handle = pg_get_di_handle_at_ip(top_ip);
 
+    XArray* /* of GlobalBlock */ gbs = NULL;
+    GlobalBlock** index_of_possible_static_var = NULL; // points to elements within gbs, so free together with it
+    Bool* static_var_in_frame = NULL;
+
     Word i;
     Bool first_elt = True;
     if (di_handle) { // sometimes it's mysteriously null
-
-      XArray* /* of GlobalBlock */ gbs = VG_(di_get_global_blocks_from_dihandle)(di_handle, False);
+      gbs = VG_(di_get_global_blocks_from_dihandle)(di_handle, False);
       Word n = VG_(sizeXA)( gbs );
 
-      Bool* inds_to_skip = (Bool*)VG_(malloc)("inds_to_skip", n * sizeof(*inds_to_skip)); // should we skip this global var?
-      Bool* inds_for_static_vars = (Bool*)VG_(malloc)("inds_for_static_vars", n * sizeof(*inds_for_static_vars)); // should we skip this global var?
+      index_of_possible_static_var = (GlobalBlock**)VG_(malloc)("index_of_possible_static_var", n * sizeof(*index_of_possible_static_var));
+      static_var_in_frame = (Bool**)VG_(malloc)("static_var_in_frame", n * sizeof(*static_var_in_frame));
       VG_(fprintf)(trace_fp, "\n\"globals\": {");
       for (i = 0; i < n; i++) {
-        inds_to_skip[i] = False;
-        inds_for_static_vars[i] = False;
+        index_of_possible_static_var[i] = NULL;
 
         GlobalBlock* gb = VG_(indexXA)( gbs, i );
         tl_assert(gb->szB > 0);
@@ -6378,32 +6380,14 @@ void pg_trace_inst(Addr a)
           //   static int x = 0;
           // }
 
-          // if we have a 'local static' var (i.e., one defined inside
-          // of a function, then we have to look within that function
-          // using pg_traverse_local_var, BUT set is_static to True so
-          // that we can find the variable in global memory, #tricky
-
-          // only take the TOP of the stack, since we can access only
-          // static vars in scope at the top of the stack anyways (right?)
-          tl_assert(stack_depth > 0);
-          Addr cur_ip = ips[0];
-          Addr cur_sp = sps[0];
-          Addr cur_fp = fps[0];
-
-          res = VG_(pg_traverse_local_var)(gb->fullname, gb->addr, cur_ip, cur_sp, cur_fp,
-                                           True, /* is_static=True; YES this is a static var declared within a function #tricky */
-                                           is_mem_defined, pg_encoded_addrs, !first_elt, trace_fp);
-          if (res) {
-            inds_for_static_vars[i] = True;
-          } else {
-            // if we still can't find it, just give up and skip displaying it:
-            inds_to_skip[i] = True;
-          }
+          // mark this as a possible static variable to traverse when
+          // we're traversing stack frames later
+          index_of_possible_static_var[i] = gb;
         } else {
           tl_assert(res); // common case, we really found the global!
         }
 
-        if (!inds_to_skip[i] && first_elt) {
+        if (!index_of_possible_static_var[i] && first_elt) {
           first_elt = False;
         }
       }
@@ -6414,7 +6398,7 @@ void pg_trace_inst(Addr a)
       first_elt = True;
       for (i = 0; i < n; i++) {
         // do this as the very first thing in the loop ...
-        if (inds_to_skip[i]) { // don't print here if we didn't find a global above
+        if (index_of_possible_static_var[i]) {
           continue;
         }
 
@@ -6426,19 +6410,9 @@ void pg_trace_inst(Addr a)
         } else {
           VG_(fprintf)(trace_fp, ",");
         }
-        if (inds_for_static_vars[i]) {
-          // must match exact wording in VG_(pg_traverse_local_var)
-          VG_(fprintf)(trace_fp, "\"%s (static %p)\"", gb->fullname, gb->addr);
-        } else {
-          VG_(fprintf)(trace_fp, "\"%s\"", gb->fullname);
-        }
+        VG_(fprintf)(trace_fp, "\"%s\"", gb->fullname);
       }
       VG_(fprintf)(trace_fp, "],\n");
-
-      VG_(deleteXA)( gbs );
-
-      VG_(free)(inds_to_skip);
-      VG_(free)(inds_for_static_vars);
     }
 
     VG_(fprintf)(trace_fp, "\"stack\": [\n");
@@ -6494,6 +6468,32 @@ void pg_trace_inst(Addr a)
             first_elt = False;
           }
         }
+
+        Word n = VG_(sizeXA)( gbs );
+        // clear first
+        for (j = 0; j < n; j++) {
+          static_var_in_frame[j] = False;
+        }
+
+        // loop through all global variables to see if any of them are
+        // actually static variables declared in THIS frame (ugh #tricky)
+        if (index_of_possible_static_var) {
+          for (j = 0; j < n; j++) {
+            GlobalBlock* gb = index_of_possible_static_var[j];
+            if (gb) {
+              bool res = VG_(pg_traverse_local_var)(gb->fullname, gb->addr, cur_ip, cur_sp, cur_fp,
+                                                    True, // is_static=True; YES this is a static var declared within a function
+                                                    is_mem_defined, pg_encoded_addrs, !first_elt, trace_fp);
+              if (res) {
+                static_var_in_frame[j] = True;
+                if (first_elt) {
+                  first_elt = False;
+                }
+              }
+            }
+          }
+        }
+
         VG_(fprintf)(trace_fp, "}");
 
         // print out an ordered list of locals since object keys have no order
@@ -6508,6 +6508,25 @@ void pg_trace_inst(Addr a)
           }
           VG_(fprintf)(trace_fp, "\"%s\"", sb->fullname);
         }
+
+        // print static vars in ordered_varnames to match 'locals'
+        if (index_of_possible_static_var) {
+          for (j = 0; j < n; j++) {
+            if (static_var_in_frame[j]) {
+              GlobalBlock* gb = index_of_possible_static_var[j];
+              tl_assert(gb);
+
+              if (first_elt) {
+                first_elt = False;
+              } else {
+                VG_(fprintf)(trace_fp, ",");
+              }
+              // must match exact wording in VG_(pg_traverse_local_var)
+              VG_(fprintf)(trace_fp, "\"%s (static %p)\"", gb->fullname, gb->addr);
+            }
+          }
+        }
+
         VG_(fprintf)(trace_fp, "]");
 
         VG_(deleteXA)(blocks);
@@ -6516,6 +6535,18 @@ void pg_trace_inst(Addr a)
       VG_(fprintf)(trace_fp, "}");
     }
     VG_(fprintf)(trace_fp, "]\n");
+
+    // delete these all at the end since we may need it to print out
+    // static vars within stack frames
+    if (gbs) {
+      VG_(deleteXA)( gbs );
+    }
+    if (index_of_possible_static_var) {
+      VG_(free)(index_of_possible_static_var);
+    }
+    if (static_var_in_frame) {
+      VG_(free)(static_var_in_frame);
+    }
 
     // reset this after every execution step so that we can re-encode
     // the same blocks at the next step
