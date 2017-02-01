@@ -370,6 +370,8 @@ SizeT pg_get_elt_size(const XArray* /* of TyEnt */ ents,
       return pg_get_elt_size(ents, ent->Te.TyTyDef.typeR); // recurse!
     case Te_TyQual: // qualifier such as 'const', 'volatile', and 'restrict'
       return pg_get_elt_size(ents, ent->Te.TyQual.typeR); // recurse!
+    case Te_TyVoid:
+        return 1; // display elements with a faux size of 1 byte
 
     // TODO: handle these in the future
     case Te_EMPTY:
@@ -382,8 +384,7 @@ SizeT pg_get_elt_size(const XArray* /* of TyEnt */ ents,
     case Te_TyRvalRef:
     case Te_TyArray:
     case Te_TyFn:
-    case Te_TyVoid:
-      VG_(printf)("ent->tag: %d", ent->tag);
+      VG_(printf)("UNHANDLED ent->tag: %d", ent->tag);
       vg_assert(0); // unhandled
   }
   vg_assert(0); // unhandled
@@ -410,6 +411,16 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
    int res;
 
    switch (ent->tag) {
+      case Te_TyVoid:
+         // display a void type as an UNSIGNED BYTE since there's no
+         // better way to do it :/
+         ent->tag = Te_TyBase;
+         ent->Te.TyBase.name = "void byte";
+         ent->Te.TyBase.szB = 1;   // 1 byte long
+         ent->Te.TyBase.enc = 'U'; // display as unsigned
+         // super hacky, DO NOT do a 'break' here; instead, fall through
+         // to Te_TyBase since we are now masquerading as a Te_TyBase ... whoa!
+
       case Te_TyBase:
          if (!ent->Te.TyBase.name) goto unhandled;
 
@@ -850,11 +861,6 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
          */
          ML_(pg_pp_varinfo)(tyents, ent->Te.TyQual.typeR, data_addr,
                             is_mem_defined_func, encoded_addrs, trace_fp);
-         break;
-      case Te_TyVoid:
-         vg_assert(0); // unhandled
-         //VG_(printf)("%svoid",
-         //            ent->Te.TyVoid.isFake ? "fake" : "");
          break;
       case Te_UNKNOWN:
          vg_assert(0); // unhandled
