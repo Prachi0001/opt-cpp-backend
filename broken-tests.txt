@@ -1,83 +1,7 @@
 Small-ish broken tests as of 2017-01-29
 
 TODO: make these into regression test cases in tests/
-
 TODO: investigate https://github.com/pgbovine/opt-cpp-backend/issues/29
-
-
-// current test i'm working on ... the trick is to display local static
-// vars WITHIN their respective stack frames even though they're globals; #tricky
-python run_cpp_backend.py 'void foo(int* a) {
-}
-
-int main() {
-  static int x[] = {1,2,3,4,5};
-  foo(x);
-}' c > out 2> err
-
----
-
-
-// yay fixed!
-python run_cpp_backend.py 'int main() {
-  const char* x = "abc";
-}' c
-
-// works:
-python run_cpp_backend.py 'int y = 42;
-int main() {
-  static int x = 0;
-}' c
-
-// harder test case ... add to test suite
-static int x = 123;
-int main() {
-  static int x = 456;
-  int y = 789;
-}
-
-// or try this:
-void foo() {
-  static int wxyz = 123;
-}
-
-void main() {
-  static int wxyz = 456;
-  foo();
-}
-
-// even harder:
-void foo (int* a) {
-}
-
-int main() {
-  static int static_x[] = {10, 20, 30};
-  foo(static_x);
-}
-
-
-// uber-tricky!
-python run_cpp_backend.py 'void foo() {
-  static int wxyz = 42;
-}
-
-void main() {
-  foo();
-  static int wxyz = 12345;
-  if (1) {
-  static int wxyz = 54321;
-  printf("%d\n", wxyz);
-}
-}' c > out 2> err
-
-
-// compiler errors; need better error messages
-python run_cpp_backend.py 'int main() {
-  unknownFunc();
-}' c
-
-python run_cpp_backend.py 'int mian() {
-}' c
 
 python run_cpp_backend.py 'int main() {
       int a[3][2] = {{1,2}, {2,3}, {3,4}};
@@ -134,27 +58,3 @@ int main() {
   void *x = foo(); // memory reappears here
   free(x);
 }' c
-
----
-this works but i want to understand why:
-
-python run_cpp_backend.py 'int x[] = {1,2,3,4,5};
-
-void foo(int* a) {
-}
-
-int main() {
-  foo(x);
-}' c > out 2> err
-
-
-doesn't work as well:
-
-python run_cpp_backend.py 'void foo(int* a) {
-}
-
-int main() {
-  static int x[] = {1,2,3,4,5};
-  foo(x);
-}' c > out 2> err
-

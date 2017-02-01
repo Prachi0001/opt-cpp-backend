@@ -104,6 +104,20 @@ else:
             exception_msg = m.group(3).strip()
             break
 
+        # linker errors are usually 'undefined ' something
+        # (this code is VERY brittle)
+        if 'undefined ' in line:
+            parts = line.split(':')
+            exception_msg = parts[-1].strip()
+            # match something like
+            # /home/pgbovine/opt-cpp-backend/./usercode.c:2: undefined reference to `asdf'
+            if FN in parts[0]:
+                try:
+                    lineno = int(parts[1])
+                except:
+                    pass
+            break
+
     ret = {'code': USER_PROGRAM,
            'trace': [{'event': 'uncaught_exception',
                     'exception_msg': exception_msg,
