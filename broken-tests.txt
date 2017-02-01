@@ -1,5 +1,1 @@
 Small-ish broken tests as of 2017-01-29
-
-python run_cpp_backend.py 'int main() {
-      int a[3][2] = {{1,2}, {2,3}, {3,4}};
-}' c

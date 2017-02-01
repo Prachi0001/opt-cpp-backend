@@ -776,29 +776,49 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
       case Te_TyArray:
          if (ent->Te.TyArray.boundRs) {
             XArray* xa = ent->Te.TyArray.boundRs;
-            // TODO: handle multi-dimensional arrays; right now we handle only 1-D
-            // for simplicity
-            vg_assert(VG_(sizeXA)(xa) == 1);
-            UWord bound_cuOff = *(UWord*)VG_(indexXA)(xa, 0);
 
-            // the type entry of the array element(s)
-            SizeT element_size = pg_get_elt_size(tyents, ent->Te.TyArray.typeR);
+            // right now we "flatten" multidimensional arrays into 1-D
+            // arrays of total_array_size elements, which is how C lays
+            // them out in memory anyhow. in the future, maybe put some
+            // metadata on the C_ARRAY element to denote the exact
+            // dimensions, so that they can be visualized properly in
+            // the frontend. e.g., int x[2][4] and int x[4][2] may look
+            // the same in memory, but should be visualized differently
+            int w;
+            int xa_size = VG_(sizeXA)(xa);
+            Long* array_dimensions = (Long*)VG_(malloc)("array_dimensions", xa_size * sizeof(*array_dimensions));
+            for (w = 0; w < xa_size; w++) {
+              UWord bound_cuOff = *(UWord*)VG_(indexXA)(xa, w);
+              TyEnt* bound_ent = ML_(TyEnts__index_by_cuOff)( tyents, NULL, bound_cuOff );
+              if (bound_ent->Te.Bound.knownL &&
+                  bound_ent->Te.Bound.knownU &&
+                  bound_ent->Te.Bound.boundL == 0) {
+                array_dimensions[w] = bound_ent->Te.Bound.boundU + 1;
+              } else {
+                array_dimensions[w] = -1; // some weird error
+              }
+            }
 
-            // inlined from pg_pp_TyBound
-            TyEnt* bound_ent = ML_(TyEnts__index_by_cuOff)( tyents, NULL, bound_cuOff );
-            vg_assert(bound_ent && bound_ent->tag == Te_Bound);
-            if (bound_ent->Te.Bound.knownL && bound_ent->Te.Bound.knownU
-                && bound_ent->Te.Bound.boundL == 0) {
-              // yay, an array with known bounds!
+            int total_array_size = 1;
+            for (w = 0; w < xa_size; w++) {
+              total_array_size *= array_dimensions[w];
+              //VG_(printf)("array_dimensions[%d]: %d\n", w, array_dimensions[w]);
+            }
+
+            //VG_(printf)("total_array_size: %d\n\n", total_array_size);
+
+            if (total_array_size > 0) {
+              // the type entry of the array element(s)
+              SizeT element_size = pg_get_elt_size(tyents, ent->Te.TyArray.typeR);
 
               VG_(fprintf)(trace_fp,
                            "{\"addr\":\"%p\", \"kind\":\"array\", \"size\":%u, \"val\": [\n  ",
                            (void*)data_addr,
-                           (unsigned int)(bound_ent->Te.Bound.boundU + 1));
+                           (unsigned int)total_array_size);
 
               first_elt = True;
               Addr cur_elt_addr = data_addr;
-              for (Long i = 0; i <= bound_ent->Te.Bound.boundU /* inclusive */; i++) {
+              for (Long i = 0; i < total_array_size; i++) {
                 if (first_elt) {
                   first_elt = False;
                 } else {
@@ -811,22 +831,12 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
               }
 
               VG_(fprintf)(trace_fp, "\n]}");
+            } else {
+              // total_array_size will be negative if -1 is in any array_dimensions
+              // due to not having a well-behaved bound
+              vg_assert(0); // unhandled
             }
-            else if (bound_ent->Te.Bound.knownL && (!bound_ent->Te.Bound.knownU)
-                && bound_ent->Te.Bound.boundL == 0) {
-              vg_assert(0); // unhandled - unknown bounds. TODO: maybe treat like a pointer?
-              //VG_(printf)("[]");
-            }
-            else {
-              vg_assert(0); // unhandled // no bounds!
-            }
-
-            // original multi-dimensional traversal code
-            /*
-            for (w = 0; w < VG_(sizeXA)(xa); w++) {
-               pg_pp_TyBound( tyents, *(UWord*)VG_(indexXA)(xa, w) );
-            }
-            */
+            VG_(free)(array_dimensions);
          } else {
             vg_assert(0); // unhandled // no bounds!
             //VG_(printf)("%s", "[??]");

@@ -21,7 +21,7 @@ GOLDEN_FILE_EXTENSION = '.golden'
 
 
 import itertools
-import os, re, shutil, optparse, difflib
+import os, re, shutil, sys, optparse, difflib
 from subprocess import *
 
 RED   = '\033[91m'
@@ -139,6 +139,7 @@ def diff_test_output(test_name):
 
 def run_test(input_filename, clobber_golden=False):
   print 'Testing', input_filename,
+  sys.stdout.flush()
 
   (base, ext) = os.path.splitext(input_filename)
   assert ext in INPUT_FILE_EXTENSIONS
