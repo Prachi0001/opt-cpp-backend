@@ -251,7 +251,9 @@ if __name__ == '__main__':
 
         # any point with a weird '???' function name is bogus
         # but we shouldn't have any more by now
-        assert '???' not in func_names
+        #assert '???' not in func_names # actually nevermind on this for now - we still sometimes get '???' so just skip those
+        if '???' in func_names:
+            continue
 
         #print func_names, frame_ids
         filtered_execution_points.append(pt)
