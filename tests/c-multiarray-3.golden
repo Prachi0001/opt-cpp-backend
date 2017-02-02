@@ -12,8 +12,108 @@ var trace = {
         {
           "encoded_locals": {
             "ans": [
-              "C_ARRAY", 
-              "0xFFEFFFDE8", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFDD8", 
+              [
+                8, 
+                100
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDD8", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDD9", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDDA", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDDB", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDDC", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDDD", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDDE", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDDF", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE0", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE1", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE2", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE3", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE4", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE5", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE6", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE7", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
               [
                 "C_DATA", 
                 "0xFFEFFFDE8", 
@@ -4002,97 +4102,97 @@ var trace = {
                 "C_DATA", 
                 "0xFFF000080", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000081", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000082", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000083", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000084", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000085", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000086", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000087", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000088", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF000089", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF00008A", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF00008B", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF00008C", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF00008D", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF00008E", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
                 "0xFFF00008F", 
                 "char", 
-                "<UNALLOCATED>"
+                "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
@@ -4717,107 +4817,111 @@ var trace = {
                 "0xFFF0000F7", 
                 "char", 
                 "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000F8", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000F9", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000FA", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000FB", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000FC", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000FD", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000FE", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000FF", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000100", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000101", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000102", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000103", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000104", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000105", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000106", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000107", 
-                "char", 
-                "<UNINITIALIZED>"
               ]
             ], 
             "sentences": [
-              "C_ARRAY", 
-              "0xFFEFFFAC8", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFAB8", 
+              [
+                8, 
+                100
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAB8", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAB9", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFABA", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFABB", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFABC", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFABD", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFABE", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFABF", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC0", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC1", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC2", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC3", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC4", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC5", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC6", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC7", 
+                "char", 
+                "<UNALLOCATED>"
+              ], 
               [
                 "C_DATA", 
                 "0xFFEFFFAC8", 
@@ -9521,106 +9625,10 @@ var trace = {
                 "0xFFEFFFDD7", 
                 "char", 
                 "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDD8", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDD9", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDDA", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDDB", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDDC", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDDD", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDDE", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDDF", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE0", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE1", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE2", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE3", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE4", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE5", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE6", 
-                "char", 
-                "<UNALLOCATED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE7", 
-                "char", 
-                "<UNALLOCATED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000110", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -9630,7 +9638,7 @@ var trace = {
             "ans"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000110"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -9646,8 +9654,108 @@ var trace = {
         {
           "encoded_locals": {
             "ans": [
-              "C_ARRAY", 
-              "0xFFEFFFDF0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFDE0", 
+              [
+                8, 
+                100
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE0", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE1", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE2", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE3", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE4", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE5", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE6", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE7", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE8", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE9", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEA", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEB", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEC", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDED", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEE", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEF", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
               [
                 "C_DATA", 
                 "0xFFEFFFDF0", 
@@ -14351,107 +14459,111 @@ var trace = {
                 "0xFFF0000FF", 
                 "char", 
                 "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000100", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000101", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000102", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000103", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000104", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000105", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000106", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000107", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000108", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000109", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010A", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010B", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010C", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010D", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010E", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010F", 
-                "char", 
-                "<UNINITIALIZED>"
               ]
             ], 
             "sentences": [
-              "C_ARRAY", 
-              "0xFFEFFFAD0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFAC0", 
+              [
+                8, 
+                100
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC0", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC1", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC2", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC3", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC4", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC5", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC6", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC7", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC8", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAC9", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACA", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACB", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACC", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACD", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACE", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACF", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
               [
                 "C_DATA", 
                 "0xFFEFFFAD0", 
@@ -19155,106 +19267,10 @@ var trace = {
                 "0xFFEFFFDDF", 
                 "char", 
                 "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE0", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE1", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE2", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE3", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE4", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE5", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE6", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE7", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE8", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE9", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEA", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEB", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEC", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDED", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEE", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEF", 
-                "char", 
-                "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000110", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -19264,7 +19280,7 @@ var trace = {
             "ans"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000110"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -19280,8 +19296,108 @@ var trace = {
         {
           "encoded_locals": {
             "ans": [
-              "C_ARRAY", 
-              "0xFFEFFFDF0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFDE0", 
+              [
+                8, 
+                100
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE0", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE1", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE2", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE3", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE4", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE5", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE6", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE7", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE8", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE9", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEA", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEB", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEC", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDED", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEE", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEF", 
+                "char", 
+                "<UNINITIALIZED>"
+              ], 
               [
                 "C_DATA", 
                 "0xFFEFFFDF0", 
@@ -23985,184 +24101,188 @@ var trace = {
                 "0xFFF0000FF", 
                 "char", 
                 "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000100", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000101", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000102", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000103", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000104", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000105", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000106", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000107", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000108", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000109", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010A", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010B", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010C", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010D", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010E", 
-                "char", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010F", 
-                "char", 
-                "<UNINITIALIZED>"
               ]
             ], 
             "sentences": [
-              "C_ARRAY", 
-              "0xFFEFFFAD0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFAC0", 
+              [
+                8, 
+                100
+              ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD0", 
+                "0xFFEFFFAC0", 
                 "char", 
                 "a"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD1", 
+                "0xFFEFFFAC1", 
                 "char", 
                 "b"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD2", 
+                "0xFFEFFFAC2", 
                 "char", 
                 "c"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD3", 
+                "0xFFEFFFAC3", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD4", 
+                "0xFFEFFFAC4", 
                 "char", 
                 "i"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD5", 
+                "0xFFEFFFAC5", 
                 "char", 
                 "s"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD6", 
+                "0xFFEFFFAC6", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD7", 
+                "0xFFEFFFAC7", 
                 "char", 
                 "a"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD8", 
+                "0xFFEFFFAC8", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD9", 
+                "0xFFEFFFAC9", 
                 "char", 
                 "w"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADA", 
+                "0xFFEFFFACA", 
                 "char", 
                 "o"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADB", 
+                "0xFFEFFFACB", 
                 "char", 
                 "r"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADC", 
+                "0xFFEFFFACC", 
                 "char", 
                 "d"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACD", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACE", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACF", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD0", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD1", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD2", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD3", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD4", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD5", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD6", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD7", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD8", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD9", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADA", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADB", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADC", 
+                "char", 
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -24594,31 +24714,31 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB24", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB25", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB26", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB27", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB28", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
@@ -24690,31 +24810,31 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB34", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB35", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB36", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB37", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB38", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -25194,19 +25314,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB88", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB89", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB8A", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
@@ -25290,19 +25410,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB98", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB99", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB9A", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -25794,43 +25914,43 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFBEC", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBED", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBEE", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBEF", 
                 "char", 
-                "\\0"
+                "b"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF0", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF1", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF2", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
@@ -25890,43 +26010,43 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFBFC", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFD", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFE", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFF", 
                 "char", 
-                "b"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC00", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC01", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC02", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -26394,19 +26514,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFC50", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC51", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC52", 
                 "char", 
-                "\\0"
+                "x"
               ], 
               [
                 "C_DATA", 
@@ -26490,19 +26610,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFC60", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC61", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC62", 
                 "char", 
-                "x"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -26994,37 +27114,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFCB4", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB5", 
                 "char", 
-                "\\0"
+                "s"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB6", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB7", 
                 "char", 
-                "\\0"
+                "3"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB8", 
                 "char", 
-                "\\0"
+                "2"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB9", 
                 "char", 
-                "\\0"
+                "4"
               ], 
               [
                 "C_DATA", 
@@ -27090,37 +27210,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFCC4", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC5", 
                 "char", 
-                "s"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC6", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC7", 
                 "char", 
-                "3"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC8", 
                 "char", 
-                "2"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC9", 
                 "char", 
-                "4"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -28194,7 +28314,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFD7C", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
@@ -28290,7 +28410,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFD8C", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -28789,106 +28909,10 @@ var trace = {
                 "0xFFEFFFDDF", 
                 "char", 
                 "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE0", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE1", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE2", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE3", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE4", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE5", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE6", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE7", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE8", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE9", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEA", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEB", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEC", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDED", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEE", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEF", 
-                "char", 
-                "\\0"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000110", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -28898,7 +28922,7 @@ var trace = {
             "ans"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000110"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -28914,31 +28938,131 @@ var trace = {
         {
           "encoded_locals": {
             "ans": [
-              "C_ARRAY", 
-              "0xFFEFFFDF0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFDE0", 
+              [
+                8, 
+                100
+              ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF0", 
+                "0xFFEFFFDE0", 
                 "char", 
                 "w"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF1", 
+                "0xFFEFFFDE1", 
                 "char", 
                 "o"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF2", 
+                "0xFFEFFFDE2", 
                 "char", 
                 "r"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF3", 
+                "0xFFEFFFDE3", 
                 "char", 
                 "d"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE4", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE5", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE6", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE7", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE8", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE9", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEA", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEB", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEC", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDED", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEE", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEF", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF0", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF1", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF2", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF3", 
+                "char", 
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -29424,13 +29548,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFE44", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFE45", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
@@ -29520,13 +29644,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFE54", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFE55", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -30624,13 +30748,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF0C", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFF0D", 
                 "char", 
-                "\\0"
+                "b"
               ], 
               [
                 "C_DATA", 
@@ -30720,13 +30844,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF1C", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFF1D", 
                 "char", 
-                "b"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -31224,7 +31348,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF70", 
                 "char", 
-                "\\0"
+                "x"
               ], 
               [
                 "C_DATA", 
@@ -31320,7 +31444,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF80", 
                 "char", 
-                "x"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -31824,37 +31948,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFFD4", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD5", 
                 "char", 
-                "\\0"
+                "s"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD6", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD7", 
                 "char", 
-                "\\0"
+                "3"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD8", 
                 "char", 
-                "\\0"
+                "2"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD9", 
                 "char", 
-                "\\0"
+                "4"
               ], 
               [
                 "C_DATA", 
@@ -31920,37 +32044,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFFE4", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE5", 
                 "char", 
-                "s"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE6", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE7", 
                 "char", 
-                "3"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE8", 
                 "char", 
-                "2"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE9", 
                 "char", 
-                "4"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -33024,7 +33148,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFF00009C", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
@@ -33120,7 +33244,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000AC", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -33619,184 +33743,188 @@ var trace = {
                 "0xFFF0000FF", 
                 "char", 
                 "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000100", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000101", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000102", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000103", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000104", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000105", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000106", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000107", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000108", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000109", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010A", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010B", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010C", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010D", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010E", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010F", 
-                "char", 
-                "\\0"
               ]
             ], 
             "sentences": [
-              "C_ARRAY", 
-              "0xFFEFFFAD0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFAC0", 
+              [
+                8, 
+                100
+              ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD0", 
+                "0xFFEFFFAC0", 
                 "char", 
                 "a"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD1", 
+                "0xFFEFFFAC1", 
                 "char", 
                 "b"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD2", 
+                "0xFFEFFFAC2", 
                 "char", 
                 "c"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD3", 
+                "0xFFEFFFAC3", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD4", 
+                "0xFFEFFFAC4", 
                 "char", 
                 "i"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD5", 
+                "0xFFEFFFAC5", 
                 "char", 
                 "s"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD6", 
+                "0xFFEFFFAC6", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD7", 
+                "0xFFEFFFAC7", 
                 "char", 
                 "a"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD8", 
+                "0xFFEFFFAC8", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD9", 
+                "0xFFEFFFAC9", 
                 "char", 
                 "w"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADA", 
+                "0xFFEFFFACA", 
                 "char", 
                 "o"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADB", 
+                "0xFFEFFFACB", 
                 "char", 
                 "r"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADC", 
+                "0xFFEFFFACC", 
                 "char", 
                 "d"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACD", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACE", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACF", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD0", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD1", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD2", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD3", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD4", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD5", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD6", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD7", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD8", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD9", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADA", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADB", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADC", 
+                "char", 
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -34228,31 +34356,31 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB24", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB25", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB26", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB27", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB28", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
@@ -34324,31 +34452,31 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB34", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB35", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB36", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB37", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB38", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -34828,19 +34956,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB88", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB89", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB8A", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
@@ -34924,19 +35052,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB98", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB99", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB9A", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -35428,43 +35556,43 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFBEC", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBED", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBEE", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBEF", 
                 "char", 
-                "\\0"
+                "b"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF0", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF1", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF2", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
@@ -35524,43 +35652,43 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFBFC", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFD", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFE", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFF", 
                 "char", 
-                "b"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC00", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC01", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC02", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -36028,19 +36156,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFC50", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC51", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC52", 
                 "char", 
-                "\\0"
+                "x"
               ], 
               [
                 "C_DATA", 
@@ -36124,19 +36252,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFC60", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC61", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC62", 
                 "char", 
-                "x"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -36628,37 +36756,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFCB4", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB5", 
                 "char", 
-                "\\0"
+                "s"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB6", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB7", 
                 "char", 
-                "\\0"
+                "3"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB8", 
                 "char", 
-                "\\0"
+                "2"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB9", 
                 "char", 
-                "\\0"
+                "4"
               ], 
               [
                 "C_DATA", 
@@ -36724,37 +36852,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFCC4", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC5", 
                 "char", 
-                "s"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC6", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC7", 
                 "char", 
-                "3"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC8", 
                 "char", 
-                "2"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC9", 
                 "char", 
-                "4"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -37828,7 +37956,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFD7C", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
@@ -37924,7 +38052,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFD8C", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -38423,106 +38551,10 @@ var trace = {
                 "0xFFEFFFDDF", 
                 "char", 
                 "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE0", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE1", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE2", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE3", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE4", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE5", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE6", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE7", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE8", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE9", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEA", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEB", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEC", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDED", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEE", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEF", 
-                "char", 
-                "\\0"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000110", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -38532,7 +38564,7 @@ var trace = {
             "ans"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000110"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -38548,31 +38580,131 @@ var trace = {
         {
           "encoded_locals": {
             "ans": [
-              "C_ARRAY", 
-              "0xFFEFFFDF0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFDE0", 
+              [
+                8, 
+                100
+              ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF0", 
+                "0xFFEFFFDE0", 
                 "char", 
                 "w"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF1", 
+                "0xFFEFFFDE1", 
                 "char", 
                 "o"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF2", 
+                "0xFFEFFFDE2", 
                 "char", 
                 "r"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFDF3", 
+                "0xFFEFFFDE3", 
                 "char", 
                 "d"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE4", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE5", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE6", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE7", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE8", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDE9", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEA", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEB", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEC", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDED", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEE", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDEF", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF0", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF1", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF2", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFDF3", 
+                "char", 
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -39058,13 +39190,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFE44", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFE45", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
@@ -39154,13 +39286,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFE54", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFE55", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -40258,13 +40390,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF0C", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFF0D", 
                 "char", 
-                "\\0"
+                "b"
               ], 
               [
                 "C_DATA", 
@@ -40354,13 +40486,13 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF1C", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFF1D", 
                 "char", 
-                "b"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -40858,7 +40990,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF70", 
                 "char", 
-                "\\0"
+                "x"
               ], 
               [
                 "C_DATA", 
@@ -40954,7 +41086,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFF80", 
                 "char", 
-                "x"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -41458,37 +41590,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFFD4", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD5", 
                 "char", 
-                "\\0"
+                "s"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD6", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD7", 
                 "char", 
-                "\\0"
+                "3"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD8", 
                 "char", 
-                "\\0"
+                "2"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFD9", 
                 "char", 
-                "\\0"
+                "4"
               ], 
               [
                 "C_DATA", 
@@ -41554,37 +41686,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFFE4", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE5", 
                 "char", 
-                "s"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE6", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE7", 
                 "char", 
-                "3"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE8", 
                 "char", 
-                "2"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFFE9", 
                 "char", 
-                "4"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -42658,7 +42790,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFF00009C", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
@@ -42754,7 +42886,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000AC", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -43253,184 +43385,188 @@ var trace = {
                 "0xFFF0000FF", 
                 "char", 
                 "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000100", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000101", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000102", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000103", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000104", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000105", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000106", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000107", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000108", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF000109", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010A", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010B", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010C", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010D", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010E", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF00010F", 
-                "char", 
-                "\\0"
               ]
             ], 
             "sentences": [
-              "C_ARRAY", 
-              "0xFFEFFFAD0", 
+              "C_MULTIDIMENSIONAL_ARRAY", 
+              "0xFFEFFFAC0", 
+              [
+                8, 
+                100
+              ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD0", 
+                "0xFFEFFFAC0", 
                 "char", 
                 "a"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD1", 
+                "0xFFEFFFAC1", 
                 "char", 
                 "b"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD2", 
+                "0xFFEFFFAC2", 
                 "char", 
                 "c"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD3", 
+                "0xFFEFFFAC3", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD4", 
+                "0xFFEFFFAC4", 
                 "char", 
                 "i"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD5", 
+                "0xFFEFFFAC5", 
                 "char", 
                 "s"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD6", 
+                "0xFFEFFFAC6", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD7", 
+                "0xFFEFFFAC7", 
                 "char", 
                 "a"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD8", 
+                "0xFFEFFFAC8", 
                 "char", 
                 " "
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFAD9", 
+                "0xFFEFFFAC9", 
                 "char", 
                 "w"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADA", 
+                "0xFFEFFFACA", 
                 "char", 
                 "o"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADB", 
+                "0xFFEFFFACB", 
                 "char", 
                 "r"
               ], 
               [
                 "C_DATA", 
-                "0xFFEFFFADC", 
+                "0xFFEFFFACC", 
                 "char", 
                 "d"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACD", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACE", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFACF", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD0", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD1", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD2", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD3", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD4", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD5", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD6", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD7", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD8", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFAD9", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADA", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADB", 
+                "char", 
+                "\\0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFEFFFADC", 
+                "char", 
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -43862,31 +43998,31 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB24", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB25", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB26", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB27", 
                 "char", 
-                "\\0"
+                "h"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB28", 
                 "char", 
-                "\\0"
+                "e"
               ], 
               [
                 "C_DATA", 
@@ -43958,31 +44094,31 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB34", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB35", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB36", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB37", 
                 "char", 
-                "h"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB38", 
                 "char", 
-                "e"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -44462,19 +44598,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB88", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB89", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB8A", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
@@ -44558,19 +44694,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFB98", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB99", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFB9A", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -45062,43 +45198,43 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFBEC", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBED", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBEE", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBEF", 
                 "char", 
-                "\\0"
+                "b"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF0", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF1", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBF2", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
@@ -45158,43 +45294,43 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFBFC", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFD", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFE", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFBFF", 
                 "char", 
-                "b"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC00", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC01", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC02", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -45662,19 +45798,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFC50", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC51", 
                 "char", 
-                "\\0"
+                " "
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC52", 
                 "char", 
-                "\\0"
+                "x"
               ], 
               [
                 "C_DATA", 
@@ -45758,19 +45894,19 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFC60", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC61", 
                 "char", 
-                " "
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFC62", 
                 "char", 
-                "x"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -46262,37 +46398,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFCB4", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB5", 
                 "char", 
-                "\\0"
+                "s"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB6", 
                 "char", 
-                "\\0"
+                "d"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB7", 
                 "char", 
-                "\\0"
+                "3"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB8", 
                 "char", 
-                "\\0"
+                "2"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCB9", 
                 "char", 
-                "\\0"
+                "4"
               ], 
               [
                 "C_DATA", 
@@ -46358,37 +46494,37 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFCC4", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC5", 
                 "char", 
-                "s"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC6", 
                 "char", 
-                "d"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC7", 
                 "char", 
-                "3"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC8", 
                 "char", 
-                "2"
+                "\\0"
               ], 
               [
                 "C_DATA", 
                 "0xFFEFFFCC9", 
                 "char", 
-                "4"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -47462,7 +47598,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFD7C", 
                 "char", 
-                "\\0"
+                "a"
               ], 
               [
                 "C_DATA", 
@@ -47558,7 +47694,7 @@ var trace = {
                 "C_DATA", 
                 "0xFFEFFFD8C", 
                 "char", 
-                "a"
+                "\\0"
               ], 
               [
                 "C_DATA", 
@@ -48057,106 +48193,10 @@ var trace = {
                 "0xFFEFFFDDF", 
                 "char", 
                 "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE0", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE1", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE2", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE3", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE4", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE5", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE6", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE7", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE8", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDE9", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEA", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEB", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEC", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDED", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEE", 
-                "char", 
-                "\\0"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFEFFFDEF", 
-                "char", 
-                "\\0"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000110", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -48166,7 +48206,7 @@ var trace = {
             "ans"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000110"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""

@@ -179,10 +179,18 @@ def encode_value(obj, heap):
         return ret
 
     elif obj['kind'] == 'array':
-        ret = ['C_ARRAY', obj['addr']]
-        for e in obj['val']:
-            ret.append(encode_value(e, heap)) # TODO: is an infinite loop possible here?
-        return ret
+        # backwards compatibility for old 1-D array format:
+        if 'dimensions' not in obj or len(obj['dimensions']) < 2:
+            ret = ['C_ARRAY', obj['addr']]
+            for e in obj['val']:
+                ret.append(encode_value(e, heap)) # TODO: is an infinite loop possible here?
+            return ret
+        else:
+            # put dimensions as the 3rd element:
+            ret = ['C_MULTIDIMENSIONAL_ARRAY', obj['addr'], obj['dimensions']]
+            for e in obj['val']:
+                ret.append(encode_value(e, heap)) # TODO: is an infinite loop possible here?
+            return ret
 
     elif obj['kind'] == 'typedef':
         # pass on the typedef type name into obj['val'], then recurse

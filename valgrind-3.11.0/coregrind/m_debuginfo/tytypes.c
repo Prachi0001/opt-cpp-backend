@@ -777,13 +777,12 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
          if (ent->Te.TyArray.boundRs) {
             XArray* xa = ent->Te.TyArray.boundRs;
 
-            // right now we "flatten" multidimensional arrays into 1-D
-            // arrays of total_array_size elements, which is how C lays
-            // them out in memory anyhow. in the future, maybe put some
-            // metadata on the C_ARRAY element to denote the exact
-            // dimensions, so that they can be visualized properly in
-            // the frontend. e.g., int x[2][4] and int x[4][2] may look
-            // the same in memory, but should be visualized differently
+            // we "flatten" a multidimensional array into a 1-D array of
+            // total_array_size elements, which is how C lays them out in
+            // memory anyhow. we also put the array_dimensions in a list,
+            // so that the frontend can use that info to visualize arrays
+            // properly. e.g., int x[2][4] and int x[4][2] look the same
+            // in memory, but should be visualized differently
             int w;
             int xa_size = VG_(sizeXA)(xa);
             Long* array_dimensions = (Long*)VG_(malloc)("array_dimensions", xa_size * sizeof(*array_dimensions));
@@ -802,19 +801,29 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
             int total_array_size = 1;
             for (w = 0; w < xa_size; w++) {
               total_array_size *= array_dimensions[w];
-              //VG_(printf)("array_dimensions[%d]: %d\n", w, array_dimensions[w]);
             }
-
-            //VG_(printf)("total_array_size: %d\n\n", total_array_size);
 
             if (total_array_size > 0) {
               // the type entry of the array element(s)
               SizeT element_size = pg_get_elt_size(tyents, ent->Te.TyArray.typeR);
 
               VG_(fprintf)(trace_fp,
-                           "{\"addr\":\"%p\", \"kind\":\"array\", \"size\":%u, \"val\": [\n  ",
+                           "{\"addr\":\"%p\", \"kind\":\"array\", \"size\":%u, ",
                            (void*)data_addr,
                            (unsigned int)total_array_size);
+
+              VG_(fprintf)(trace_fp,
+                           "\"dimensions\": [");
+
+              for (w = 0; w < xa_size; w++) {
+                if (w > 0) {
+                  VG_(fprintf)(trace_fp, ", ");
+                }
+                VG_(fprintf)(trace_fp, "%d", array_dimensions[w]);
+              }
+
+              VG_(fprintf)(trace_fp,
+                           "], \"val\": [\n  ");
 
               first_elt = True;
               Addr cur_elt_addr = data_addr;
