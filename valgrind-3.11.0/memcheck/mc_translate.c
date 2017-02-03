@@ -6469,15 +6469,15 @@ void pg_trace_inst(Addr a)
           }
         }
 
-        Word n = VG_(sizeXA)( gbs );
-        // clear first
-        for (j = 0; j < n; j++) {
-          static_var_in_frame[j] = False;
-        }
-
         // loop through all global variables to see if any of them are
         // actually static variables declared in THIS frame (ugh #tricky)
         if (index_of_possible_static_var) {
+          Word n = VG_(sizeXA)( gbs );
+          // clear first
+          for (j = 0; j < n; j++) {
+            static_var_in_frame[j] = False;
+          }
+
           for (j = 0; j < n; j++) {
             GlobalBlock* gb = index_of_possible_static_var[j];
             if (gb) {
@@ -6511,6 +6511,7 @@ void pg_trace_inst(Addr a)
 
         // print static vars in ordered_varnames to match 'locals'
         if (index_of_possible_static_var) {
+          Word n = VG_(sizeXA)( gbs );
           for (j = 0; j < n; j++) {
             if (static_var_in_frame[j]) {
               GlobalBlock* gb = index_of_possible_static_var[j];
