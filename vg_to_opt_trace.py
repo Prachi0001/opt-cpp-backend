@@ -320,8 +320,17 @@ if __name__ == '__main__':
                 # optimization -- when you find a 'call' instruction,
                 # look ahead in the trace to find all *consecutive*
                 # entries with the same frame_ids and on the same line,
-                # then eliminate those from the trace
-                lookahead = final_execution_points[cur_ind:]
+                # then eliminate those from the trace.
+                #
+                # if we don't do this optimization, then the visualizer
+                # will show multiple steps for entering a function call,
+                # with formal parameters being filled in with their
+                # values along the way; while this is somewhat
+                # informative, it's also kinda extraneous. instead, we
+                # want to skip over all parameter initialization and
+                # jump right into the function body right away with all
+                # the parameters initialized
+                lookahead = final_execution_points[cur_ind+1:] # start at the next index
                 for future_step in lookahead:
                     future_frame_ids = [e['frame_id'] for e in future_step['stack_to_render']]
                     if cur_frame_ids == future_frame_ids and cur['line'] == future_step['line']:
