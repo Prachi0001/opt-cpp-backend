@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "int x = 111;\nvoid main() {\n  int x = 222;\n  {\n    int x = 333;\n  }\n}\n", 
   "trace": [
     {
@@ -22,12 +22,12 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -36,7 +36,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -62,12 +62,12 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "int", 
               222
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -77,7 +77,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -103,12 +103,12 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "int", 
               222
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -117,10 +117,10 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

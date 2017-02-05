@@ -55,12 +55,12 @@ all-traces: basic.trace \
 %.trace: %.c ../valgrind-3.11.0/inst/bin/valgrind
 	@gcc -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
 	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
-	@python ../vg_to_opt_trace.py --create_jsvar=trace $< > $(basename $<).trace || true
+	@python ../vg_to_opt_trace.py --prettydump $< > $(basename $<).trace || true
 
 %.trace: %.cpp ../valgrind-3.11.0/inst/bin/valgrind
 	@g++ -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
 	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
-	@python ../vg_to_opt_trace.py --create_jsvar=trace $< > $(basename $<).trace || true
+	@python ../vg_to_opt_trace.py --prettydump $< > $(basename $<).trace || true
 
 clean:
 	rm -f *.trace *.vgtrace *.out

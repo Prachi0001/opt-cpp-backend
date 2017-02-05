@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\ninline int foo(int x) {\n  return 5;\n}\n\nint main() {\n  foo(3);\n  return 0;\n}\n", 
   "trace": [
     {
@@ -11,14 +11,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -33,25 +33,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -60,7 +60,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000E0"
+          "unique_hash": "foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -75,25 +75,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -102,7 +102,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000E0"
+          "unique_hash": "foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -117,25 +117,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -144,7 +144,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000E0"
+          "unique_hash": "foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -159,14 +159,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -181,17 +181,17 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

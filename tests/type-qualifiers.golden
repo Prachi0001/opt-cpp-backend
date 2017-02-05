@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "int main() {\n  volatile int foo = 111; \n  unsigned long int volatile bar = 222;\n  const volatile int* baz = &foo;\n  volatile const unsigned long int* rt_clk = &bar;\n}\n", 
   "trace": [
     {
@@ -262,4 +262,4 @@ var trace = {
       "stdout": ""
     }
   ]
-};
+}

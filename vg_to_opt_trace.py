@@ -139,6 +139,9 @@ def process_json_obj(obj, err_str, stdout_str):
 
         stack_obj['unique_hash'] = stack_obj['func_name'] + '_' + stack_obj['frame_id']
 
+        #if 'line' in e:
+        #    stack_obj['line'] = e['line']
+
         # unsupported
         stack_obj['is_parent'] = False
         stack_obj['is_zombie'] = False
@@ -224,6 +227,10 @@ if __name__ == '__main__':
     basename, ext = os.path.splitext(fn)
     assert ext in ('.c', '.cpp')
     cur_record_lines = []
+
+    # execution points after just returning from a function but not advancing
+    # the line number of the caller, so don't show those
+    extraneous_step_after_return_set = set()
 
     success = True
 
@@ -315,6 +322,15 @@ if __name__ == '__main__':
             elif len(prev_frame_ids) > len(cur_frame_ids):
                 if cur_frame_ids == prev_frame_ids[:-1]:
                     prev['event'] = 'return'
+
+                    #if len(prev['stack_to_render']) > 1:
+                    #    print >> sys.stderr, 'return:',
+                    #    print >> sys.stderr
+                    #    print >> sys.stderr, '  prev:', json.dumps(prev['stack_to_render'][-2])
+                    #    print >> sys.stderr
+                    #    print >> sys.stderr, '   cur:', cur['line'], json.dumps(cur['stack_to_render'][-1])
+                    #    #extraneous_step_after_return_set.add(cur)
+
 
         # make the last statement a faux 'return', presumably from main
         if success:

@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "void foo() {\n  static int wxyz = 42;\n}\n\nvoid main() {\n  foo();\n  static int wxyz = 12345;\n  if (1) {\n    static int wxyz = 54321;\n    printf(\"%d\\n\", wxyz);\n  }\n}\n", 
   "trace": [
     {
@@ -18,7 +18,7 @@ var trace = {
               12345
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -27,7 +27,7 @@ var trace = {
             "wxyz (static 0x601048)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -49,7 +49,7 @@ var trace = {
               12345
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -58,7 +58,7 @@ var trace = {
             "wxyz (static 0x601048)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
@@ -69,7 +69,7 @@ var trace = {
               42
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -78,7 +78,7 @@ var trace = {
             "wxyz (static 0x601040)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000F0"
+          "unique_hash": "foo_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -106,7 +106,7 @@ var trace = {
               12345
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -116,7 +116,7 @@ var trace = {
             "wxyz (static 0x601044)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -138,7 +138,7 @@ var trace = {
               12345
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -147,10 +147,10 @@ var trace = {
             "wxyz (static 0x601048)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": "54321\n"
     }
   ]
-};
+}

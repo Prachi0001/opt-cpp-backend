@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "int main()\n{\n  int y;\n  int z = y * 2;\n  int x = z * 10;\n  printf (\"x = %d\\n\", x);\n}\n", 
   "trace": [
     {
@@ -13,24 +13,24 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000F4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "z": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -41,7 +41,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -58,24 +58,24 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000EC", 
+              "0xFFF0000FC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000F4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "z": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -86,7 +86,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -103,24 +103,24 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000EC", 
+              "0xFFF0000FC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000F4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "z": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -131,7 +131,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -148,24 +148,24 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000EC", 
+              "0xFFF0000FC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000F4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "z": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -176,7 +176,7 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -194,24 +194,24 @@ var trace = {
           "encoded_locals": {
             "x": [
               "C_DATA", 
-              "0xFFF0000EC", 
+              "0xFFF0000FC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_DATA", 
-              "0xFFF0000E4", 
+              "0xFFF0000F4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "z": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -222,10 +222,10 @@ var trace = {
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

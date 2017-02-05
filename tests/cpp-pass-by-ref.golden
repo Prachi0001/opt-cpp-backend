@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "// From: http://www.inference.phy.cam.ac.uk/teaching/comput/C++/examples/SortReference2.shtml\n\n// SortReference2.cc\n// Program to sort two numbers using call by reference. \n// Smallest number is output first.\n\n#include <iostream>\nusing namespace std;\n\n// Function prototype for call by reference using pointers\n// see http://www-h.eng.cam.ac.uk/help/tpl/languages/C++/argsC++.html\n// for further advice.\nvoid swap(float &x, float &y);\nvoid swap2(float *px, float *py);\nvoid swap2b(float *px, float *py);\n\nint main()\n{\n   float a, b;\n\n   a = 2.71;\n   b = 3.14;\n   \n   swap(a, b);\n   swap2(&a, &b);\n   swap2b(&a, &b);\n\n   return 0;\n}\n\n// A function definition for call by reference\n// The variables x and y will have their values changed.\n\nvoid swap(float &x, float &y)\n// Swaps x and y data of calling function\n{\n   float temp;\n\n   temp = x;\n   x = y;\n   y = temp;\n}\n\nvoid swap2(float *px, float *py) // Here the arguments are pointers\n// Swaps x and y data of calling function\n{\n   float temp;\n\n   temp = *px;  // to find the value associated with the pointer px, use *px\n   *px = *py;\n   *py = temp;\n}\n\nvoid swap2b(float *px, float *py)\n// Swaps x and y data of calling function\n{\n   float temp;\n\n   temp = px[0];  // A synonym for *px is px[0]\n   px[0] = py[0];\n   py[0] = temp;\n}\n", 
   "trace": [
     {
@@ -1731,4 +1731,4 @@ var trace = {
       "stdout": ""
     }
   ]
-};
+}

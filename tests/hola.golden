@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "// from an actual bug report!\n#include <stdio.h>\n\nint main() {\n  printf(\"Hola\\n\");\n}\n", 
   "trace": [
     {
@@ -46,4 +46,4 @@ var trace = {
       "stdout": "Hola\n"
     }
   ]
-};
+}

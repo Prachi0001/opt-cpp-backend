@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "#include <stdlib.h>\n#include <unistd.h>\nint main( void )\n{\n  char* arr = malloc(-10);\n  (void) write( 1 /* stdout */, arr, 10 );\n  return 0;\n}\n", 
   "trace": [
     {
@@ -13,12 +13,12 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -27,7 +27,7 @@ var trace = {
             "arr"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000E0"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -44,12 +44,12 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -58,7 +58,7 @@ var trace = {
             "arr"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000E0"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -76,12 +76,12 @@ var trace = {
           "encoded_locals": {
             "arr": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -90,10 +90,10 @@ var trace = {
             "arr"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000E0"
+          "unique_hash": "main_0xFFF0000F0"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

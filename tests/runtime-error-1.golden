@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "#include <stdlib.h>\n\nint main() {\n  int* x = (int*)malloc(2*sizeof(*x));\n  x[100] = 10;   // invalid write\n  int y = x[10]; // invalid read\n}\n", 
   "trace": [
     {
@@ -157,4 +157,4 @@ var trace = {
       "stdout": ""
     }
   ]
-};
+}

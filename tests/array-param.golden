@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "#include <stdlib.h>\n\n// cool, seems like debug info treats both params as pointers and not\n// array types\nint arrayParams(short short_array[5] /* incorrect bound */, char char_array[]) {\n  return 0;\n}\n\nint main() {\n  short stack_shorts[10];\n  stack_shorts[1] = 1;\n  stack_shorts[3] = 3;\n  stack_shorts[5] = 5;\n  stack_shorts[7] = 7;\n  stack_shorts[9] = 9;\n\n  char* heap_str = (char*)malloc(7);\n  heap_str[0] = 'B';\n  heap_str[1] = 'o';\n  heap_str[2] = 'b';\n  heap_str[3] = '\\0';\n\n  arrayParams(stack_shorts, heap_str);\n  return 0;\n}\n", 
   "trace": [
     {
@@ -13,61 +13,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000D8", 
-              [
-                "C_DATA", 
-                "0xFFF0000D8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000DA", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000DC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000DE", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
+              "0xFFF0000E8", 
               [
                 "C_DATA", 
                 "0xFFF0000E8", 
@@ -79,10 +31,58 @@ var trace = {
                 "0xFFF0000EA", 
                 "short int", 
                 "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000EC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000EE", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F0", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F2", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -92,7 +92,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -109,61 +109,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -175,10 +127,58 @@ var trace = {
                 "0xFFF0000F2", 
                 "short int", 
                 "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
+                "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -188,7 +188,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -205,61 +205,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -270,11 +222,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -284,7 +284,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -301,61 +301,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -366,11 +318,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -380,7 +380,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -397,61 +397,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -462,11 +414,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -476,7 +476,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -493,61 +493,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -558,11 +510,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -572,7 +572,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -589,61 +589,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -654,11 +606,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -668,7 +668,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -732,61 +732,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -797,11 +749,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -811,7 +811,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -875,61 +875,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -940,11 +892,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -954,7 +954,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1018,61 +1018,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -1083,11 +1035,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1097,7 +1097,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1161,61 +1161,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -1226,11 +1178,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1240,7 +1240,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1304,61 +1304,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -1369,11 +1321,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1383,7 +1383,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1447,61 +1447,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -1512,11 +1464,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1526,24 +1526,24 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "char_array": [
               "C_DATA", 
-              "0xFFF0000B0", 
+              "0xFFF0000C0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "short_array": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "arrayParams", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1553,7 +1553,7 @@ var trace = {
             "char_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "arrayParams_0xFFF0000C0"
+          "unique_hash": "arrayParams_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1617,61 +1617,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -1682,11 +1634,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1696,24 +1696,24 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "char_array": [
               "C_DATA", 
-              "0xFFF0000B0", 
+              "0xFFF0000C0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "short_array": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000E0"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "arrayParams", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1723,7 +1723,7 @@ var trace = {
             "char_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "arrayParams_0xFFF0000C0"
+          "unique_hash": "arrayParams_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1787,61 +1787,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -1852,11 +1804,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1866,24 +1866,24 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "char_array": [
               "C_DATA", 
-              "0xFFF0000B0", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x53FE040"
             ], 
             "short_array": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000E0"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "arrayParams", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1893,7 +1893,7 @@ var trace = {
             "char_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "arrayParams_0xFFF0000C0"
+          "unique_hash": "arrayParams_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1957,61 +1957,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -2022,11 +1974,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2036,24 +2036,24 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "char_array": [
               "C_DATA", 
-              "0xFFF0000B0", 
+              "0xFFF0000C0", 
               "pointer", 
               "0x53FE040"
             ], 
             "short_array": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000E0"
+              "0xFFF0000F0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "arrayParams", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2063,7 +2063,7 @@ var trace = {
             "char_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "arrayParams_0xFFF0000C0"
+          "unique_hash": "arrayParams_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2127,61 +2127,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -2192,11 +2144,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2206,7 +2206,7 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2270,61 +2270,13 @@ var trace = {
           "encoded_locals": {
             "heap_str": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ], 
             "stack_shorts": [
               "C_ARRAY", 
-              "0xFFF0000E0", 
-              [
-                "C_DATA", 
-                "0xFFF0000E0", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E2", 
-                "short int", 
-                1
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E4", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E6", 
-                "short int", 
-                3
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000E8", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EA", 
-                "short int", 
-                5
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EC", 
-                "short int", 
-                "<UNINITIALIZED>"
-              ], 
-              [
-                "C_DATA", 
-                "0xFFF0000EE", 
-                "short int", 
-                7
-              ], 
+              "0xFFF0000F0", 
               [
                 "C_DATA", 
                 "0xFFF0000F0", 
@@ -2335,11 +2287,59 @@ var trace = {
                 "C_DATA", 
                 "0xFFF0000F2", 
                 "short int", 
+                1
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F4", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F6", 
+                "short int", 
+                3
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000F8", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FA", 
+                "short int", 
+                5
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FC", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000FE", 
+                "short int", 
+                7
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000100", 
+                "short int", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF000102", 
+                "short int", 
                 9
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2349,10 +2349,10 @@ var trace = {
             "heap_str"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

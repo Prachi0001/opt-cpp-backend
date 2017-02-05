@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "typedef unsigned char BYTE;\ntypedef long long int LLI;\ntypedef int* INT_PTR;\ntypedef char* C_STRING;\n\nint main() {\n  LLI x = 1234567890;\n  BYTE y[5] = {10,20,30,40,50};\n  int foo = 42;\n  INT_PTR foo_ptr = &foo;\n  C_STRING name = \"Philip\\tGuo\\n\";\n}\n", 
   "trace": [
     {
@@ -13,64 +13,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "LLI", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               [
                 "C_DATA", 
-                "0xFFF0000E8", 
+                "0xFFF0000F8", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000E9", 
+                "0xFFF0000F9", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000EA", 
+                "0xFFF0000FA", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000EB", 
+                "0xFFF0000FB", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000EC", 
+                "0xFFF0000FC", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -83,7 +83,7 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -100,64 +100,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000E4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "LLI", 
               "<UNINITIALIZED>"
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               [
                 "C_DATA", 
-                "0xFFF0000F0", 
+                "0xFFF000100", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F1", 
+                "0xFFF000101", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F2", 
+                "0xFFF000102", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F3", 
+                "0xFFF000103", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F4", 
+                "0xFFF000104", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -170,7 +170,7 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -187,64 +187,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000E4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "LLI", 
               1234567890
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               [
                 "C_DATA", 
-                "0xFFF0000F0", 
+                "0xFFF000100", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F1", 
+                "0xFFF000101", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F2", 
+                "0xFFF000102", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F3", 
+                "0xFFF000103", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F4", 
+                "0xFFF000104", 
                 "BYTE", 
                 "<UNINITIALIZED>"
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -257,7 +257,7 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -274,64 +274,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000E4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "LLI", 
               1234567890
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               [
                 "C_DATA", 
-                "0xFFF0000F0", 
+                "0xFFF000100", 
                 "BYTE", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F1", 
+                "0xFFF000101", 
                 "BYTE", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F2", 
+                "0xFFF000102", 
                 "BYTE", 
                 30
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F3", 
+                "0xFFF000103", 
                 "BYTE", 
                 40
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F4", 
+                "0xFFF000104", 
                 "BYTE", 
                 50
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -344,7 +344,7 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -361,64 +361,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000E4", 
               "int", 
               42
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "LLI", 
               1234567890
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               [
                 "C_DATA", 
-                "0xFFF0000F0", 
+                "0xFFF000100", 
                 "BYTE", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F1", 
+                "0xFFF000101", 
                 "BYTE", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F2", 
+                "0xFFF000102", 
                 "BYTE", 
                 30
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F3", 
+                "0xFFF000103", 
                 "BYTE", 
                 40
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F4", 
+                "0xFFF000104", 
                 "BYTE", 
                 50
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -431,7 +431,7 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -448,64 +448,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000E4", 
               "int", 
               42
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D4"
+              "0xFFF0000E4"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "LLI", 
               1234567890
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               [
                 "C_DATA", 
-                "0xFFF0000F0", 
+                "0xFFF000100", 
                 "BYTE", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F1", 
+                "0xFFF000101", 
                 "BYTE", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F2", 
+                "0xFFF000102", 
                 "BYTE", 
                 30
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F3", 
+                "0xFFF000103", 
                 "BYTE", 
                 40
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F4", 
+                "0xFFF000104", 
                 "BYTE", 
                 50
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -518,7 +518,7 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -612,64 +612,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000E4", 
               "int", 
               42
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D4"
+              "0xFFF0000E4"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x400644"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "LLI", 
               1234567890
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               [
                 "C_DATA", 
-                "0xFFF0000F0", 
+                "0xFFF000100", 
                 "BYTE", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F1", 
+                "0xFFF000101", 
                 "BYTE", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F2", 
+                "0xFFF000102", 
                 "BYTE", 
                 30
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F3", 
+                "0xFFF000103", 
                 "BYTE", 
                 40
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F4", 
+                "0xFFF000104", 
                 "BYTE", 
                 50
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -682,7 +682,7 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -776,64 +776,64 @@ var trace = {
           "encoded_locals": {
             "foo": [
               "C_DATA", 
-              "0xFFF0000D4", 
+              "0xFFF0000E4", 
               "int", 
               42
             ], 
             "foo_ptr": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D4"
+              "0xFFF0000E4"
             ], 
             "name": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x400644"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "LLI", 
               1234567890
             ], 
             "y": [
               "C_ARRAY", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               [
                 "C_DATA", 
-                "0xFFF0000F0", 
+                "0xFFF000100", 
                 "BYTE", 
                 10
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F1", 
+                "0xFFF000101", 
                 "BYTE", 
                 20
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F2", 
+                "0xFFF000102", 
                 "BYTE", 
                 30
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F3", 
+                "0xFFF000103", 
                 "BYTE", 
                 40
               ], 
               [
                 "C_DATA", 
-                "0xFFF0000F4", 
+                "0xFFF000104", 
                 "BYTE", 
                 50
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -846,10 +846,10 @@ var trace = {
             "name"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

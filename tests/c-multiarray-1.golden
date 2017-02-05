@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "// simplified from the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\nconst int DIM1 = 3;\nconst int DIM2 = 4;\n\nint main() {\n  int x[DIM1][DIM2];\n  int i, j;\n  for (i = 0; i < DIM1; i++)\n    for(j = 0; j < DIM2; j++)\n      x[i][j] = i+j*i;\n}\n", 
   "trace": [
     {
@@ -1892,4 +1892,4 @@ var trace = {
       "stdout": ""
     }
   ]
-};
+}

@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n#include <stdlib.h>\n\ntypedef long long int rhubarbInt64;\ntypedef unsigned long long int UrhubarbInt64;\ntypedef unsigned int* UIntPtr;\n\nchar* globalStr = \"MR FURLEY\\t\\nis a good man\\rhello\\tworld\\t\\n\\n\\n\\\\ \\r \\r a\\r  \\\\b \\\\c\";\nunsigned char* localAddr;\nint globalInt = 5555;\ndouble globalDouble = 12345.67890123;\nunsigned long long int globalLong = 6969696969696969;\nstatic const int globalWkdayA = 4;\n\nchar* returnChar(char** charPtr)\n{\n  return 0;\n}\n\nint main()\n{\n  printf(\"char* globalStr: %p\\n\", &globalStr);\n  printf(\"unsigned char* localAddr: %p\\n\", &localAddr);\n  printf(\"int globalInt: %p\\n\", &globalInt);\n  printf(\"double globalDouble: %p\\n\", &globalDouble);\n  printf(\"unsigned long long int globalLong: %p\\n\", &globalLong);\n  printf(\"static const int globalWkdayA: %p\\n\", &globalWkdayA);\n\n  return 0;\n}\n", 
   "trace": [
     {
@@ -396,14 +396,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -803,14 +803,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": "char* globalStr: 0x601040\n"
@@ -1210,14 +1210,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": "char* globalStr: 0x601040\nunsigned char* localAddr: 0x601068\n"
@@ -1617,14 +1617,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": "char* globalStr: 0x601040\nunsigned char* localAddr: 0x601068\nint globalInt: 0x601048\n"
@@ -2024,14 +2024,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": "char* globalStr: 0x601040\nunsigned char* localAddr: 0x601068\nint globalInt: 0x601048\ndouble globalDouble: 0x601050\n"
@@ -2431,14 +2431,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": "char* globalStr: 0x601040\nunsigned char* localAddr: 0x601068\nint globalInt: 0x601048\ndouble globalDouble: 0x601050\nunsigned long long int globalLong: 0x601058\n"
@@ -2838,14 +2838,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": "char* globalStr: 0x601040\nunsigned char* localAddr: 0x601068\nint globalInt: 0x601048\ndouble globalDouble: 0x601050\nunsigned long long int globalLong: 0x601058\nstatic const int globalWkdayA: 0x400680\n"
@@ -3245,17 +3245,17 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": "char* globalStr: 0x601040\nunsigned char* localAddr: 0x601068\nint globalInt: 0x601048\ndouble globalDouble: 0x601050\nunsigned long long int globalLong: 0x601058\nstatic const int globalWkdayA: 0x400680\n"
     }
   ]
-};
+}

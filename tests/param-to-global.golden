@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "int x[] = {1,2,3,4,5};\n\nvoid foo(int* a) {\n}\n\nint main() {\n  foo(x);\n}\n", 
   "trace": [
     {
@@ -48,14 +48,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -107,25 +107,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -134,7 +134,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000E0"
+          "unique_hash": "foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -186,25 +186,25 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "a": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x601040"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -213,7 +213,7 @@ var trace = {
             "a"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "foo_0xFFF0000E0"
+          "unique_hash": "foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -265,17 +265,17 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

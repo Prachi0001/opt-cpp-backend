@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "#include <stdlib.h>\n\ntypedef struct {\n   int account_number;\n   double balance;\n   unsigned long moneys[5];\n} Account;\n\nint main() {\n  Account my_account;\n  my_account.account_number = 42;\n  my_account.balance = 3.141592653589793238462643383279502884197169399375105820974944592307816406286;\n  my_account.moneys[1] = 123;\n  my_account.moneys[3] = 456;\n\n  Account stack_accounts_array[4];\n  stack_accounts_array[1].account_number = 1;\n  stack_accounts_array[1].moneys[1] = 111111;\n  stack_accounts_array[3].account_number = 3;\n  stack_accounts_array[3].moneys[3] = 333333;\n\n  Account* heap_accounts_array = malloc(5 * sizeof(*heap_accounts_array));\n  heap_accounts_array[1].account_number = 1;\n  heap_accounts_array[1].moneys[1] = 111111;\n  heap_accounts_array[3].account_number = 3;\n  heap_accounts_array[3].moneys[3] = 333333;\n}\n", 
   "trace": [
     {
@@ -13,19 +13,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC0", 
+              "0xFFEFFFFD0", 
               "pointer", 
               "<UNALLOCATED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFC8", 
+                  "0xFFEFFFFD8", 
                   "int", 
                   "<UNALLOCATED>"
                 ]
@@ -34,7 +34,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "double", 
                   "<UNALLOCATED>"
                 ]
@@ -43,19 +43,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFD8", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFD8", 
-                    "long unsigned int", 
-                    "<UNALLOCATED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNALLOCATED>"
-                  ], 
+                  "0xFFEFFFFE8", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFE8", 
@@ -73,22 +61,34 @@ var trace = {
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
                     "<UNALLOCATED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNALLOCATED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    "<UNALLOCATED>"
                   ]
                 ]
               ]
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000008", 
+              "0xFFF000018", 
               [
                 "C_STRUCT", 
-                "0xFFF000008", 
+                "0xFFF000018", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000008", 
+                    "0xFFF000018", 
                     "int", 
                     "<UNALLOCATED>"
                   ]
@@ -97,7 +97,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "double", 
                     "<UNALLOCATED>"
                   ]
@@ -106,19 +106,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000018", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000018", 
-                      "long unsigned int", 
-                      "<UNALLOCATED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNALLOCATED>"
-                    ], 
+                    "0xFFF000028", 
                     [
                       "C_DATA", 
                       "0xFFF000028", 
@@ -136,19 +124,31 @@ var trace = {
                       "0xFFF000038", 
                       "long unsigned int", 
                       "<UNALLOCATED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000040", 
+                      "long unsigned int", 
+                      "<UNALLOCATED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNALLOCATED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000040", 
+                "0xFFF000050", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000040", 
+                    "0xFFF000050", 
                     "int", 
                     "<UNALLOCATED>"
                   ]
@@ -157,7 +157,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "double", 
                     "<UNALLOCATED>"
                   ]
@@ -166,19 +166,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000050", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000050", 
-                      "long unsigned int", 
-                      "<UNALLOCATED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNALLOCATED>"
-                    ], 
+                    "0xFFF000060", 
                     [
                       "C_DATA", 
                       "0xFFF000060", 
@@ -195,6 +183,18 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
+                      "<UNALLOCATED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNALLOCATED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
                   ]
@@ -202,13 +202,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000078", 
+                "0xFFF000088", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000078", 
+                    "0xFFF000088", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -217,7 +217,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -226,19 +226,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000088", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000088", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000098", 
                     [
                       "C_DATA", 
                       "0xFFF000098", 
@@ -256,19 +244,31 @@ var trace = {
                       "0xFFF0000A8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B0", 
+                "0xFFF0000C0", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B0", 
+                    "0xFFF0000C0", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -277,7 +277,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -286,19 +286,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C0", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D0", 
                     [
                       "C_DATA", 
                       "0xFFF0000D0", 
@@ -316,13 +304,25 @@ var trace = {
                       "0xFFF0000E0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000E8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -333,7 +333,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -350,19 +350,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -371,7 +371,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   "<UNINITIALIZED>"
                 ]
@@ -380,19 +380,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -410,22 +398,34 @@ var trace = {
                     "0xFFF000000", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
                   ]
                 ]
               ]
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -434,7 +434,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -443,19 +443,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -473,19 +461,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -494,7 +494,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -503,19 +503,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -533,19 +521,31 @@ var trace = {
                       "0xFFF000078", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -554,7 +554,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -563,19 +563,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -593,19 +581,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -614,7 +614,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -623,19 +623,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -653,13 +641,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -670,7 +670,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -687,19 +687,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -708,7 +708,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   "<UNINITIALIZED>"
                 ]
@@ -717,19 +717,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -747,22 +735,34 @@ var trace = {
                     "0xFFF000000", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
                   ]
                 ]
               ]
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -771,7 +771,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -780,19 +780,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -810,19 +798,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -831,7 +831,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -840,19 +840,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -870,19 +858,31 @@ var trace = {
                       "0xFFF000078", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -891,7 +891,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -900,19 +900,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -930,19 +918,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -951,7 +951,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -960,19 +960,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -990,13 +978,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1007,7 +1007,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1024,19 +1024,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -1045,7 +1045,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -1054,19 +1054,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -1084,22 +1072,34 @@ var trace = {
                     "0xFFF000000", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
                   ]
                 ]
               ]
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1108,7 +1108,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1117,19 +1117,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -1147,19 +1135,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1168,7 +1168,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1177,19 +1177,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -1207,19 +1195,31 @@ var trace = {
                       "0xFFF000078", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1228,7 +1228,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1237,19 +1237,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -1267,19 +1255,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1288,7 +1288,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1297,19 +1297,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -1327,13 +1315,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1344,7 +1344,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1361,19 +1361,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -1382,7 +1382,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -1391,19 +1391,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -1414,11 +1402,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    "<UNINITIALIZED>"
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1427,16 +1427,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1445,7 +1445,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1454,19 +1454,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -1484,19 +1472,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1505,7 +1505,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1514,19 +1514,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -1544,19 +1532,31 @@ var trace = {
                       "0xFFF000078", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1565,7 +1565,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1574,19 +1574,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -1604,19 +1592,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1625,7 +1625,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1634,19 +1634,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -1664,13 +1652,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1681,7 +1681,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1698,19 +1698,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -1719,7 +1719,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -1728,19 +1728,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -1751,11 +1739,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1764,16 +1764,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1782,7 +1782,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1791,19 +1791,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -1821,19 +1809,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1842,7 +1842,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1851,19 +1851,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -1881,19 +1869,31 @@ var trace = {
                       "0xFFF000078", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1902,7 +1902,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1911,19 +1911,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -1941,19 +1929,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -1962,7 +1962,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -1971,19 +1971,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -2001,13 +1989,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2018,7 +2018,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2035,19 +2035,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -2056,7 +2056,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -2065,19 +2065,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -2088,11 +2076,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2101,16 +2101,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2119,7 +2119,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2128,19 +2128,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -2158,19 +2146,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -2179,7 +2179,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2188,19 +2188,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -2218,19 +2206,31 @@ var trace = {
                       "0xFFF000078", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2239,7 +2239,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2248,19 +2248,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -2278,19 +2266,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2299,7 +2299,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2308,19 +2308,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -2338,13 +2326,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2355,7 +2355,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2372,19 +2372,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -2393,7 +2393,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -2402,19 +2402,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -2425,11 +2413,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2438,16 +2438,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2456,7 +2456,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2465,19 +2465,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -2495,19 +2483,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -2516,7 +2516,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2525,19 +2525,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -2548,11 +2536,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -2561,13 +2561,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2576,7 +2576,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2585,19 +2585,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -2615,19 +2603,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2636,7 +2636,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2645,19 +2645,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -2675,13 +2663,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2692,7 +2692,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2709,19 +2709,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -2730,7 +2730,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -2739,19 +2739,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -2762,11 +2750,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2775,16 +2775,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2793,7 +2793,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2802,19 +2802,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -2832,19 +2820,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -2853,7 +2853,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2862,19 +2862,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -2885,11 +2873,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -2898,13 +2898,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -2913,7 +2913,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2922,19 +2922,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -2952,19 +2940,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     3
                   ]
@@ -2973,7 +2973,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -2982,19 +2982,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -3012,13 +3000,25 @@ var trace = {
                       "0xFFF0000E8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3029,7 +3029,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3046,19 +3046,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -3067,7 +3067,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -3076,19 +3076,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -3099,11 +3087,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -3112,16 +3112,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -3130,7 +3130,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3139,19 +3139,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -3169,19 +3157,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -3190,7 +3190,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3199,19 +3199,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -3222,11 +3210,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -3235,13 +3235,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -3250,7 +3250,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3259,19 +3259,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -3289,19 +3277,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     3
                   ]
@@ -3310,7 +3310,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3319,19 +3319,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -3342,11 +3330,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF0000E0", 
                       "long unsigned int", 
-                      333333
+                      "<UNINITIALIZED>"
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF0000E8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      333333
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -3355,7 +3355,7 @@ var trace = {
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3366,7 +3366,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3688,19 +3688,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "0x53FE040"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -3709,7 +3709,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -3718,19 +3718,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -3741,11 +3729,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -3754,16 +3754,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -3772,7 +3772,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3781,19 +3781,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -3811,19 +3799,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -3832,7 +3832,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3841,19 +3841,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -3864,11 +3852,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -3877,13 +3877,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -3892,7 +3892,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3901,19 +3901,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -3931,19 +3919,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     3
                   ]
@@ -3952,7 +3952,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -3961,19 +3961,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -3984,11 +3972,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF0000E0", 
                       "long unsigned int", 
-                      333333
+                      "<UNINITIALIZED>"
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF0000E8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      333333
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -3997,7 +3997,7 @@ var trace = {
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4008,7 +4008,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -4330,19 +4330,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "0x53FE040"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -4351,7 +4351,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -4360,19 +4360,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -4383,11 +4371,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -4396,16 +4396,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -4414,7 +4414,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -4423,19 +4423,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -4453,19 +4441,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -4474,7 +4474,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -4483,19 +4483,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -4506,11 +4494,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -4519,13 +4519,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -4534,7 +4534,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -4543,19 +4543,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -4573,19 +4561,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     3
                   ]
@@ -4594,7 +4594,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -4603,19 +4603,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -4626,11 +4614,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF0000E0", 
                       "long unsigned int", 
-                      333333
+                      "<UNINITIALIZED>"
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF0000E8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      333333
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -4639,7 +4639,7 @@ var trace = {
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4650,7 +4650,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -4972,19 +4972,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "0x53FE040"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -4993,7 +4993,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -5002,19 +5002,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -5025,11 +5013,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -5038,16 +5038,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -5056,7 +5056,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5065,19 +5065,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -5095,19 +5083,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -5116,7 +5116,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5125,19 +5125,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -5148,11 +5136,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -5161,13 +5161,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -5176,7 +5176,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5185,19 +5185,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -5215,19 +5203,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     3
                   ]
@@ -5236,7 +5236,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5245,19 +5245,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -5268,11 +5256,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF0000E0", 
                       "long unsigned int", 
-                      333333
+                      "<UNINITIALIZED>"
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF0000E8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      333333
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -5281,7 +5281,7 @@ var trace = {
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5292,7 +5292,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -5614,19 +5614,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "0x53FE040"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -5635,7 +5635,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -5644,19 +5644,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -5667,11 +5655,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -5680,16 +5680,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -5698,7 +5698,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5707,19 +5707,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -5737,19 +5725,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -5758,7 +5758,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5767,19 +5767,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -5790,11 +5778,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -5803,13 +5803,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -5818,7 +5818,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5827,19 +5827,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -5857,19 +5845,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     3
                   ]
@@ -5878,7 +5878,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -5887,19 +5887,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -5910,11 +5898,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF0000E0", 
                       "long unsigned int", 
-                      333333
+                      "<UNINITIALIZED>"
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF0000E8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      333333
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -5923,7 +5923,7 @@ var trace = {
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5934,7 +5934,7 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -6256,19 +6256,19 @@ var trace = {
           "encoded_locals": {
             "heap_accounts_array": [
               "C_DATA", 
-              "0xFFEFFFFC8", 
+              "0xFFEFFFFD8", 
               "pointer", 
               "0x53FE040"
             ], 
             "my_account": [
               "C_STRUCT", 
-              "0xFFEFFFFD0", 
+              "0xFFEFFFFE0", 
               "Account", 
               [
                 "account_number", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD0", 
+                  "0xFFEFFFFE0", 
                   "int", 
                   42
                 ]
@@ -6277,7 +6277,7 @@ var trace = {
                 "balance", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFFD8", 
+                  "0xFFEFFFFE8", 
                   "double", 
                   3.141593
                 ]
@@ -6286,19 +6286,7 @@ var trace = {
                 "moneys", 
                 [
                   "C_ARRAY", 
-                  "0xFFEFFFFE0", 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE0", 
-                    "long unsigned int", 
-                    "<UNINITIALIZED>"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFFE8", 
-                    "long unsigned int", 
-                    123
-                  ], 
+                  "0xFFEFFFFF0", 
                   [
                     "C_DATA", 
                     "0xFFEFFFFF0", 
@@ -6309,11 +6297,23 @@ var trace = {
                     "C_DATA", 
                     "0xFFEFFFFF8", 
                     "long unsigned int", 
-                    456
+                    123
                   ], 
                   [
                     "C_DATA", 
                     "0xFFF000000", 
+                    "long unsigned int", 
+                    "<UNINITIALIZED>"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000008", 
+                    "long unsigned int", 
+                    456
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000010", 
                     "long unsigned int", 
                     "<UNINITIALIZED>"
                   ]
@@ -6322,16 +6322,16 @@ var trace = {
             ], 
             "stack_accounts_array": [
               "C_ARRAY", 
-              "0xFFF000010", 
+              "0xFFF000020", 
               [
                 "C_STRUCT", 
-                "0xFFF000010", 
+                "0xFFF000020", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000010", 
+                    "0xFFF000020", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -6340,7 +6340,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000018", 
+                    "0xFFF000028", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -6349,19 +6349,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000020", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000020", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000028", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF000030", 
                     [
                       "C_DATA", 
                       "0xFFF000030", 
@@ -6379,19 +6367,31 @@ var trace = {
                       "0xFFF000040", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000048", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000050", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000048", 
+                "0xFFF000058", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000048", 
+                    "0xFFF000058", 
                     "int", 
                     1
                   ]
@@ -6400,7 +6400,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000050", 
+                    "0xFFF000060", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -6409,19 +6409,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000058", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000058", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000060", 
-                      "long unsigned int", 
-                      111111
-                    ], 
+                    "0xFFF000068", 
                     [
                       "C_DATA", 
                       "0xFFF000068", 
@@ -6432,11 +6420,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF000070", 
                       "long unsigned int", 
-                      "<UNINITIALIZED>"
+                      111111
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF000078", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000080", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF000088", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -6445,13 +6445,13 @@ var trace = {
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF000080", 
+                "0xFFF000090", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF000080", 
+                    "0xFFF000090", 
                     "int", 
                     "<UNINITIALIZED>"
                   ]
@@ -6460,7 +6460,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF000088", 
+                    "0xFFF000098", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -6469,19 +6469,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF000090", 
-                    [
-                      "C_DATA", 
-                      "0xFFF000090", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF000098", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000A0", 
                     [
                       "C_DATA", 
                       "0xFFF0000A0", 
@@ -6499,19 +6487,31 @@ var trace = {
                       "0xFFF0000B0", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000B8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000C0", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
                     ]
                   ]
                 ]
               ], 
               [
                 "C_STRUCT", 
-                "0xFFF0000B8", 
+                "0xFFF0000C8", 
                 "Account", 
                 [
                   "account_number", 
                   [
                     "C_DATA", 
-                    "0xFFF0000B8", 
+                    "0xFFF0000C8", 
                     "int", 
                     3
                   ]
@@ -6520,7 +6520,7 @@ var trace = {
                   "balance", 
                   [
                     "C_DATA", 
-                    "0xFFF0000C0", 
+                    "0xFFF0000D0", 
                     "double", 
                     "<UNINITIALIZED>"
                   ]
@@ -6529,19 +6529,7 @@ var trace = {
                   "moneys", 
                   [
                     "C_ARRAY", 
-                    "0xFFF0000C8", 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000C8", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
-                    [
-                      "C_DATA", 
-                      "0xFFF0000D0", 
-                      "long unsigned int", 
-                      "<UNINITIALIZED>"
-                    ], 
+                    "0xFFF0000D8", 
                     [
                       "C_DATA", 
                       "0xFFF0000D8", 
@@ -6552,11 +6540,23 @@ var trace = {
                       "C_DATA", 
                       "0xFFF0000E0", 
                       "long unsigned int", 
-                      333333
+                      "<UNINITIALIZED>"
                     ], 
                     [
                       "C_DATA", 
                       "0xFFF0000E8", 
+                      "long unsigned int", 
+                      "<UNINITIALIZED>"
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F0", 
+                      "long unsigned int", 
+                      333333
+                    ], 
+                    [
+                      "C_DATA", 
+                      "0xFFF0000F8", 
                       "long unsigned int", 
                       "<UNINITIALIZED>"
                     ]
@@ -6565,7 +6565,7 @@ var trace = {
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -6576,10 +6576,10 @@ var trace = {
             "heap_accounts_array"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}

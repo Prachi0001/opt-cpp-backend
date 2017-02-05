@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "int main() {\n  int a = 150;\n  char b = (char)a;\n  return 0;\n}\n", 
   "trace": []
-};
+}

@@ -1,4 +1,4 @@
-var trace = {
+{
   "code": "// From: http://www.cprogramming.com/tutorial/lesson12.html\n\n#include <iostream>\n\nclass Computer {\npublic:\n  Computer();\n  ~Computer();\n  void setspeed ( int p );\n  int readspeed();\nprotected:\n  int processorspeed;\n};\n\nComputer::Computer() {\n  processorspeed = 0;\n}\n\nComputer::~Computer() {\n  //Destructors do not accept arguments\n}\n\nvoid Computer::setspeed ( int p ) {\n  processorspeed = p;\n}\n\nint Computer::readspeed()  {\n  return processorspeed;\n}\n\nint main() {\n  Computer compute;  \n  compute.setspeed(100); \n  int s = compute.readspeed();\n\n  Computer* pCompute = &compute;\n  pCompute->setspeed(5000);\n  s = pCompute->readspeed();\n\n  Computer* heapCompute = new Computer;\n  heapCompute->setspeed(30000);\n  s = heapCompute->readspeed();\n\n  delete heapCompute;\n  return 0;\n}\n", 
   "trace": [
     {
@@ -22,14 +22,14 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -55,31 +55,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF00009C", 
+              "0xFFF0000AC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF000098", 
+              "0xFFF0000A8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000A0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -89,7 +89,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000A0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -115,31 +115,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF00009C", 
+              "0xFFF0000AC", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF000098", 
+              "0xFFF0000A8", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000A0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -149,7 +149,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000A0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -175,31 +175,31 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }, 
         {
           "encoded_locals": {
             "__initialize_p": [
               "C_DATA", 
-              "0xFFF00009C", 
+              "0xFFF0000AC", 
               "int", 
               1
             ], 
             "__priority": [
               "C_DATA", 
-              "0xFFF000098", 
+              "0xFFF0000A8", 
               "int", 
               65535
             ]
           }, 
-          "frame_id": "0xFFF0000A0", 
+          "frame_id": "0xFFF0000B0", 
           "func_name": "__static_initialization_and_destruction_0(int, int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -209,7 +209,7 @@ var trace = {
             "__priority"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000A0"
+          "unique_hash": "__static_initialization_and_destruction_0(int, int)_0xFFF0000B0"
         }
       ], 
       "stdout": ""
@@ -235,14 +235,14 @@ var trace = {
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "_GLOBAL__sub_I__ZN8ComputerC2Ev", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000B0"
+          "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -257,14 +257,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -279,14 +279,14 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -303,13 +303,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -317,24 +317,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -346,18 +346,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -374,13 +374,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -388,24 +388,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -417,18 +417,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -445,13 +445,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   0
                 ]
@@ -459,24 +459,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -488,18 +488,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -516,13 +516,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   0
                 ]
@@ -530,24 +530,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -559,7 +559,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -576,13 +576,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   0
                 ]
@@ -590,24 +590,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -619,24 +619,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -646,7 +646,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -663,13 +663,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   0
                 ]
@@ -677,24 +677,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -706,24 +706,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -733,7 +733,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -750,13 +750,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   0
                 ]
@@ -764,24 +764,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -793,24 +793,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               100
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -820,7 +820,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -837,13 +837,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -851,24 +851,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -880,24 +880,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               100
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -907,7 +907,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -924,13 +924,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -938,24 +938,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -967,7 +967,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -984,13 +984,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -998,24 +998,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1027,18 +1027,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1047,7 +1047,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1064,13 +1064,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1078,24 +1078,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1107,18 +1107,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1127,7 +1127,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1144,13 +1144,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1158,24 +1158,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1187,18 +1187,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1207,7 +1207,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1224,13 +1224,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1238,24 +1238,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1267,7 +1267,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1284,13 +1284,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1298,24 +1298,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1327,7 +1327,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1344,13 +1344,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1358,24 +1358,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1387,7 +1387,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1404,13 +1404,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1418,24 +1418,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1447,24 +1447,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1474,7 +1474,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1491,13 +1491,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1505,24 +1505,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1534,24 +1534,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1561,7 +1561,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1578,13 +1578,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   100
                 ]
@@ -1592,24 +1592,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1621,24 +1621,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               5000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1648,7 +1648,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1665,13 +1665,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -1679,24 +1679,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1708,24 +1708,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               5000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1735,7 +1735,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1752,13 +1752,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -1766,24 +1766,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1795,7 +1795,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1812,13 +1812,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -1826,24 +1826,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1855,18 +1855,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1875,7 +1875,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1892,13 +1892,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -1906,24 +1906,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1935,18 +1935,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1955,7 +1955,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -1972,13 +1972,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -1986,24 +1986,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2015,18 +2015,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2035,7 +2035,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2052,13 +2052,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2066,24 +2066,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2095,7 +2095,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2112,13 +2112,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2126,24 +2126,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2155,7 +2155,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2172,13 +2172,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2186,24 +2186,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2215,18 +2215,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2243,13 +2243,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2257,24 +2257,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2286,18 +2286,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2314,13 +2314,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2328,24 +2328,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2357,18 +2357,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2385,13 +2385,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2399,24 +2399,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2428,7 +2428,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2464,13 +2464,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2478,24 +2478,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2507,7 +2507,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2543,13 +2543,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2557,24 +2557,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2586,24 +2586,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2613,7 +2613,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2649,13 +2649,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2663,24 +2663,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2692,24 +2692,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2719,7 +2719,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2755,13 +2755,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2769,24 +2769,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2798,24 +2798,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               30000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2825,7 +2825,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2861,13 +2861,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2875,24 +2875,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2904,24 +2904,24 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000B4", 
               "int", 
               30000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2931,7 +2931,7 @@ var trace = {
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000B0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -2967,13 +2967,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -2981,24 +2981,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3010,7 +3010,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3046,13 +3046,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3060,24 +3060,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3089,18 +3089,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3109,7 +3109,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -3145,13 +3145,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3159,24 +3159,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3188,18 +3188,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3208,7 +3208,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -3244,13 +3244,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3258,24 +3258,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3287,18 +3287,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000A8", 
+              "0xFFF0000B8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3307,7 +3307,7 @@ var trace = {
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000B0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -3343,13 +3343,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3357,24 +3357,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3386,7 +3386,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3422,13 +3422,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3436,24 +3436,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3465,7 +3465,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3501,13 +3501,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3515,24 +3515,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3544,18 +3544,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -3591,13 +3591,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3605,24 +3605,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3634,18 +3634,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -3681,13 +3681,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3695,24 +3695,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3724,7 +3724,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3746,13 +3746,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3760,24 +3760,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3789,7 +3789,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3811,13 +3811,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3825,24 +3825,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3854,18 +3854,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -3887,13 +3887,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3901,24 +3901,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3930,18 +3930,18 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000B0", 
+          "frame_id": "0xFFF0000C0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000B0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
         }
       ], 
       "stdout": ""
@@ -3963,13 +3963,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -3977,24 +3977,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4006,7 +4006,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -4028,13 +4028,13 @@ var trace = {
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000C0", 
+              "0xFFF0000D0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000C0", 
+                  "0xFFF0000D0", 
                   "int", 
                   5000
                 ]
@@ -4042,24 +4042,24 @@ var trace = {
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
-              "0xFFF0000C0"
+              "0xFFF0000D0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4071,7 +4071,7 @@ var trace = {
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -4086,17 +4086,17 @@ var trace = {
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000100"
         }
       ], 
       "stdout": ""
     }
   ]
-};
+}
