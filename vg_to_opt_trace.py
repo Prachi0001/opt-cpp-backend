@@ -139,8 +139,8 @@ def process_json_obj(obj, err_str, stdout_str):
 
         stack_obj['unique_hash'] = stack_obj['func_name'] + '_' + stack_obj['frame_id']
 
-        #if 'line' in e:
-        #    stack_obj['line'] = e['line']
+        if 'line' in e:
+            stack_obj['line'] = e['line']
 
         # unsupported
         stack_obj['is_parent'] = False

@@ -16,6 +16,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 1, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000110"
@@ -38,6 +39,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 1, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000110"
@@ -84,6 +86,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 2, 
           "ordered_varnames": [
             "x", 
             "x_array"
@@ -197,6 +200,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 5, 
           "ordered_varnames": [
             "x", 
             "x_array"
@@ -310,6 +314,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "x", 
             "x_array"
@@ -423,6 +428,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "x", 
             "x_array"
@@ -536,6 +542,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "x", 
             "x_array"
@@ -643,6 +650,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "x", 
             "x_array"
@@ -690,6 +698,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "x", 
             "x_array"
@@ -715,6 +724,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000110"

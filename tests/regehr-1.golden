@@ -46,6 +46,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "a", 
             "b"
@@ -101,6 +102,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "a", 
             "b"
@@ -184,6 +186,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "a", 
             "b"
@@ -268,6 +271,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "a", 
             "b"
@@ -352,6 +356,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "a", 
             "b"
@@ -436,6 +441,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "a", 
             "b"
@@ -520,6 +526,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "a", 
             "b"
@@ -604,6 +611,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 14, 
           "ordered_varnames": [
             "a", 
             "b"

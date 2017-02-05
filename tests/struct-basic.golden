@@ -81,6 +81,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 21, 
           "ordered_varnames": [
             "my_account", 
             "my_point"
@@ -171,6 +172,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 21, 
           "ordered_varnames": [
             "my_account", 
             "my_point"
@@ -261,6 +263,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "my_account", 
             "my_point"
@@ -398,6 +401,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [
             "my_account", 
             "my_point"
@@ -563,6 +567,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 27, 
           "ordered_varnames": [
             "my_account", 
             "my_point"
@@ -728,6 +733,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 28, 
           "ordered_varnames": [
             "my_account", 
             "my_point"
@@ -893,6 +899,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 28, 
           "ordered_varnames": [
             "my_account", 
             "my_point"
@@ -1058,6 +1065,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 30, 
           "ordered_varnames": [
             "my_account", 
             "my_point"

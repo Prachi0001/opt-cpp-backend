@@ -38,6 +38,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -85,6 +86,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -132,6 +134,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -179,6 +182,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -200,6 +204,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -246,6 +251,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -267,6 +273,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -313,6 +320,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -334,6 +342,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 5, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -380,6 +389,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -427,6 +437,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -448,6 +459,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -494,6 +506,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -515,6 +528,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -561,6 +575,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -582,6 +597,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 5, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -628,6 +644,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -675,6 +692,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -696,6 +714,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -742,6 +761,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -763,6 +783,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -809,6 +830,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"
@@ -830,6 +852,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 5, 
           "ordered_varnames": [
             "x (static 0x601044)"
           ], 
@@ -876,6 +899,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "y", 
             "x (static 0x60103C)"

@@ -32,6 +32,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 22, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -215,6 +216,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -398,6 +400,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -409,6 +412,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "check_0xFFF0000E0"
@@ -592,6 +596,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 26, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -775,6 +780,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 27, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -958,6 +964,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 27, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -1141,6 +1148,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 28, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -1152,6 +1160,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "check_0xFFF0000E0"
@@ -1335,6 +1344,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 30, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -1518,6 +1528,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -1701,6 +1712,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -1884,6 +1896,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -1895,6 +1908,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "check_0xFFF0000E0"
@@ -2078,6 +2092,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 34, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -2261,6 +2276,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -2444,6 +2460,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -2627,6 +2644,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 36, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -2638,6 +2656,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "check_0xFFF0000E0"
@@ -2821,6 +2840,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 38, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -3004,6 +3024,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -3187,6 +3208,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -3370,6 +3392,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 40, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -3381,6 +3404,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "check_0xFFF0000E0"
@@ -3564,6 +3588,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 42, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"
@@ -3747,6 +3772,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 43, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF0000F0"

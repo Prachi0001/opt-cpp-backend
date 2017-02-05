@@ -108,6 +108,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -227,6 +228,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -346,6 +348,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -560,6 +563,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -774,6 +778,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -988,6 +993,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -1202,6 +1208,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -1416,6 +1423,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -1630,6 +1638,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -1844,6 +1853,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -2058,6 +2068,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -2272,6 +2283,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -2486,6 +2498,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -2700,6 +2713,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -2914,6 +2928,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -3128,6 +3143,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -3342,6 +3358,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -3556,6 +3573,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -3770,6 +3788,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "localArray", 
             "a", 
@@ -3985,6 +4004,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "localArray", 
             "a", 

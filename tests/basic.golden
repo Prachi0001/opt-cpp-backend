@@ -163,6 +163,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -338,6 +339,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -513,6 +515,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -555,6 +558,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -729,6 +733,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -771,6 +776,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -1022,6 +1028,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -1064,6 +1071,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -1315,6 +1323,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -1357,6 +1366,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -1404,6 +1414,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -1656,6 +1667,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -1698,6 +1710,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -1745,6 +1758,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -1997,6 +2011,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -2039,6 +2054,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -2086,6 +2102,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -2338,6 +2355,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -2380,6 +2398,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -2427,6 +2446,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -2679,6 +2699,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -2721,6 +2742,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -2768,6 +2790,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 14, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -3020,6 +3043,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -3062,6 +3086,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -3313,6 +3338,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -3355,6 +3381,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 8, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -3606,6 +3633,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -3648,6 +3676,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -3822,6 +3851,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -3997,6 +4027,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 18, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -4172,6 +4203,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 20, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -4347,6 +4379,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 22, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -4522,6 +4555,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -4697,6 +4731,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -4872,6 +4907,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 25, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -5047,6 +5083,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 26, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -5222,6 +5259,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 26, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -5444,6 +5482,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 29, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -5666,6 +5705,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 30, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -5888,6 +5928,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 31, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -6110,6 +6151,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -6332,6 +6374,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -6554,6 +6597,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 36, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -6776,6 +6820,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 37, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -6998,6 +7043,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 37, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -7290,6 +7336,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 40, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -7582,6 +7629,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 41, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -7874,6 +7922,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 42, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -8166,6 +8215,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 43, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -8458,6 +8508,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 44, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -8750,6 +8801,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 47, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -9042,6 +9094,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -9334,6 +9387,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -9626,6 +9680,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -9918,6 +9973,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -9960,6 +10016,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -10251,6 +10308,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -10293,6 +10351,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -10584,6 +10643,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -10626,6 +10686,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -10917,6 +10978,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -10959,6 +11021,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -11006,6 +11069,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -11298,6 +11362,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -11340,6 +11405,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -11387,6 +11453,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -11679,6 +11746,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -11721,6 +11789,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -11768,6 +11837,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -12060,6 +12130,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -12102,6 +12173,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -12149,6 +12221,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -12441,6 +12514,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -12483,6 +12557,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -12530,6 +12605,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 14, 
           "ordered_varnames": [
             "x", 
             "y", 
@@ -12822,6 +12898,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -12864,6 +12941,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -13155,6 +13233,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -13197,6 +13276,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 8, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -13488,6 +13568,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -13530,6 +13611,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "a", 
             "b", 
@@ -13821,6 +13903,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -14113,6 +14196,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 52, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -14405,6 +14489,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -14697,6 +14782,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 54, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 
@@ -14989,6 +15075,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 54, 
           "ordered_varnames": [
             "ret", 
             "stack_str", 

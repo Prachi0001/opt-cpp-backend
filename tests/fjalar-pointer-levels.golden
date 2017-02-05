@@ -44,6 +44,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -98,6 +99,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -152,6 +154,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -206,6 +209,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -260,6 +264,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 14, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -314,6 +319,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -336,6 +342,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "ppp"
           ], 
@@ -388,6 +395,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -410,6 +418,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "ppp"
           ], 
@@ -462,6 +471,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -484,6 +494,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "ppp"
           ], 
@@ -536,6 +547,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [
             "x", 
             "ptr", 
@@ -590,6 +602,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 18, 
           "ordered_varnames": [
             "x", 
             "ptr", 

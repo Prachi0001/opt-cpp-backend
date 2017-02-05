@@ -16,6 +16,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -27,6 +28,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -49,6 +51,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -60,6 +63,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -84,6 +88,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -109,6 +114,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -120,6 +126,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -144,6 +151,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -169,6 +177,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -180,6 +189,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -204,6 +214,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -229,6 +240,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -240,6 +252,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -262,6 +275,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000100"
@@ -284,6 +298,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000100"
@@ -313,6 +328,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -326,6 +342,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -355,6 +372,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -368,6 +386,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -397,6 +416,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -410,6 +430,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -439,163 +460,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
-          "ordered_varnames": [
-            "heapComputeArray"
-          ], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
-        }
-      ], 
-      "stdout": ""
-    }, 
-    {
-      "event": "call", 
-      "func_name": "Computer::Computer()", 
-      "globals": {}, 
-      "heap": {}, 
-      "line": 15, 
-      "ordered_globals": [], 
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "heapComputeArray": [
-              "C_DATA", 
-              "0xFFF0000D8", 
-              "pointer", 
-              "<UNINITIALIZED>"
-            ]
-          }, 
-          "frame_id": "0xFFF000100", 
-          "func_name": "main", 
-          "is_highlighted": false, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "ordered_varnames": [
-            "heapComputeArray"
-          ], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
-        }, 
-        {
-          "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
-          "func_name": "Computer::Computer()", 
-          "is_highlighted": true, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "ordered_varnames": [], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
-        }
-      ], 
-      "stdout": ""
-    }, 
-    {
-      "event": "step_line", 
-      "func_name": "Computer::Computer()", 
-      "globals": {}, 
-      "heap": {}, 
-      "line": 16, 
-      "ordered_globals": [], 
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "heapComputeArray": [
-              "C_DATA", 
-              "0xFFF0000D8", 
-              "pointer", 
-              "<UNINITIALIZED>"
-            ]
-          }, 
-          "frame_id": "0xFFF000100", 
-          "func_name": "main", 
-          "is_highlighted": false, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "ordered_varnames": [
-            "heapComputeArray"
-          ], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
-        }, 
-        {
-          "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
-          "func_name": "Computer::Computer()", 
-          "is_highlighted": true, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "ordered_varnames": [], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
-        }
-      ], 
-      "stdout": ""
-    }, 
-    {
-      "event": "return", 
-      "func_name": "Computer::Computer()", 
-      "globals": {}, 
-      "heap": {}, 
-      "line": 17, 
-      "ordered_globals": [], 
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "heapComputeArray": [
-              "C_DATA", 
-              "0xFFF0000D8", 
-              "pointer", 
-              "<UNINITIALIZED>"
-            ]
-          }, 
-          "frame_id": "0xFFF000100", 
-          "func_name": "main", 
-          "is_highlighted": false, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "ordered_varnames": [
-            "heapComputeArray"
-          ], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
-        }, 
-        {
-          "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
-          "func_name": "Computer::Computer()", 
-          "is_highlighted": true, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "ordered_varnames": [], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
-        }
-      ], 
-      "stdout": ""
-    }, 
-    {
-      "event": "step_line", 
-      "func_name": "main", 
-      "globals": {}, 
-      "heap": {}, 
-      "line": 32, 
-      "ordered_globals": [], 
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "heapComputeArray": [
-              "C_DATA", 
-              "0xFFF0000D8", 
-              "pointer", 
-              "<UNINITIALIZED>"
-            ]
-          }, 
-          "frame_id": "0xFFF000100", 
-          "func_name": "main", 
-          "is_highlighted": true, 
-          "is_parent": false, 
-          "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -627,6 +492,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -640,6 +506,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -669,6 +536,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -682,6 +550,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -711,6 +580,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -724,6 +594,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -753,6 +624,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -784,6 +656,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -797,6 +670,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -826,6 +700,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -839,6 +714,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -868,6 +744,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -881,6 +758,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -910,6 +788,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -941,6 +820,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -954,6 +834,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -983,6 +864,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -996,6 +878,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -1025,6 +908,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -1038,6 +922,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000C0"
@@ -1067,6 +952,171 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
+          "ordered_varnames": [
+            "heapComputeArray"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "call", 
+      "func_name": "Computer::Computer()", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 15, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "heapComputeArray": [
+              "C_DATA", 
+              "0xFFF0000D8", 
+              "pointer", 
+              "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 32, 
+          "ordered_varnames": [
+            "heapComputeArray"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF0000C0", 
+          "func_name": "Computer::Computer()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 15, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "step_line", 
+      "func_name": "Computer::Computer()", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 16, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "heapComputeArray": [
+              "C_DATA", 
+              "0xFFF0000D8", 
+              "pointer", 
+              "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 32, 
+          "ordered_varnames": [
+            "heapComputeArray"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF0000C0", 
+          "func_name": "Computer::Computer()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 16, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
+      "func_name": "Computer::Computer()", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 17, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "heapComputeArray": [
+              "C_DATA", 
+              "0xFFF0000D8", 
+              "pointer", 
+              "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 32, 
+          "ordered_varnames": [
+            "heapComputeArray"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF0000C0", 
+          "func_name": "Computer::Computer()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 17, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "step_line", 
+      "func_name": "main", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 32, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "heapComputeArray": [
+              "C_DATA", 
+              "0xFFF0000D8", 
+              "pointer", 
+              "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -1201,6 +1251,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 33, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -1335,6 +1386,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 33, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -1361,6 +1413,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -1496,6 +1549,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 33, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -1522,6 +1576,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -1657,6 +1712,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 33, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -1683,6 +1739,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -1818,6 +1875,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 33, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -1844,6 +1902,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 25, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -1979,6 +2038,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 34, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -2113,6 +2173,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 34, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -2139,6 +2200,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -2274,6 +2336,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 34, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -2300,6 +2363,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -2435,6 +2499,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 34, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -2461,6 +2526,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -2596,6 +2662,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 34, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -2622,6 +2689,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 25, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -2757,6 +2825,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -2891,6 +2960,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -2917,6 +2987,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -3052,6 +3123,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -3078,6 +3150,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -3213,6 +3286,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -3239,6 +3313,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -3375,6 +3450,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [
             "heapComputeArray"
           ], 
@@ -3401,6 +3477,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [
             "this", 
             "p"

@@ -45,6 +45,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 3, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"
@@ -99,6 +100,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"
@@ -244,6 +246,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"
@@ -453,6 +456,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 9, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"
@@ -714,6 +718,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"
@@ -1009,6 +1014,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"
@@ -1344,6 +1350,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"
@@ -1679,6 +1686,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 14, 
           "ordered_varnames": [
             "stack_animals", 
             "heap_animals"

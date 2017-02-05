@@ -23,6 +23,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 5, 
           "ordered_varnames": [
             "wxyz (static 0x601048)"
           ], 
@@ -54,6 +55,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "wxyz (static 0x601048)"
           ], 
@@ -74,6 +76,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 3, 
           "ordered_varnames": [
             "wxyz (static 0x601040)"
           ], 
@@ -111,6 +114,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "wxyz (static 0x601048)", 
             "wxyz (static 0x601044)"
@@ -143,6 +147,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "wxyz (static 0x601048)"
           ], 

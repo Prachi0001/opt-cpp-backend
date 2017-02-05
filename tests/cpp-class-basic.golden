@@ -16,6 +16,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -27,6 +28,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -49,6 +51,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -60,6 +63,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -84,6 +88,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -109,6 +114,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -120,6 +126,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -144,6 +151,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -169,6 +177,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -180,6 +189,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -204,6 +214,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -229,6 +240,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -240,6 +252,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN8ComputerC2Ev_0xFFF0000C0"
@@ -262,6 +275,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000100"
@@ -284,6 +298,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000100"
@@ -321,6 +336,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 54, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -334,6 +350,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 27, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000D0"
@@ -371,6 +388,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 54, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -384,6 +402,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 30, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000D0"
@@ -421,6 +440,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 54, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -434,6 +454,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::Computer()_0xFFF0000D0"
@@ -471,6 +492,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 58, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -510,6 +532,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 58, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -536,6 +559,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -576,6 +600,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 58, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -602,6 +627,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 39, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -642,6 +668,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 58, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -668,6 +695,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 43, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -708,6 +736,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 58, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -734,6 +763,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 44, 
           "ordered_varnames": [
             "this", 
             "p"
@@ -774,6 +804,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 61, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -813,6 +844,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 61, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -833,6 +865,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 46, 
           "ordered_varnames": [
             "this"
           ], 
@@ -872,6 +905,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 61, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -892,6 +926,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this"
           ], 
@@ -931,6 +966,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 61, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -951,6 +987,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this"
           ], 
@@ -990,6 +1027,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 61, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -1029,6 +1067,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 61, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -1042,6 +1081,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 33, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::~Computer()_0xFFF0000D0"
@@ -1079,6 +1119,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 61, 
           "ordered_varnames": [
             "compute"
           ], 
@@ -1092,6 +1133,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 36, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Computer::~Computer()_0xFFF0000D0"
@@ -1114,6 +1156,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000100"
@@ -1136,6 +1179,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000100"

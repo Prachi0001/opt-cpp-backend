@@ -213,6 +213,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 32, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -436,6 +437,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 35, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -659,6 +661,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 37, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -882,6 +885,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 38, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -1105,6 +1109,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 38, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -1328,6 +1333,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 40, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -1551,6 +1557,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 42, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -1774,6 +1781,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 45, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -1997,6 +2005,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 47, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -2220,6 +2229,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 47, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -2235,6 +2245,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "foo_0xFFF0000A0"
@@ -2454,6 +2465,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -2677,6 +2689,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -2705,6 +2718,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -2927,6 +2941,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -2955,6 +2970,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -3177,6 +3193,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -3205,6 +3222,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -3427,6 +3445,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -3455,6 +3474,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 12, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -3677,6 +3697,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -3705,6 +3726,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -3927,6 +3949,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -3955,6 +3978,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 15, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -4177,6 +4201,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -4400,6 +4425,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -4428,6 +4454,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 19, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -4650,6 +4677,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -4678,6 +4706,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 19, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -4900,6 +4929,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -4928,6 +4958,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 19, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -5150,6 +5181,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -5178,6 +5210,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 21, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -5400,6 +5433,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -5428,6 +5462,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 22, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -5650,6 +5685,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -5678,6 +5714,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 24, 
           "ordered_varnames": [
             "local1", 
             "local2"
@@ -5900,6 +5937,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 52, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 
@@ -6123,6 +6161,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "localIntArray", 
             "localFloat", 

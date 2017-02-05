@@ -9633,6 +9633,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 4, 
           "ordered_varnames": [
             "sentences", 
             "ans"
@@ -19275,6 +19276,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 5, 
           "ordered_varnames": [
             "sentences", 
             "ans"
@@ -28917,6 +28919,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 6, 
           "ordered_varnames": [
             "sentences", 
             "ans"
@@ -38559,6 +38562,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 7, 
           "ordered_varnames": [
             "sentences", 
             "ans"
@@ -48201,6 +48205,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 8, 
           "ordered_varnames": [
             "sentences", 
             "ans"

@@ -243,6 +243,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 10, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -495,6 +496,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 11, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -747,6 +749,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 13, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -999,6 +1002,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 14, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -1251,6 +1255,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 15, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -1503,6 +1508,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 16, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -1755,6 +1761,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 19, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -2007,6 +2014,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 20, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -2259,6 +2267,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 21, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -2511,6 +2520,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 22, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -2763,6 +2773,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -3015,6 +3026,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 23, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"
@@ -3267,6 +3279,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 26, 
           "ordered_varnames": [
             "a", 
             "aliasGlobalStr"

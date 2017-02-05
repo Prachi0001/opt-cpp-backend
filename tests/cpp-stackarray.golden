@@ -16,6 +16,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -27,6 +28,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN5Stack16numStacksCreatedE_0xFFF0000D0"
@@ -49,6 +51,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -60,6 +63,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN5Stack16numStacksCreatedE_0xFFF0000D0"
@@ -84,6 +88,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -109,6 +114,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -120,6 +126,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN5Stack16numStacksCreatedE_0xFFF0000D0"
@@ -144,6 +151,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -169,6 +177,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -180,6 +189,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN5Stack16numStacksCreatedE_0xFFF0000D0"
@@ -204,6 +214,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [
             "__initialize_p", 
             "__priority"
@@ -229,6 +240,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": -999, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "__libc_csu_init_0x2"
@@ -240,6 +252,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "_GLOBAL__sub_I__ZN5Stack16numStacksCreatedE_0xFFF0000D0"
@@ -262,6 +275,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 92, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000110"
@@ -284,6 +298,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 92, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000110"
@@ -395,6 +410,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -410,6 +426,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 40, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -521,6 +538,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -536,6 +554,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 40, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -647,6 +666,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -662,6 +682,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 41, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -868,6 +889,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -883,6 +905,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 42, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -1089,6 +1112,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -1104,6 +1128,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 43, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -1310,6 +1335,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -1325,6 +1351,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 44, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -1531,6 +1558,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -1546,6 +1574,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 45, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -1816,6 +1845,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 93, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -1831,6 +1861,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 46, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -2101,6 +2132,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 95, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -2375,6 +2407,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 95, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -2403,6 +2436,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -2676,6 +2710,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 95, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -2704,6 +2739,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -2977,6 +3013,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 95, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -3005,6 +3042,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -3278,6 +3316,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 95, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -3306,6 +3345,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -3579,6 +3619,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 95, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -3607,6 +3648,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -3880,6 +3922,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 95, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -3908,6 +3951,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -4181,6 +4225,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 96, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -4455,6 +4500,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 96, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -4483,6 +4529,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -4756,6 +4803,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 96, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -4784,6 +4832,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -5057,6 +5106,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 96, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -5085,6 +5135,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -5358,6 +5409,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 96, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -5386,6 +5438,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -5659,6 +5712,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 96, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -5687,6 +5741,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -5960,6 +6015,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 96, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -5988,6 +6044,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -6261,6 +6318,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 97, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -6535,6 +6593,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 97, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -6563,6 +6622,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -6836,6 +6896,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 97, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -6864,6 +6925,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -7137,6 +7199,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 97, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -7165,6 +7228,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -7438,6 +7502,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 97, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -7466,6 +7531,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -7739,6 +7805,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 97, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -7767,6 +7834,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -8040,6 +8108,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 97, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -8068,6 +8137,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -8341,6 +8411,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 98, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -8615,6 +8686,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 98, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -8643,6 +8715,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -8916,6 +8989,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 98, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -8944,6 +9018,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -9217,6 +9292,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 98, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -9245,6 +9321,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -9518,6 +9595,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 98, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -9546,6 +9624,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -9819,6 +9898,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 98, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -9847,6 +9927,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -10120,6 +10201,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 98, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -10148,6 +10230,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -10421,6 +10504,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 99, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -10695,6 +10779,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 99, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -10723,6 +10808,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -10996,6 +11082,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 99, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -11024,6 +11111,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -11297,6 +11385,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 99, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -11325,6 +11414,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -11598,6 +11688,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 99, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -11626,6 +11717,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -11899,6 +11991,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 99, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -11927,6 +12020,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -12200,6 +12294,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 99, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -12228,6 +12323,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -12501,6 +12597,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -12775,6 +12872,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -12797,6 +12895,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 74, 
           "ordered_varnames": [
             "this"
           ], 
@@ -13069,6 +13168,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -13091,6 +13191,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 74, 
           "ordered_varnames": [
             "this"
           ], 
@@ -13363,6 +13464,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -13385,6 +13487,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 74, 
           "ordered_varnames": [
             "this"
           ], 
@@ -13657,6 +13760,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -13931,6 +14035,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -13953,6 +14058,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 72, 
           "ordered_varnames": [
             "this"
           ], 
@@ -14225,6 +14331,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -14247,6 +14354,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 72, 
           "ordered_varnames": [
             "this"
           ], 
@@ -14519,6 +14627,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -14541,6 +14650,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 72, 
           "ordered_varnames": [
             "this"
           ], 
@@ -14813,6 +14923,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 102, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -15087,6 +15198,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 103, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -15361,6 +15473,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 103, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -15376,6 +15489,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 78, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::getNumStacksCreated()_0xFFF0000A0"
@@ -15646,6 +15760,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 103, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -15661,6 +15776,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 79, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::getNumStacksCreated()_0xFFF0000A0"
@@ -15931,6 +16047,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 103, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -16205,6 +16322,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -16479,6 +16597,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -16501,6 +16620,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -16773,6 +16893,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -16795,6 +16916,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -17067,6 +17189,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -17089,6 +17212,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -17361,6 +17485,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -17383,6 +17508,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -17403,6 +17529,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -17675,6 +17802,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -17697,6 +17825,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -17717,6 +17846,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -17989,6 +18119,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -18011,6 +18142,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -18031,6 +18163,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -18303,6 +18436,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -18325,6 +18459,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -18345,6 +18480,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -18617,6 +18753,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -18639,6 +18776,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -18911,6 +19049,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -18933,6 +19072,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -19205,6 +19345,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -19227,6 +19368,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -19499,6 +19641,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -19773,6 +19916,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 107, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -20047,6 +20191,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -20321,6 +20466,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -20343,6 +20489,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -20615,6 +20762,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -20637,6 +20785,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -20909,6 +21058,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -20931,6 +21081,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -21203,6 +21354,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -21225,6 +21377,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -21245,6 +21398,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -21517,6 +21671,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -21539,6 +21694,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -21559,6 +21715,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -21831,6 +21988,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -21853,6 +22011,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -21873,6 +22032,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -22145,6 +22305,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -22167,6 +22328,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -22187,6 +22349,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -22459,6 +22622,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -22481,6 +22645,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -22753,6 +22918,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -22775,6 +22941,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -23047,6 +23214,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -23069,6 +23237,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -23341,6 +23510,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -23615,6 +23785,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 107, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -23889,6 +24060,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -24163,6 +24335,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -24185,6 +24358,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -24457,6 +24631,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -24479,6 +24654,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -24751,6 +24927,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -24773,6 +24950,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -25045,6 +25223,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -25067,6 +25246,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -25087,6 +25267,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -25359,6 +25540,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -25381,6 +25563,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -25401,6 +25584,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -25673,6 +25857,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -25695,6 +25880,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -25715,6 +25901,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -25987,6 +26174,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -26009,6 +26197,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -26029,6 +26218,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -26301,6 +26491,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -26323,6 +26514,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -26595,6 +26787,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -26617,6 +26810,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -26889,6 +27083,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -26911,6 +27106,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -27183,6 +27379,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -27457,6 +27654,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 107, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -27731,6 +27929,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -28005,6 +28204,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -28027,6 +28227,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -28299,6 +28500,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -28321,6 +28523,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -28593,6 +28796,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -28615,6 +28819,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -28887,6 +29092,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -28909,6 +29115,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -28929,6 +29136,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -29201,6 +29409,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -29223,6 +29432,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -29243,6 +29453,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -29515,6 +29726,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -29537,6 +29749,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -29557,6 +29770,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -29829,6 +30043,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -29851,6 +30066,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -29871,6 +30087,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -30143,6 +30360,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -30165,6 +30383,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -30437,6 +30656,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -30459,6 +30679,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -30731,6 +30952,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -30753,6 +30975,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -31025,6 +31248,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -31299,6 +31523,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 107, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -31573,6 +31798,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -31847,6 +32073,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -31869,6 +32096,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -32141,6 +32369,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -32163,6 +32392,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -32435,6 +32665,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -32457,6 +32688,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -32729,6 +32961,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -32751,6 +32984,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -32771,6 +33005,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -33043,6 +33278,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -33065,6 +33301,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -33085,6 +33322,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -33357,6 +33595,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -33379,6 +33618,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -33399,6 +33639,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -33671,6 +33912,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -33693,6 +33935,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -33713,6 +33956,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -33985,6 +34229,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -34007,6 +34252,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -34279,6 +34525,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -34301,6 +34548,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -34573,6 +34821,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -34595,6 +34844,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -34867,6 +35117,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -35043,280 +35294,6 @@
         ]
       }, 
       "line": 107, 
-      "ordered_globals": [], 
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "first": [
-              "C_STRUCT", 
-              "0xFFF0000C0", 
-              "Stack", 
-              [
-                "numElts", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000C0", 
-                  "int", 
-                  0
-                ]
-              ], 
-              [
-                "maxElts", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000C4", 
-                  "int", 
-                  10
-                ]
-              ], 
-              [
-                "myName", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000C8", 
-                  "pointer", 
-                  "0x5C1E040"
-                ]
-              ], 
-              [
-                "stackRep", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000D0", 
-                  "pointer", 
-                  "0x5C1E090"
-                ]
-              ]
-            ], 
-            "s": [
-              "C_DATA", 
-              "0xFFF0000BC", 
-              "int", 
-              101
-            ], 
-            "second": [
-              "C_STRUCT", 
-              "0xFFF0000E0", 
-              "Stack", 
-              [
-                "numElts", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000E0", 
-                  "int", 
-                  "<UNINITIALIZED>"
-                ]
-              ], 
-              [
-                "maxElts", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000E4", 
-                  "int", 
-                  "<UNINITIALIZED>"
-                ]
-              ], 
-              [
-                "myName", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000E8", 
-                  "pointer", 
-                  "<UNINITIALIZED>"
-                ]
-              ], 
-              [
-                "stackRep", 
-                [
-                  "C_DATA", 
-                  "0xFFF0000F0", 
-                  "pointer", 
-                  "<UNINITIALIZED>"
-                ]
-              ]
-            ]
-          }, 
-          "frame_id": "0xFFF000110", 
-          "func_name": "main", 
-          "is_highlighted": true, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "ordered_varnames": [
-            "first", 
-            "s", 
-            "second"
-          ], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000110"
-        }
-      ], 
-      "stdout": "My first stack: MAX_ELTS: 10, NUM_STACKS_CREATED: 1\n\n!PRIVATE!105\n\n!PRIVATE!104\n\n!PRIVATE!103\n\n!PRIVATE!102\n\n!PRIVATE!"
-    }, 
-    {
-      "event": "step_line", 
-      "func_name": "main", 
-      "globals": {}, 
-      "heap": {
-        "0x5C1E040": [
-          "C_ARRAY", 
-          "0x5C1E040", 
-          [
-            "C_DATA", 
-            "0x5C1E040", 
-            "char", 
-            "M"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E041", 
-            "char", 
-            "y"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E042", 
-            "char", 
-            " "
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E043", 
-            "char", 
-            "f"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E044", 
-            "char", 
-            "i"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E045", 
-            "char", 
-            "r"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E046", 
-            "char", 
-            "s"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E047", 
-            "char", 
-            "t"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E048", 
-            "char", 
-            " "
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E049", 
-            "char", 
-            "s"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E04A", 
-            "char", 
-            "t"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E04B", 
-            "char", 
-            "a"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E04C", 
-            "char", 
-            "c"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E04D", 
-            "char", 
-            "k"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E04E", 
-            "char", 
-            "\\0"
-          ]
-        ], 
-        "0x5C1E090": [
-          "C_ARRAY", 
-          "0x5C1E090", 
-          [
-            "C_DATA", 
-            "0x5C1E090", 
-            "int", 
-            101
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E094", 
-            "int", 
-            102
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E098", 
-            "int", 
-            103
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E09C", 
-            "int", 
-            104
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E0A0", 
-            "int", 
-            105
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E0A4", 
-            "int", 
-            "<UNINITIALIZED>"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E0A8", 
-            "int", 
-            "<UNINITIALIZED>"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E0AC", 
-            "int", 
-            "<UNINITIALIZED>"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E0B0", 
-            "int", 
-            "<UNINITIALIZED>"
-          ], 
-          [
-            "C_DATA", 
-            "0x5C1E0B4", 
-            "int", 
-            "<UNINITIALIZED>"
-          ]
-        ]
-      }, 
-      "line": 106, 
       "ordered_globals": [], 
       "stack_to_render": [
         {
@@ -35415,6 +35392,282 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 107, 
+          "ordered_varnames": [
+            "first", 
+            "s", 
+            "second"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000110"
+        }
+      ], 
+      "stdout": "My first stack: MAX_ELTS: 10, NUM_STACKS_CREATED: 1\n\n!PRIVATE!105\n\n!PRIVATE!104\n\n!PRIVATE!103\n\n!PRIVATE!102\n\n!PRIVATE!"
+    }, 
+    {
+      "event": "step_line", 
+      "func_name": "main", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_DATA", 
+            "0x5C1E040", 
+            "char", 
+            "M"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E041", 
+            "char", 
+            "y"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E042", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E043", 
+            "char", 
+            "f"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E044", 
+            "char", 
+            "i"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E045", 
+            "char", 
+            "r"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E046", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E047", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E048", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E049", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04A", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04B", 
+            "char", 
+            "a"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04C", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04D", 
+            "char", 
+            "k"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04E", 
+            "char", 
+            "\\0"
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_DATA", 
+            "0x5C1E090", 
+            "int", 
+            101
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E094", 
+            "int", 
+            102
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E098", 
+            "int", 
+            103
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E09C", 
+            "int", 
+            104
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A0", 
+            "int", 
+            105
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A8", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0AC", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B0", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ]
+        ]
+      }, 
+      "line": 106, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": [
+              "C_STRUCT", 
+              "0xFFF0000C0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C0", 
+                  "int", 
+                  0
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C4", 
+                  "int", 
+                  10
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C8", 
+                  "pointer", 
+                  "0x5C1E040"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000D0", 
+                  "pointer", 
+                  "0x5C1E090"
+                ]
+              ]
+            ], 
+            "s": [
+              "C_DATA", 
+              "0xFFF0000BC", 
+              "int", 
+              101
+            ], 
+            "second": [
+              "C_STRUCT", 
+              "0xFFF0000E0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E0", 
+                  "int", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E4", 
+                  "int", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E8", 
+                  "pointer", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000F0", 
+                  "pointer", 
+                  "<UNINITIALIZED>"
+                ]
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000110", 
+          "func_name": "main", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -35689,6 +35942,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -35711,6 +35965,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -35983,6 +36238,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -36005,6 +36261,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -36277,6 +36534,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -36299,6 +36557,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 69, 
           "ordered_varnames": [
             "this"
           ], 
@@ -36571,6 +36830,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -36593,6 +36853,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -36865,6 +37126,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 106, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -37139,6 +37401,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -37413,6 +37676,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -37428,6 +37692,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 40, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -37698,6 +37963,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -37713,6 +37979,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 40, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -37983,6 +38250,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -37998,6 +38266,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 41, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -38368,6 +38637,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -38383,6 +38653,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 42, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -38753,6 +39024,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -38768,6 +39040,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 43, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -39138,6 +39411,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -39153,6 +39427,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 44, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -39523,6 +39798,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -39538,6 +39814,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 45, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -39942,6 +40219,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -39957,6 +40235,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 46, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::Stack(char*, int)_0xFFF0000A0"
@@ -40361,6 +40640,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 112, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -40769,6 +41049,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 112, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -40797,6 +41078,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -41204,6 +41486,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 112, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -41232,6 +41515,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -41639,6 +41923,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 112, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -41667,6 +41952,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -42074,6 +42360,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 112, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -42102,6 +42389,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -42509,6 +42797,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 112, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -42537,6 +42826,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -42944,6 +43234,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 112, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -42972,6 +43263,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -43379,6 +43671,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 113, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -43787,6 +44080,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 113, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -43815,6 +44109,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -44222,6 +44517,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 113, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -44250,6 +44546,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -44657,6 +44954,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 113, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -44685,6 +44983,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -45092,6 +45391,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 113, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -45120,6 +45420,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -45527,6 +45828,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 113, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -45555,6 +45857,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -45962,6 +46265,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 113, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -45990,6 +46294,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -46397,6 +46702,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 114, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -46805,6 +47111,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 114, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -46833,6 +47140,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -47240,6 +47548,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 114, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -47268,6 +47577,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 48, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -47675,6 +47985,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 114, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -47703,6 +48014,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 49, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -48110,6 +48422,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 114, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -48138,6 +48451,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 50, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -48545,6 +48859,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 114, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -48573,6 +48888,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 51, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -48980,6 +49296,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 114, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -49008,6 +49325,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 53, 
           "ordered_varnames": [
             "this", 
             "dat"
@@ -49415,6 +49733,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -49823,6 +50142,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -49845,6 +50165,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 74, 
           "ordered_varnames": [
             "this"
           ], 
@@ -50251,6 +50572,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -50273,6 +50595,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 74, 
           "ordered_varnames": [
             "this"
           ], 
@@ -50679,6 +51002,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -50701,6 +51025,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 74, 
           "ordered_varnames": [
             "this"
           ], 
@@ -51107,6 +51432,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -51515,6 +51841,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -51537,6 +51864,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 72, 
           "ordered_varnames": [
             "this"
           ], 
@@ -51943,6 +52271,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -51965,6 +52294,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 72, 
           "ordered_varnames": [
             "this"
           ], 
@@ -52371,6 +52701,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -52393,6 +52724,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 72, 
           "ordered_varnames": [
             "this"
           ], 
@@ -52799,6 +53131,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 116, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -53207,6 +53540,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 117, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -53615,6 +53949,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 117, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -53630,6 +53965,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 78, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::getNumStacksCreated()_0xFFF0000A0"
@@ -54034,6 +54370,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 117, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -54049,6 +54386,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 79, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::getNumStacksCreated()_0xFFF0000A0"
@@ -54453,6 +54791,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 117, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -54861,6 +55200,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -55269,6 +55609,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -55291,6 +55632,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -55697,6 +56039,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -55719,6 +56062,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -56125,6 +56469,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -56147,6 +56492,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -56553,6 +56899,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -56575,6 +56922,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -56595,6 +56943,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -57001,6 +57350,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -57023,6 +57373,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -57043,6 +57394,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -57449,6 +57801,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -57471,6 +57824,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -57491,6 +57845,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -57897,6 +58252,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -57919,6 +58275,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -57939,6 +58296,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -58345,6 +58703,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -58367,6 +58726,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -58773,6 +59133,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -58795,6 +59156,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -59201,6 +59563,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -59223,6 +59586,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -59629,6 +59993,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -60037,6 +60402,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 121, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -60445,6 +60811,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -60853,6 +61220,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -60875,6 +61243,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -61281,6 +61650,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -61303,6 +61673,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -61709,6 +62080,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -61731,6 +62103,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -62137,6 +62510,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -62159,6 +62533,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -62179,6 +62554,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -62585,6 +62961,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -62607,6 +62984,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -62627,6 +63005,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -63033,6 +63412,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -63055,6 +63435,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -63075,6 +63456,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -63481,6 +63863,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -63503,6 +63886,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -63523,6 +63907,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -63929,6 +64314,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -63951,6 +64337,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -64357,6 +64744,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -64379,6 +64767,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -64785,6 +65174,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -64807,6 +65197,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -65213,6 +65604,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -65621,6 +66013,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 121, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -66029,6 +66422,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -66437,6 +66831,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -66459,6 +66854,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -66865,6 +67261,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -66887,6 +67284,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -67293,6 +67691,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -67315,6 +67714,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -67721,6 +68121,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -67743,6 +68144,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -67763,6 +68165,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -68169,6 +68572,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -68191,6 +68595,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -68211,6 +68616,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 86, 
           "ordered_varnames": [
             "this"
           ], 
@@ -68617,6 +69023,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -68639,6 +69046,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -68659,6 +69067,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 88, 
           "ordered_varnames": [
             "this"
           ], 
@@ -69065,6 +69474,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -69087,6 +69497,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 64, 
           "ordered_varnames": [
             "this"
           ], 
@@ -69107,6 +69518,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 89, 
           "ordered_varnames": [
             "this"
           ], 
@@ -69513,6 +69925,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -69535,6 +69948,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 65, 
           "ordered_varnames": [
             "this"
           ], 
@@ -69941,6 +70355,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -69963,6 +70378,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 66, 
           "ordered_varnames": [
             "this"
           ], 
@@ -70369,6 +70785,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -70391,6 +70808,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -70797,6 +71215,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -71205,6 +71624,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 121, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -71613,6 +72033,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -72021,6 +72442,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -72043,6 +72465,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 62, 
           "ordered_varnames": [
             "this"
           ], 
@@ -72449,6 +72872,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -72471,6 +72895,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 63, 
           "ordered_varnames": [
             "this"
           ], 
@@ -72877,6 +73302,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -72899,6 +73325,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 69, 
           "ordered_varnames": [
             "this"
           ], 
@@ -73305,6 +73732,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -73327,6 +73755,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 70, 
           "ordered_varnames": [
             "this"
           ], 
@@ -73733,6 +74162,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 120, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -74141,6 +74571,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -74549,6 +74980,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -74957,6 +75389,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -74972,6 +75405,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 81, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -75376,6 +75810,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -75391,6 +75826,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 82, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -75765,6 +76201,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -75780,6 +76217,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 83, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -76058,6 +76496,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 110, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -76073,6 +76512,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 84, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -76351,6 +76791,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -76633,6 +77074,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -76648,6 +77090,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 81, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -76926,6 +77369,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -76941,6 +77385,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 82, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -77159,6 +77604,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -77174,6 +77620,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 83, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -77302,6 +77749,7 @@
           "is_highlighted": false, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -77317,6 +77765,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 84, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "Stack::~Stack()_0xFFF0000A0"
@@ -77445,6 +77894,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -77577,6 +78027,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 124, 
           "ordered_varnames": [
             "first", 
             "s", 
@@ -77603,6 +78054,7 @@
           "is_highlighted": true, 
           "is_parent": false, 
           "is_zombie": false, 
+          "line": 125, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
           "unique_hash": "main_0xFFF000110"
