@@ -49,8 +49,7 @@ def filter_output(lines):
   # multi-line comparison
   fullstr = ''.join(x) # don't need an extra newline since all lines are already separated by newline chars
   fullstr = objrefid_RE.sub('"REF", ID', fullstr)
-  ret = fullstr.split('\n') # split again to get a list of lines
-  return ret
+  return fullstr
 
 
 def execute(input_filename):
@@ -102,18 +101,6 @@ def golden_differs_from_out(golden_file):
   return out_s_filtered != golden_s_filtered
 
 
-# for sanity checking
-def print_filtered_outfile(test_name):
-  (base, ext) = os.path.splitext(test_name)
-  outfile = base + OUTPUT_FILE_EXTENSION
-  assert os.path.isfile(outfile)
-
-  out_s = open(outfile).readlines()
-  out_s_filtered = filter_output(out_s)
-  for line in out_s_filtered:
-    print line
-
-
 def diff_test_output(test_name):
   (base, ext) = os.path.splitext(test_name)
 
@@ -128,13 +115,14 @@ def diff_test_output(test_name):
   golden_s_filtered = filter_output(golden_s)
   out_s_filtered = filter_output(out_s)
 
-  first_line = True
-  for line in difflib.unified_diff(golden_s_filtered, out_s_filtered, \
-                                   fromfile=golden_file, tofile=outfile):
-    if first_line:
-      print # print an extra line to ease readability
-      first_line = False
-    print line
+  # use system diff since difflib is SLOW AS HECK
+  golden_filtered_f = open('/tmp/golden.trace', 'w')
+  out_filtered_f = open('/tmp/out.trace', 'w')
+  print >> golden_filtered_f, golden_s_filtered
+  print >> out_filtered_f, out_s_filtered
+  golden_filtered_f.close()
+  out_filtered_f.close()
+  os.system('diff -ur /tmp/out.trace /tmp/golden.trace')
 
 
 def run_test(input_filename, clobber_golden=False):
@@ -208,9 +196,6 @@ if __name__ == "__main__":
 
   elif options.diff_all:
     diff_all_test_outputs()
-  elif options.print_test_name:
-    assert options.print_test_name in ALL_TESTS
-    print_filtered_outfile(options.print_test_name)
   elif options.diff_test_name:
     assert options.diff_test_name in ALL_TESTS
     diff_test_output(options.diff_test_name)

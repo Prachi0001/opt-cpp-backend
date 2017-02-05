@@ -1,5 +1,6 @@
-# Convert a trace created by the Valgrind OPT C backend to a format that
-# the OPT frontend can digest
+# Convert a raw trace created by the Valgrind OPT C backend to a format
+# that the OPT frontend can digest, making various optimizations and
+# clean-ups along the way to beautify the trace
 
 # Created 2015-10-04 by Philip Guo
 
@@ -10,7 +11,7 @@
 
 # this is pretty brittle and dependent on the user's gcc version and
 # such because it generates code to conform to certain calling
-# conventions, frame pointer settings, etc., eeek
+# conventions, frame pointer settings (DON'T omit it!), etc., eeek
 #
 # we're assuming that the user has compiled with:
 # gcc -ggdb -O0 -fno-omit-frame-pointer
@@ -228,10 +229,6 @@ if __name__ == '__main__':
     assert ext in ('.c', '.cpp')
     cur_record_lines = []
 
-    # execution points after just returning from a function but not advancing
-    # the line number of the caller, so don't show those
-    extraneous_step_after_return_set = set()
-
     success = True
 
     for line in open(basename + '.vgtrace'):
@@ -311,6 +308,7 @@ if __name__ == '__main__':
 
         assert len(final_execution_points) <= len(filtered_execution_points)
 
+        cur_ind = 1
         # now mark 'call' and' 'return' events via the same heuristic as above
         for prev, cur in zip(final_execution_points, final_execution_points[1:]):
             prev_frame_ids = [e['frame_id'] for e in prev['stack_to_render']]
@@ -319,18 +317,51 @@ if __name__ == '__main__':
             if len(prev_frame_ids) < len(cur_frame_ids):
                 if prev_frame_ids == cur_frame_ids[:-1]:
                     cur['event'] = 'call'
+                # optimization -- when you find a 'call' instruction,
+                # look ahead in the trace to find all *consecutive*
+                # entries with the same frame_ids and on the same line,
+                # then eliminate those from the trace
+                lookahead = final_execution_points[cur_ind:]
+                for future_step in lookahead:
+                    future_frame_ids = [e['frame_id'] for e in future_step['stack_to_render']]
+                    if cur_frame_ids == future_frame_ids and cur['line'] == future_step['line']:
+                        future_step['to_delete'] = True
+                    else:
+                        # BREAK AS SOON AS you change lines or stack
+                        # frame_id contents, since we don't want to be
+                        # over-eager and cut out *non-consecutive*
+                        # elements from the trace
+                        break
+
             elif len(prev_frame_ids) > len(cur_frame_ids):
                 if cur_frame_ids == prev_frame_ids[:-1]:
                     prev['event'] = 'return'
+                    if len(prev['stack_to_render']) > 1:
+                        #print >> sys.stderr, 'return:',
+                        #print >> sys.stderr, '  prev:', json.dumps(prev['stack_to_render'][-2])
+                        #print >> sys.stderr, '   cur:', json.dumps(cur['stack_to_render'][-1])
+                        prev_caller = prev['stack_to_render'][-2]
+                        cur_top = cur['stack_to_render'][-1]
+                        # if we're returning to the SAME LINE in the
+                        # caller as it originally called this function
+                        # with, then skip this step since it's
+                        # redundant. for example:
+                        '''
+void* foo() {
+  void *x = malloc(1);
+  return x;
+}
+int main() {
+  void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
+                   //     before its return value is assigned to x. this optimization
+                   //     eliminates this step to clean up the trace a bit
+}
+                        '''
+                        if (cur_top['frame_id'] == prev_caller['frame_id']) and \
+                           (cur_top['line'] == prev_caller['line']):
+                            cur['to_delete'] = True
 
-                    #if len(prev['stack_to_render']) > 1:
-                    #    print >> sys.stderr, 'return:',
-                    #    print >> sys.stderr
-                    #    print >> sys.stderr, '  prev:', json.dumps(prev['stack_to_render'][-2])
-                    #    print >> sys.stderr
-                    #    print >> sys.stderr, '   cur:', cur['line'], json.dumps(cur['stack_to_render'][-1])
-                    #    #extraneous_step_after_return_set.add(cur)
-
+            cur_ind += 1 # tricky indent
 
         # make the last statement a faux 'return', presumably from main
         if success:
@@ -362,6 +393,18 @@ if __name__ == '__main__':
             prev_frame_ids = cur_frame_ids
 
         final_execution_points = tmp # the ole' switcheroo
+
+
+    # now eliminate all steps before the first call to 'main' to clean up the trace,
+    # especially for C++ code with weird pre-main initializers
+    for e in final_execution_points:
+        if e['func_name'] == 'main':
+            break # GET OUT!
+        else:
+            e['to_delete'] = True
+
+
+    final_execution_points = [e for e in final_execution_points if 'to_delete' not in e]
 
     if len(final_execution_points) > MAX_STEPS:
       # truncate to MAX_STEPS entries
