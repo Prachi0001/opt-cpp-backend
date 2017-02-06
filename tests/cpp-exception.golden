@@ -73,50 +73,6 @@
       "func_name": "function(int)", 
       "globals": {}, 
       "heap": {}, 
-      "line": 13, 
-      "ordered_globals": [], 
-      "stack_to_render": [
-        {
-          "encoded_locals": {}, 
-          "frame_id": "0xFFF000110", 
-          "func_name": "main", 
-          "is_highlighted": false, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "line": 24, 
-          "ordered_varnames": [], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000110"
-        }, 
-        {
-          "encoded_locals": {
-            "a": [
-              "C_DATA", 
-              "0xFFF0000DC", 
-              "int", 
-              "<UNINITIALIZED>"
-            ]
-          }, 
-          "frame_id": "0xFFF000100", 
-          "func_name": "function(int)", 
-          "is_highlighted": true, 
-          "is_parent": false, 
-          "is_zombie": false, 
-          "line": 13, 
-          "ordered_varnames": [
-            "a"
-          ], 
-          "parent_frame_id_list": [], 
-          "unique_hash": "function(int)_0xFFF000100"
-        }
-      ], 
-      "stdout": ""
-    }, 
-    {
-      "event": "step_line", 
-      "func_name": "function(int)", 
-      "globals": {}, 
-      "heap": {}, 
       "line": 15, 
       "ordered_globals": [], 
       "stack_to_render": [
