@@ -341,35 +341,9 @@ if __name__ == '__main__':
                         # over-eager and cut out *non-consecutive*
                         # elements from the trace
                         break
-
             elif len(prev_frame_ids) > len(cur_frame_ids):
                 if cur_frame_ids == prev_frame_ids[:-1]:
                     prev['event'] = 'return'
-                    if len(prev['stack_to_render']) > 1:
-                        #print >> sys.stderr, 'return:',
-                        #print >> sys.stderr, '  prev:', json.dumps(prev['stack_to_render'][-2])
-                        #print >> sys.stderr, '   cur:', json.dumps(cur['stack_to_render'][-1])
-                        prev_caller = prev['stack_to_render'][-2]
-                        cur_top = cur['stack_to_render'][-1]
-                        # if we're returning to the SAME LINE in the
-                        # caller as it originally called this function
-                        # with, then skip this step since it's
-                        # redundant. for example:
-                        '''
-void* foo() {
-  void *x = malloc(1);
-  return x;
-}
-int main() {
-  void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
-                   //     before its return value is assigned to x. this optimization
-                   //     eliminates this step to clean up the trace a bit
-}
-                        '''
-                        if (cur_top['frame_id'] == prev_caller['frame_id']) and \
-                           (cur_top['line'] == prev_caller['line']):
-                            cur['to_delete'] = True
-
             cur_ind += 1 # tricky indent
 
         # make the last statement a faux 'return', presumably from main
@@ -415,6 +389,47 @@ int main() {
 
         final_execution_points = tmp # the ole' switcheroo
 
+        # if we're returning to the SAME LINE in the
+        # caller as it originally called this function
+        # with, then skip this step since it's
+        # redundant. for example:
+        '''
+void* foo() {
+void *x = malloc(1);
+return x;
+}
+int main() {
+void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
+                 //     before its return value is assigned to x. this optimization
+                 //     eliminates this step to clean up the trace a bit
+}
+        '''
+        for prev, cur, next in zip(final_execution_points, final_execution_points[1:], final_execution_points[2:]):
+            if prev['event'] == 'return' and len(prev['stack_to_render']) > 1:
+                #print >> sys.stderr, 'return:',
+                #print >> sys.stderr, '  prev:', json.dumps(prev['stack_to_render'][-2])
+                #print >> sys.stderr, '   cur:', json.dumps(cur['stack_to_render'][-1])
+                prev_caller = prev['stack_to_render'][-2]
+                cur_top = cur['stack_to_render'][-1]
+                # if we're returning to the SAME LINE in the
+                # caller as it originally called this function
+                # with, then skip this step since it's
+                # redundant. for example:
+                '''
+                void* foo() {
+                void *x = malloc(1);
+                return x;
+                }
+                int main() {
+                void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
+                               //     before its return value is assigned to x. this optimization
+                               //     eliminates this step to clean up the trace a bit
+                }
+                '''
+                if (cur_top['frame_id'] == prev_caller['frame_id']) and \
+                   (cur_top['line'] == prev_caller['line']):
+                    cur['to_delete'] = True
+
 
     # now eliminate all steps before the first call to 'main' to clean up the trace,
     # especially for C++ code with weird pre-main initializers
@@ -425,6 +440,9 @@ int main() {
             e['to_delete'] = True
 
 
+    for e in final_execution_points:
+        if 'to_delete' in e:
+            print >> sys.stderr, 'to_delete:', json.dumps(e)
     final_execution_points = [e for e in final_execution_points if 'to_delete' not in e]
 
     if len(final_execution_points) > MAX_STEPS:
