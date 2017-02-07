@@ -408,8 +408,13 @@ void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
         if prev['event'] == 'return' and len(prev['stack_to_render']) > 1:
             prev_caller = prev['stack_to_render'][-2]
             cur_top = cur['stack_to_render'][-1]
+            # one additional subtle caveat is that we should delete only
+            # if cur['func_name'] == next['func_name'] because otherwise
+            # we will be directly jumping into another function without
+            # first showing the return to cur, which may look JARRING
             if (cur_top['frame_id'] == prev_caller['frame_id']) and \
-               (cur_top['line'] == prev_caller['line']):
+               (cur_top['line'] == prev_caller['line']) and \
+               (cur['func_name'] == next['func_name']):
                 cur['to_delete'] = True
 
 
