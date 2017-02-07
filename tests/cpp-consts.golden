@@ -246,6 +246,79 @@
       "stdout": "hi\n"
     }, 
     {
+      "event": "return", 
+      "func_name": "A::A()", 
+      "globals": {
+        "global_const": [
+          "C_DATA", 
+          "0x400A40", 
+          "int", 
+          50
+        ], 
+        "static_const": [
+          "C_DATA", 
+          "0x400A3C", 
+          "int", 
+          100
+        ]
+      }, 
+      "heap": {}, 
+      "line": 13, 
+      "ordered_globals": [
+        "static_const", 
+        "global_const"
+      ], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT", 
+              "0xFFF0000FF", 
+              "A"
+            ], 
+            "argc": [
+              "C_DATA", 
+              "0xFFF0000EC", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF0000E0", 
+              "pointer", 
+              "0xFFF0001F8"
+            ]
+          }, 
+          "frame_id": "0xFFF000110", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 21, 
+          "ordered_varnames": [
+            "a", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000110"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF0000D0", 
+          "func_name": "A::A()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 13, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "A::A()_0xFFF0000D0"
+        }
+      ], 
+      "stdout": "hi\n"
+    }, 
+    {
       "event": "step_line", 
       "func_name": "main", 
       "globals": {
@@ -371,6 +444,88 @@
               "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF0000D0", 
+          "func_name": "A::getInt()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 15, 
+          "ordered_varnames": [
+            "this"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "A::getInt()_0xFFF0000D0"
+        }
+      ], 
+      "stdout": "hi\n"
+    }, 
+    {
+      "event": "return", 
+      "func_name": "A::getInt()", 
+      "globals": {
+        "global_const": [
+          "C_DATA", 
+          "0x400A40", 
+          "int", 
+          50
+        ], 
+        "static_const": [
+          "C_DATA", 
+          "0x400A3C", 
+          "int", 
+          100
+        ]
+      }, 
+      "heap": {}, 
+      "line": 15, 
+      "ordered_globals": [
+        "static_const", 
+        "global_const"
+      ], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT", 
+              "0xFFF0000FF", 
+              "A"
+            ], 
+            "argc": [
+              "C_DATA", 
+              "0xFFF0000EC", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF0000E0", 
+              "pointer", 
+              "0xFFF0001F8"
+            ]
+          }, 
+          "frame_id": "0xFFF000110", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 22, 
+          "ordered_varnames": [
+            "a", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000110"
+        }, 
+        {
+          "encoded_locals": {
+            "this": [
+              "C_DATA", 
+              "0xFFF0000C8", 
+              "pointer", 
+              "0xFFF0000FF"
             ]
           }, 
           "frame_id": "0xFFF0000D0", 

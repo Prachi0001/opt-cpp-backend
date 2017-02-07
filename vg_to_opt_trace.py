@@ -376,6 +376,18 @@ int main() {
         if success:
             final_execution_points[-1]['event'] = 'return'
 
+    # kludgy: don't do to_delete for return events, since if we do this,
+    # then we may be skipping return events for one-liner functions like
+    #   int getInt() { return static_const_member;}
+    # due to our above optimization to cut out all events on the same
+    # line as a 'call' instruction. in a one-liner function, the call
+    # and return are on the same line, so we don't want to delete the return
+    for e in final_execution_points:
+        if e['event'] == 'return':
+            if 'to_delete' in e:
+                del e['to_delete']
+
+
     # only keep the FIRST 'step_line' event for any given line, to match what
     # a line-level debugger would do
     if ONLY_ONE_REC_PER_LINE:

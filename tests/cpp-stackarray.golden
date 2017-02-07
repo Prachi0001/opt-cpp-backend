@@ -11004,6 +11004,302 @@
       "stdout": ""
     }, 
     {
+      "event": "return", 
+      "func_name": "Stack::getMaxElts()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_DATA", 
+            "0x5C1E040", 
+            "char", 
+            "M"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E041", 
+            "char", 
+            "y"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E042", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E043", 
+            "char", 
+            "f"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E044", 
+            "char", 
+            "i"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E045", 
+            "char", 
+            "r"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E046", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E047", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E048", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E049", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04A", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04B", 
+            "char", 
+            "a"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04C", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04D", 
+            "char", 
+            "k"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04E", 
+            "char", 
+            "\\0"
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_DATA", 
+            "0x5C1E090", 
+            "int", 
+            101
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E094", 
+            "int", 
+            102
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E098", 
+            "int", 
+            103
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E09C", 
+            "int", 
+            104
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A0", 
+            "int", 
+            105
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A8", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0AC", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B0", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ]
+        ]
+      }, 
+      "line": 74, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": [
+              "C_STRUCT", 
+              "0xFFF0000C0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C0", 
+                  "int", 
+                  5
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C4", 
+                  "int", 
+                  10
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C8", 
+                  "pointer", 
+                  "0x5C1E040"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000D0", 
+                  "pointer", 
+                  "0x5C1E090"
+                ]
+              ]
+            ], 
+            "s": [
+              "C_DATA", 
+              "0xFFF0000BC", 
+              "int", 
+              "<UNINITIALIZED>"
+            ], 
+            "second": [
+              "C_STRUCT", 
+              "0xFFF0000E0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E0", 
+                  "int", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E4", 
+                  "int", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E8", 
+                  "pointer", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000F0", 
+                  "pointer", 
+                  "<UNINITIALIZED>"
+                ]
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000110", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 102, 
+          "ordered_varnames": [
+            "first", 
+            "s", 
+            "second"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000110"
+        }, 
+        {
+          "encoded_locals": {
+            "this": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "pointer", 
+              "0xFFF0000C0"
+            ]
+          }, 
+          "frame_id": "0xFFF0000A0", 
+          "func_name": "Stack::getMaxElts()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 74, 
+          "ordered_varnames": [
+            "this"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Stack::getMaxElts()_0xFFF0000A0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
       "event": "call", 
       "func_name": "Stack::getName()", 
       "globals": {}, 
@@ -11282,6 +11578,302 @@
               "0xFFF000098", 
               "pointer", 
               "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF0000A0", 
+          "func_name": "Stack::getName()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 72, 
+          "ordered_varnames": [
+            "this"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Stack::getName()_0xFFF0000A0"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
+      "func_name": "Stack::getName()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_DATA", 
+            "0x5C1E040", 
+            "char", 
+            "M"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E041", 
+            "char", 
+            "y"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E042", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E043", 
+            "char", 
+            "f"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E044", 
+            "char", 
+            "i"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E045", 
+            "char", 
+            "r"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E046", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E047", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E048", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E049", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04A", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04B", 
+            "char", 
+            "a"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04C", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04D", 
+            "char", 
+            "k"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04E", 
+            "char", 
+            "\\0"
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_DATA", 
+            "0x5C1E090", 
+            "int", 
+            101
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E094", 
+            "int", 
+            102
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E098", 
+            "int", 
+            103
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E09C", 
+            "int", 
+            104
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A0", 
+            "int", 
+            105
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A8", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0AC", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B0", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ]
+        ]
+      }, 
+      "line": 72, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": [
+              "C_STRUCT", 
+              "0xFFF0000C0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C0", 
+                  "int", 
+                  5
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C4", 
+                  "int", 
+                  10
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C8", 
+                  "pointer", 
+                  "0x5C1E040"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000D0", 
+                  "pointer", 
+                  "0x5C1E090"
+                ]
+              ]
+            ], 
+            "s": [
+              "C_DATA", 
+              "0xFFF0000BC", 
+              "int", 
+              "<UNINITIALIZED>"
+            ], 
+            "second": [
+              "C_STRUCT", 
+              "0xFFF0000E0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E0", 
+                  "int", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E4", 
+                  "int", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E8", 
+                  "pointer", 
+                  "<UNINITIALIZED>"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000F0", 
+                  "pointer", 
+                  "<UNINITIALIZED>"
+                ]
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000110", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 102, 
+          "ordered_varnames": [
+            "first", 
+            "s", 
+            "second"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000110"
+        }, 
+        {
+          "encoded_locals": {
+            "this": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "pointer", 
+              "0xFFF0000C0"
             ]
           }, 
           "frame_id": "0xFFF0000A0", 
@@ -43017,6 +43609,436 @@
       "stdout": "My first stack: MAX_ELTS: 10, NUM_STACKS_CREATED: 1\n\n!PRIVATE!105\n\n!PRIVATE!104\n\n!PRIVATE!103\n\n!PRIVATE!102\n\n!PRIVATE!101\n"
     }, 
     {
+      "event": "return", 
+      "func_name": "Stack::getMaxElts()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_DATA", 
+            "0x5C1E040", 
+            "char", 
+            "M"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E041", 
+            "char", 
+            "y"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E042", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E043", 
+            "char", 
+            "f"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E044", 
+            "char", 
+            "i"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E045", 
+            "char", 
+            "r"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E046", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E047", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E048", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E049", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04A", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04B", 
+            "char", 
+            "a"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04C", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04D", 
+            "char", 
+            "k"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04E", 
+            "char", 
+            "\\0"
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_DATA", 
+            "0x5C1E090", 
+            "int", 
+            101
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E094", 
+            "int", 
+            102
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E098", 
+            "int", 
+            103
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E09C", 
+            "int", 
+            104
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A0", 
+            "int", 
+            105
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A8", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0AC", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B0", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ]
+        ], 
+        "0x5C1E100": [
+          "C_ARRAY", 
+          "0x5C1E100", 
+          [
+            "C_DATA", 
+            "0x5C1E100", 
+            "char", 
+            "M"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E101", 
+            "char", 
+            "y"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E102", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E103", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E104", 
+            "char", 
+            "e"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E105", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E106", 
+            "char", 
+            "o"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E107", 
+            "char", 
+            "n"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E108", 
+            "char", 
+            "d"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E109", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10A", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10B", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10C", 
+            "char", 
+            "a"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10D", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10E", 
+            "char", 
+            "k"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10F", 
+            "char", 
+            "\\0"
+          ]
+        ], 
+        "0x5C1E150": [
+          "C_ARRAY", 
+          "0x5C1E150", 
+          [
+            "C_DATA", 
+            "0x5C1E150", 
+            "int", 
+            1001
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E154", 
+            "int", 
+            1002
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E158", 
+            "int", 
+            1003
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E15C", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E160", 
+            "int", 
+            "<UNINITIALIZED>"
+          ]
+        ]
+      }, 
+      "line": 74, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": [
+              "C_STRUCT", 
+              "0xFFF0000C0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C0", 
+                  "int", 
+                  0
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C4", 
+                  "int", 
+                  10
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C8", 
+                  "pointer", 
+                  "0x5C1E040"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000D0", 
+                  "pointer", 
+                  "0x5C1E090"
+                ]
+              ]
+            ], 
+            "s": [
+              "C_DATA", 
+              "0xFFF0000BC", 
+              "int", 
+              0
+            ], 
+            "second": [
+              "C_STRUCT", 
+              "0xFFF0000E0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E0", 
+                  "int", 
+                  3
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E4", 
+                  "int", 
+                  5
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E8", 
+                  "pointer", 
+                  "0x5C1E100"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000F0", 
+                  "pointer", 
+                  "0x5C1E150"
+                ]
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000110", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 116, 
+          "ordered_varnames": [
+            "first", 
+            "s", 
+            "second"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000110"
+        }, 
+        {
+          "encoded_locals": {
+            "this": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "pointer", 
+              "0xFFF0000E0"
+            ]
+          }, 
+          "frame_id": "0xFFF0000A0", 
+          "func_name": "Stack::getMaxElts()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 74, 
+          "ordered_varnames": [
+            "this"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Stack::getMaxElts()_0xFFF0000A0"
+        }
+      ], 
+      "stdout": "My first stack: MAX_ELTS: 10, NUM_STACKS_CREATED: 1\n\n!PRIVATE!105\n\n!PRIVATE!104\n\n!PRIVATE!103\n\n!PRIVATE!102\n\n!PRIVATE!101\n"
+    }, 
+    {
       "event": "call", 
       "func_name": "Stack::getName()", 
       "globals": {}, 
@@ -43429,6 +44451,436 @@
               "0xFFF000098", 
               "pointer", 
               "<UNINITIALIZED>"
+            ]
+          }, 
+          "frame_id": "0xFFF0000A0", 
+          "func_name": "Stack::getName()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 72, 
+          "ordered_varnames": [
+            "this"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Stack::getName()_0xFFF0000A0"
+        }
+      ], 
+      "stdout": "My first stack: MAX_ELTS: 10, NUM_STACKS_CREATED: 1\n\n!PRIVATE!105\n\n!PRIVATE!104\n\n!PRIVATE!103\n\n!PRIVATE!102\n\n!PRIVATE!101\n"
+    }, 
+    {
+      "event": "return", 
+      "func_name": "Stack::getName()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_DATA", 
+            "0x5C1E040", 
+            "char", 
+            "M"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E041", 
+            "char", 
+            "y"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E042", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E043", 
+            "char", 
+            "f"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E044", 
+            "char", 
+            "i"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E045", 
+            "char", 
+            "r"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E046", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E047", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E048", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E049", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04A", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04B", 
+            "char", 
+            "a"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04C", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04D", 
+            "char", 
+            "k"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E04E", 
+            "char", 
+            "\\0"
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_DATA", 
+            "0x5C1E090", 
+            "int", 
+            101
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E094", 
+            "int", 
+            102
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E098", 
+            "int", 
+            103
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E09C", 
+            "int", 
+            104
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A0", 
+            "int", 
+            105
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0A8", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0AC", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B0", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E0B4", 
+            "int", 
+            "<UNINITIALIZED>"
+          ]
+        ], 
+        "0x5C1E100": [
+          "C_ARRAY", 
+          "0x5C1E100", 
+          [
+            "C_DATA", 
+            "0x5C1E100", 
+            "char", 
+            "M"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E101", 
+            "char", 
+            "y"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E102", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E103", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E104", 
+            "char", 
+            "e"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E105", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E106", 
+            "char", 
+            "o"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E107", 
+            "char", 
+            "n"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E108", 
+            "char", 
+            "d"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E109", 
+            "char", 
+            " "
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10A", 
+            "char", 
+            "s"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10B", 
+            "char", 
+            "t"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10C", 
+            "char", 
+            "a"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10D", 
+            "char", 
+            "c"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10E", 
+            "char", 
+            "k"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E10F", 
+            "char", 
+            "\\0"
+          ]
+        ], 
+        "0x5C1E150": [
+          "C_ARRAY", 
+          "0x5C1E150", 
+          [
+            "C_DATA", 
+            "0x5C1E150", 
+            "int", 
+            1001
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E154", 
+            "int", 
+            1002
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E158", 
+            "int", 
+            1003
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E15C", 
+            "int", 
+            "<UNINITIALIZED>"
+          ], 
+          [
+            "C_DATA", 
+            "0x5C1E160", 
+            "int", 
+            "<UNINITIALIZED>"
+          ]
+        ]
+      }, 
+      "line": 72, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": [
+              "C_STRUCT", 
+              "0xFFF0000C0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C0", 
+                  "int", 
+                  0
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C4", 
+                  "int", 
+                  10
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000C8", 
+                  "pointer", 
+                  "0x5C1E040"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000D0", 
+                  "pointer", 
+                  "0x5C1E090"
+                ]
+              ]
+            ], 
+            "s": [
+              "C_DATA", 
+              "0xFFF0000BC", 
+              "int", 
+              0
+            ], 
+            "second": [
+              "C_STRUCT", 
+              "0xFFF0000E0", 
+              "Stack", 
+              [
+                "numElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E0", 
+                  "int", 
+                  3
+                ]
+              ], 
+              [
+                "maxElts", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E4", 
+                  "int", 
+                  5
+                ]
+              ], 
+              [
+                "myName", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E8", 
+                  "pointer", 
+                  "0x5C1E100"
+                ]
+              ], 
+              [
+                "stackRep", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000F0", 
+                  "pointer", 
+                  "0x5C1E150"
+                ]
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000110", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 116, 
+          "ordered_varnames": [
+            "first", 
+            "s", 
+            "second"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000110"
+        }, 
+        {
+          "encoded_locals": {
+            "this": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "pointer", 
+              "0xFFF0000E0"
             ]
           }, 
           "frame_id": "0xFFF0000A0", 

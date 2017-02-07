@@ -522,6 +522,141 @@
     }, 
     {
       "event": "return", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              0
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Square::Square()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 21, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Square::Square()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Square::Square()", 
       "globals": {}, 
       "heap": {}, 
@@ -1201,6 +1336,160 @@
     }, 
     {
       "event": "return", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              1
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Triangle::Triangle()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 17, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Triangle::Triangle()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Triangle::Triangle()", 
       "globals": {}, 
       "heap": {
@@ -1799,6 +2088,178 @@
     }, 
     {
       "event": "call", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              2
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Square::Square()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 21, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Square::Square()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Shape::Shape()", 
       "globals": {}, 
       "heap": {
@@ -2831,6 +3292,196 @@
     }, 
     {
       "event": "return", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E0E0": [
+          "C_ARRAY", 
+          "0x5C1E0E0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E0E0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E0E0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              3
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "0x5C1E0E0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Triangle::Triangle()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 17, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Triangle::Triangle()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Triangle::Triangle()", 
       "globals": {}, 
       "heap": {
@@ -3573,6 +4224,214 @@
     }, 
     {
       "event": "call", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E0E0": [
+          "C_ARRAY", 
+          "0x5C1E0E0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E0E0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E0E0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E130": [
+          "C_ARRAY", 
+          "0x5C1E130", 
+          [
+            "C_STRUCT", 
+            "0x5C1E130", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E130", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              4
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "0x5C1E0E0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "0x5C1E130"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Square::Square()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 21, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Square::Square()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Shape::Shape()", 
       "globals": {}, 
       "heap": {
@@ -4595,6 +5454,232 @@
     }, 
     {
       "event": "call", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E0E0": [
+          "C_ARRAY", 
+          "0x5C1E0E0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E0E0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E0E0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E130": [
+          "C_ARRAY", 
+          "0x5C1E130", 
+          [
+            "C_STRUCT", 
+            "0x5C1E130", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E130", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E180": [
+          "C_ARRAY", 
+          "0x5C1E180", 
+          [
+            "C_STRUCT", 
+            "0x5C1E180", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E180", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              5
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "0x5C1E0E0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "0x5C1E130"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "0x5C1E180"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Triangle::Triangle()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 17, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Triangle::Triangle()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Shape::Shape()", 
       "globals": {}, 
       "heap": {
@@ -5707,6 +6792,250 @@
     }, 
     {
       "event": "call", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E0E0": [
+          "C_ARRAY", 
+          "0x5C1E0E0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E0E0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E0E0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E130": [
+          "C_ARRAY", 
+          "0x5C1E130", 
+          [
+            "C_STRUCT", 
+            "0x5C1E130", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E130", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E180": [
+          "C_ARRAY", 
+          "0x5C1E180", 
+          [
+            "C_STRUCT", 
+            "0x5C1E180", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E180", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E1D0": [
+          "C_ARRAY", 
+          "0x5C1E1D0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E1D0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E1D0", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              6
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "0x5C1E0E0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "0x5C1E130"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "0x5C1E180"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "0x5C1E1D0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Square::Square()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 21, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Square::Square()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Shape::Shape()", 
       "globals": {}, 
       "heap": {
@@ -6909,6 +8238,268 @@
     }, 
     {
       "event": "call", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E0E0": [
+          "C_ARRAY", 
+          "0x5C1E0E0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E0E0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E0E0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E130": [
+          "C_ARRAY", 
+          "0x5C1E130", 
+          [
+            "C_STRUCT", 
+            "0x5C1E130", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E130", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E180": [
+          "C_ARRAY", 
+          "0x5C1E180", 
+          [
+            "C_STRUCT", 
+            "0x5C1E180", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E180", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E1D0": [
+          "C_ARRAY", 
+          "0x5C1E1D0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E1D0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E1D0", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E220": [
+          "C_ARRAY", 
+          "0x5C1E220", 
+          [
+            "C_STRUCT", 
+            "0x5C1E220", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E220", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              7
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "0x5C1E0E0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "0x5C1E130"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "0x5C1E180"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "0x5C1E1D0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "0x5C1E220"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Triangle::Triangle()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 17, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Triangle::Triangle()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Shape::Shape()", 
       "globals": {}, 
       "heap": {
@@ -8201,6 +9792,286 @@
     }, 
     {
       "event": "call", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E0E0": [
+          "C_ARRAY", 
+          "0x5C1E0E0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E0E0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E0E0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E130": [
+          "C_ARRAY", 
+          "0x5C1E130", 
+          [
+            "C_STRUCT", 
+            "0x5C1E130", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E130", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E180": [
+          "C_ARRAY", 
+          "0x5C1E180", 
+          [
+            "C_STRUCT", 
+            "0x5C1E180", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E180", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E1D0": [
+          "C_ARRAY", 
+          "0x5C1E1D0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E1D0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E1D0", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E220": [
+          "C_ARRAY", 
+          "0x5C1E220", 
+          [
+            "C_STRUCT", 
+            "0x5C1E220", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E220", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E270": [
+          "C_ARRAY", 
+          "0x5C1E270", 
+          [
+            "C_STRUCT", 
+            "0x5C1E270", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E270", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              8
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "0x5C1E0E0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "0x5C1E130"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "0x5C1E180"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "0x5C1E1D0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "0x5C1E220"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "0x5C1E270"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Square::Square()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 21, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Square::Square()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Shape::Shape()", 
       "globals": {}, 
       "heap": {
@@ -9583,6 +11454,304 @@
     }, 
     {
       "event": "call", 
+      "func_name": "Shape::Shape()", 
+      "globals": {}, 
+      "heap": {
+        "0x5C1E040": [
+          "C_ARRAY", 
+          "0x5C1E040", 
+          [
+            "C_STRUCT", 
+            "0x5C1E040", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E040", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E090": [
+          "C_ARRAY", 
+          "0x5C1E090", 
+          [
+            "C_STRUCT", 
+            "0x5C1E090", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E090", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E0E0": [
+          "C_ARRAY", 
+          "0x5C1E0E0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E0E0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E0E0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E130": [
+          "C_ARRAY", 
+          "0x5C1E130", 
+          [
+            "C_STRUCT", 
+            "0x5C1E130", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E130", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E180": [
+          "C_ARRAY", 
+          "0x5C1E180", 
+          [
+            "C_STRUCT", 
+            "0x5C1E180", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E180", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E1D0": [
+          "C_ARRAY", 
+          "0x5C1E1D0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E1D0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E1D0", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E220": [
+          "C_ARRAY", 
+          "0x5C1E220", 
+          [
+            "C_STRUCT", 
+            "0x5C1E220", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E220", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E270": [
+          "C_ARRAY", 
+          "0x5C1E270", 
+          [
+            "C_STRUCT", 
+            "0x5C1E270", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E270", 
+                "pointer", 
+                "0x400A10"
+              ]
+            ]
+          ]
+        ], 
+        "0x5C1E2C0": [
+          "C_ARRAY", 
+          "0x5C1E2C0", 
+          [
+            "C_STRUCT", 
+            "0x5C1E2C0", 
+            "Shape", 
+            [
+              "_vptr.Shape", 
+              [
+                "C_DATA", 
+                "0x5C1E2C0", 
+                "pointer", 
+                "0x4009F0"
+              ]
+            ]
+          ]
+        ]
+      }, 
+      "line": 6, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": [
+              "C_DATA", 
+              "0xFFF00008C", 
+              "int", 
+              1
+            ], 
+            "argv": [
+              "C_DATA", 
+              "0xFFF000080", 
+              "pointer", 
+              "0xFFF0001E8"
+            ], 
+            "i": [
+              "C_DATA", 
+              "0xFFF000098", 
+              "int", 
+              9
+            ], 
+            "shapes": [
+              "C_ARRAY", 
+              "0xFFF0000A0", 
+              [
+                "C_DATA", 
+                "0xFFF0000A0", 
+                "pointer", 
+                "0x5C1E040"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000A8", 
+                "pointer", 
+                "0x5C1E090"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B0", 
+                "pointer", 
+                "0x5C1E0E0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000B8", 
+                "pointer", 
+                "0x5C1E130"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C0", 
+                "pointer", 
+                "0x5C1E180"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000C8", 
+                "pointer", 
+                "0x5C1E1D0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D0", 
+                "pointer", 
+                "0x5C1E220"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000D8", 
+                "pointer", 
+                "0x5C1E270"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E0", 
+                "pointer", 
+                "0x5C1E2C0"
+              ], 
+              [
+                "C_DATA", 
+                "0xFFF0000E8", 
+                "pointer", 
+                "<UNINITIALIZED>"
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 36, 
+          "ordered_varnames": [
+            "i", 
+            "shapes", 
+            "argc", 
+            "argv"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000070", 
+          "func_name": "Triangle::Triangle()", 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 17, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Triangle::Triangle()_0xFFF000070"
+        }, 
+        {
+          "encoded_locals": {}, 
+          "frame_id": "0xFFF000050", 
+          "func_name": "Shape::Shape()", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 6, 
+          "ordered_varnames": [], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "Shape::Shape()_0xFFF000050"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
+      "event": "return", 
       "func_name": "Shape::Shape()", 
       "globals": {}, 
       "heap": {
