@@ -671,6 +671,46 @@
       "stdout": ""
     }, 
     {
+      "event": "step_line", 
+      "func_name": "main", 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 61, 
+      "ordered_globals": [], 
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "compute": [
+              "C_STRUCT", 
+              "0xFFF0000E0", 
+              "Computer", 
+              [
+                "processorspeed", 
+                [
+                  "C_DATA", 
+                  "0xFFF0000E0", 
+                  "int", 
+                  100
+                ]
+              ]
+            ]
+          }, 
+          "frame_id": "0xFFF000100", 
+          "func_name": "main", 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "is_zombie": false, 
+          "line": 61, 
+          "ordered_varnames": [
+            "compute"
+          ], 
+          "parent_frame_id_list": [], 
+          "unique_hash": "main_0xFFF000100"
+        }
+      ], 
+      "stdout": ""
+    }, 
+    {
       "event": "call", 
       "func_name": "Computer::~Computer()", 
       "globals": {}, 
