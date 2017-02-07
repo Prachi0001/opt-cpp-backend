@@ -364,6 +364,7 @@ if __name__ == '__main__':
 
     # only keep the FIRST 'step_line' event for any given line, to match what
     # a line-level debugger would do
+    # (try to do this before other optimizations)
     if ONLY_ONE_REC_PER_LINE:
         tmp = []
         prev_event = None
@@ -389,46 +390,27 @@ if __name__ == '__main__':
 
         final_execution_points = tmp # the ole' switcheroo
 
-        # if we're returning to the SAME LINE in the
-        # caller as it originally called this function
-        # with, then skip this step since it's
-        # redundant. for example:
-        '''
+    # optimization: if we're returning to the SAME LINE in the
+    # caller as it originally called this function with, then
+    # skip this step since it's redundant. for example:
+    '''
 void* foo() {
 void *x = malloc(1);
 return x;
 }
 int main() {
 void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
-                 //     before its return value is assigned to x. this optimization
-                 //     eliminates this step to clean up the trace a bit
+             //     before its return value is assigned to x. this optimization
+             //     eliminates this step to clean up the trace a bit
 }
-        '''
-        for prev, cur, next in zip(final_execution_points, final_execution_points[1:], final_execution_points[2:]):
-            if prev['event'] == 'return' and len(prev['stack_to_render']) > 1:
-                #print >> sys.stderr, 'return:',
-                #print >> sys.stderr, '  prev:', json.dumps(prev['stack_to_render'][-2])
-                #print >> sys.stderr, '   cur:', json.dumps(cur['stack_to_render'][-1])
-                prev_caller = prev['stack_to_render'][-2]
-                cur_top = cur['stack_to_render'][-1]
-                # if we're returning to the SAME LINE in the
-                # caller as it originally called this function
-                # with, then skip this step since it's
-                # redundant. for example:
-                '''
-                void* foo() {
-                void *x = malloc(1);
-                return x;
-                }
-                int main() {
-                void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
-                               //     before its return value is assigned to x. this optimization
-                               //     eliminates this step to clean up the trace a bit
-                }
-                '''
-                if (cur_top['frame_id'] == prev_caller['frame_id']) and \
-                   (cur_top['line'] == prev_caller['line']):
-                    cur['to_delete'] = True
+    '''
+    for prev, cur, next in zip(final_execution_points, final_execution_points[1:], final_execution_points[2:]):
+        if prev['event'] == 'return' and len(prev['stack_to_render']) > 1:
+            prev_caller = prev['stack_to_render'][-2]
+            cur_top = cur['stack_to_render'][-1]
+            if (cur_top['frame_id'] == prev_caller['frame_id']) and \
+               (cur_top['line'] == prev_caller['line']):
+                cur['to_delete'] = True
 
 
     # now eliminate all steps before the first call to 'main' to clean up the trace,
