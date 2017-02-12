@@ -9,6 +9,9 @@ from subprocess import Popen, PIPE
 import re
 import sys
 
+VALGRIND_MSG_RE = re.compile('==\d+== (.*)$')
+end_of_trace_error_msg = None
+
 DN = os.path.dirname(sys.argv[0])
 if not DN:
     DN = '.' # so that we always have an executable path like ./usercode.exe
@@ -66,16 +69,38 @@ if gcc_retcode == 0:
     print >> sys.stderr, '=== Valgrind stderr ==='
     print >> sys.stderr, valgrind_stderr
 
-    # TODO: gracefully handle Valgrind-produced errors
+    error_lines = []
+    in_error_msg = False
+    if valgrind_retcode != 0: # there's been an error with Valgrind
+        for line in valgrind_stderr.splitlines():
+            m = VALGRIND_MSG_RE.match(line)
+            if m:
+                msg = m.group(1).rstrip()
+                #print >> sys.stderr, msg
+                if 'Process terminating' in msg:
+                    in_error_msg = True
+
+                if in_error_msg:
+                    if not msg:
+                        in_error_msg = False
+
+                if in_error_msg:
+                    error_lines.append(msg)
+
+        #print >> sys.stderr, error_lines
+        if error_lines:
+            end_of_trace_error_msg = '\n'.join(error_lines)
+
 
     # convert vgtrace into an OPT trace
 
     # TODO: integrate call into THIS SCRIPT since it's simply Python
     # code; no need to call it as an external script
     POSTPROCESS_EXE = os.path.join(DN, 'vg_to_opt_trace.py')
-    postprocess_p = Popen(['python', POSTPROCESS_EXE,
-                           '--jsondump', F_PATH],
-                          stdout=PIPE, stderr=PIPE)
+    args = ['python', POSTPROCESS_EXE, '--jsondump', F_PATH]
+    if end_of_trace_error_msg:
+        args += ['--end-of-trace-error-msg', end_of_trace_error_msg]
+    postprocess_p = Popen(args, stdout=PIPE, stderr=PIPE)
     (postprocess_stdout, postprocess_stderr) = postprocess_p.communicate()
     postprocess_retcode = postprocess_p.returncode
     print >> sys.stderr, '=== postprocess stderr ==='

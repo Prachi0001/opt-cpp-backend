@@ -7,6 +7,9 @@
 # pass in full path name of a source file, which should end in '.c' or '.cpp'.
 # assumes that the Valgrind-produced trace is $basename.vgtrace
 # (without the '.c.' or '.cpp' extension)
+#
+# optionally, if you want to pass an error message to display at the end
+# of the trace, pass it in via the --end-of-trace-error-msg argument
 
 
 # this is pretty brittle and dependent on the user's gcc version and
@@ -221,6 +224,8 @@ if __name__ == '__main__':
                       help="Dump compact JSON as output")
     parser.add_option("--prettydump", dest="prettydump", action="store_true", default=False,
                       help="Dump pretty-printed JSON as output")
+    parser.add_option("--end-of-trace-error-msg", dest="end_of_trace_error_msg", default=None,
+                      help="Display this error message at the end of the trace")
 
     (options, args) = parser.parse_args()
 
@@ -350,6 +355,7 @@ if __name__ == '__main__':
         if success:
             final_execution_points[-1]['event'] = 'return'
 
+
     # kludgy: don't do to_delete for return events, since if we do this,
     # then we may be skipping return events for one-liner functions like
     #   int getInt() { return static_const_member;}
@@ -432,20 +438,20 @@ void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
             print >> sys.stderr, 'to_delete:', json.dumps(e)
     final_execution_points = [e for e in final_execution_points if 'to_delete' not in e]
 
+
     if len(final_execution_points) > MAX_STEPS:
       # truncate to MAX_STEPS entries
-      final_execution_points = final_execution_points[:MAX_STEPS]
-      final_execution_points[-1]['event'] = 'instruction_limit_reached'
-      final_execution_points[-1]['exception_msg'] = 'Stopped after running ' + str(MAX_STEPS) + ' steps. Please shorten your code,\nsince Python Tutor is not designed to handle long-running code.'
+        final_execution_points = final_execution_points[:MAX_STEPS]
+        final_execution_points[-1]['event'] = 'instruction_limit_reached'
+        final_execution_points[-1]['exception_msg'] = 'Stopped after running ' + str(MAX_STEPS) + ' steps. Please shorten your code,\nsince Python Tutor is not designed to handle long-running code.'
+    #elif options.end_of_trace_error_msg:
+    #    # make last statement an exception if end_of_trace_error_msg passed in
+    #    final_execution_points[-1]['event'] = 'exception'
+    #    final_execution_points[-1]['exception_msg'] = options.end_of_trace_error_msg
+    #else:
+    #    # make last statement a faux 'return', presumably from main
+    #    final_execution_points[-1]['event'] = 'return'
 
-    '''
-    for elt in final_execution_points:
-        skip = False
-        cur_event = elt['event']
-        cur_line = elt['line']
-        cur_frame_ids = [e['frame_id'] for e in elt['stack_to_render']]
-        print cur_event, cur_line, cur_frame_ids
-    '''
 
     cod = open(fn).read()
     # produce the final trace, voila!
