@@ -1,5 +1,5 @@
 {
-  "code": "int main() {\n  int* x = malloc(8);\n  free(x); // show x pointing to garbage\n  x = 0;   // show x pointing to NULL\n}\n", 
+  "code": "int main() {\n  int* x = malloc(8);\n  free(x); // show x pointing to garbage\n  x = 0;   // show x pointing to NULL\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -185,3 +185,4 @@
     }
   ]
 }
+

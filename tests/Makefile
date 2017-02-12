@@ -53,14 +53,22 @@ all-traces: basic.trace \
 
 
 %.trace: %.c ../valgrind-3.11.0/inst/bin/valgrind
-	@gcc -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
-	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
-	@python ../vg_to_opt_trace.py --prettydump $< > $(basename $<).trace || true
+	@python ../run_cpp_backend.py "`cat $<`" c --prettydump > $(basename $<).trace
 
 %.trace: %.cpp ../valgrind-3.11.0/inst/bin/valgrind
-	@g++ -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
-	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
-	@python ../vg_to_opt_trace.py --prettydump $< > $(basename $<).trace || true
+	@python ../run_cpp_backend.py "`cat $<`" cpp --prettydump > $(basename $<).trace
+
+
+# old crufty code ...
+#%.trace: %.c ../valgrind-3.11.0/inst/bin/valgrind
+#	@gcc -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
+#	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
+#	@python ../vg_to_opt_trace.py --prettydump $< > $(basename $<).trace || true
+#
+#%.trace: %.cpp ../valgrind-3.11.0/inst/bin/valgrind
+#	@g++ -ggdb -O0 -fno-omit-frame-pointer $< -o $(basename $@).exe
+#	@stdbuf -o0 ../valgrind-3.11.0/inst/bin/valgrind --tool=memcheck --source-filename=$< --trace-filename=$(basename $<).vgtrace ./$(basename $<).exe || true
+#	@python ../vg_to_opt_trace.py --prettydump $< > $(basename $<).trace || true
 
 clean:
 	rm -f *.trace *.vgtrace *.out

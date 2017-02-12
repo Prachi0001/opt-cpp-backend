@@ -1,5 +1,5 @@
 {
-  "code": "// simplified from the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n\nconst int DIM1 = 3;\nconst int DIM2 = 4;\n\nstruct boo {\n  int a;\n  int b;\n  int c[4][5];\n  int* d[9][7];\n};\n\nstruct boo globalBoo;\n\nvoid fint(int param[DIM1][DIM2]) {\n  return;\n}\n\nvoid __attribute__(()) fcrashint(int param[10][5], struct boo booParam) {\n  printf(\"fcrashint: &param=%p &booParam=%p, diff=%d\\n\",\n         &param, &booParam, (void*)&booParam - (void*)&param);\n};\n\nint main() {\n  int x[DIM1][DIM2];\n  int i, j;\n  for (i = 0; i < DIM1; i++)\n    for(j = 0; j < DIM2; j++)\n      x[i][j] = i+j*i;\n  globalBoo.a = 42;\n  globalBoo.b = 9876;\n  globalBoo.c[0][0] = 12345;\n  globalBoo.c[1][0] = 54321;\n  globalBoo.c[2][0] = 42;\n  fint(x);\n  fcrashint(x, globalBoo);\n  return 0;\n}\n", 
+  "code": "// simplified from the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n\nconst int DIM1 = 3;\nconst int DIM2 = 4;\n\nstruct boo {\n  int a;\n  int b;\n  int c[4][5];\n  int* d[9][7];\n};\n\nstruct boo globalBoo;\n\nvoid fint(int param[DIM1][DIM2]) {\n  return;\n}\n\nvoid __attribute__(()) fcrashint(int param[10][5], struct boo booParam) {\n  printf(\"fcrashint: &param=%p &booParam=%p, diff=%d\\n\",\n         &param, &booParam, (void*)&booParam - (void*)&param);\n};\n\nint main() {\n  int x[DIM1][DIM2];\n  int i, j;\n  for (i = 0; i < DIM1; i++)\n    for(j = 0; j < DIM2; j++)\n      x[i][j] = i+j*i;\n  globalBoo.a = 42;\n  globalBoo.b = 9876;\n  globalBoo.c[0][0] = 12345;\n  globalBoo.c[1][0] = 54321;\n  globalBoo.c[2][0] = 42;\n  fint(x);\n  fcrashint(x, globalBoo);\n  return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -573,18 +573,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -595,7 +595,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1172,18 +1172,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1194,7 +1194,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1771,18 +1771,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1793,7 +1793,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2370,18 +2370,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2392,7 +2392,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2969,18 +2969,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               0
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2991,7 +2991,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3568,18 +3568,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               0
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3590,7 +3590,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -4167,18 +4167,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4189,7 +4189,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -4766,18 +4766,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4788,7 +4788,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -5365,18 +5365,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               2
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5387,7 +5387,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -5964,18 +5964,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               2
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5986,7 +5986,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -6563,18 +6563,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -6585,7 +6585,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -7162,18 +7162,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -7184,7 +7184,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -7761,18 +7761,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               0
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -7783,7 +7783,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -8360,18 +8360,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -8382,7 +8382,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -8959,18 +8959,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               0
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -8981,7 +8981,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -9558,18 +9558,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               0
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -9580,7 +9580,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -10157,18 +10157,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -10179,7 +10179,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -10756,18 +10756,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -10778,7 +10778,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -11355,18 +11355,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               2
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -11377,7 +11377,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -11954,18 +11954,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               2
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -11976,7 +11976,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -12553,18 +12553,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -12575,7 +12575,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -13152,18 +13152,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -13174,7 +13174,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -13751,18 +13751,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               1
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -13773,7 +13773,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -14350,18 +14350,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -14372,7 +14372,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -14949,18 +14949,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               0
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -14971,7 +14971,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -15548,18 +15548,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               0
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -15570,7 +15570,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -16147,18 +16147,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -16169,7 +16169,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -16746,18 +16746,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -16768,7 +16768,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -17345,18 +17345,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               2
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -17367,7 +17367,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -17944,18 +17944,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               2
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -17966,7 +17966,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -18543,18 +18543,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -18565,7 +18565,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -19142,18 +19142,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -19164,7 +19164,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -19741,18 +19741,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               2
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -19763,7 +19763,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -20340,18 +20340,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -20362,7 +20362,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -20939,18 +20939,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -20961,7 +20961,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -21538,18 +21538,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -21560,7 +21560,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -22137,18 +22137,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -22159,7 +22159,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -22736,18 +22736,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -22758,7 +22758,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -23335,18 +23335,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -23357,7 +23357,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -23934,18 +23934,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -23956,18 +23956,18 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "param": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFEFFFE08", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFEFFFE20", 
           "func_name": "fint", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -23977,7 +23977,7 @@
             "param"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "fint_0xFFEFFFE00"
+          "unique_hash": "fint_0xFFEFFFE20"
         }
       ], 
       "stdout": ""
@@ -24554,18 +24554,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -24576,18 +24576,18 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "param": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFEFFFE08", 
               "pointer", 
-              "0xFFF000060"
+              "0xFFF000080"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFEFFFE20", 
           "func_name": "fint", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -24597,7 +24597,7 @@
             "param"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "fint_0xFFEFFFE00"
+          "unique_hash": "fint_0xFFEFFFE20"
         }
       ], 
       "stdout": ""
@@ -25174,18 +25174,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -25196,18 +25196,18 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "param": [
               "C_DATA", 
-              "0xFFEFFFDE8", 
+              "0xFFEFFFE08", 
               "pointer", 
-              "0xFFF000060"
+              "0xFFF000080"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFEFFFE20", 
           "func_name": "fint", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -25217,7 +25217,7 @@
             "param"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "fint_0xFFEFFFE00"
+          "unique_hash": "fint_0xFFEFFFE20"
         }
       ], 
       "stdout": ""
@@ -25794,18 +25794,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -25816,7 +25816,7 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -26393,18 +26393,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -26415,19 +26415,19 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "booParam": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFEFFFE30", 
               "boo", 
               [
                 "a", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFEFFFE30", 
                   "int", 
                   42
                 ]
@@ -26436,7 +26436,7 @@
                 "b", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFEFFFE34", 
                   "int", 
                   9876
                 ]
@@ -26445,64 +26445,16 @@
                 "c", 
                 [
                   "C_MULTIDIMENSIONAL_ARRAY", 
-                  "0xFFEFFFE18", 
+                  "0xFFEFFFE38", 
                   [
                     4, 
                     5
                   ], 
                   [
                     "C_DATA", 
-                    "0xFFEFFFE18", 
-                    "int", 
-                    12345
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE1C", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE20", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE24", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE28", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE2C", 
-                    "int", 
-                    54321
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE30", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE34", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
                     "0xFFEFFFE38", 
                     "int", 
-                    0
+                    12345
                   ], 
                   [
                     "C_DATA", 
@@ -26514,7 +26466,7 @@
                     "C_DATA", 
                     "0xFFEFFFE40", 
                     "int", 
-                    42
+                    0
                   ], 
                   [
                     "C_DATA", 
@@ -26532,7 +26484,7 @@
                     "C_DATA", 
                     "0xFFEFFFE4C", 
                     "int", 
-                    0
+                    54321
                   ], 
                   [
                     "C_DATA", 
@@ -26562,11 +26514,59 @@
                     "C_DATA", 
                     "0xFFEFFFE60", 
                     "int", 
-                    0
+                    42
                   ], 
                   [
                     "C_DATA", 
                     "0xFFEFFFE64", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE68", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE6C", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE70", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE74", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE78", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE7C", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE80", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE84", 
                     "int", 
                     0
                   ]
@@ -26576,34 +26576,10 @@
                 "d", 
                 [
                   "C_MULTIDIMENSIONAL_ARRAY", 
-                  "0xFFEFFFE68", 
+                  "0xFFEFFFE88", 
                   [
                     9, 
                     7
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE68", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE70", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE78", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE80", 
-                    "pointer", 
-                    "0x0"
                   ], 
                   [
                     "C_DATA", 
@@ -26958,18 +26934,42 @@
                     "0xFFF000058", 
                     "pointer", 
                     "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000060", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000068", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000070", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000078", 
+                    "pointer", 
+                    "0x0"
                   ]
                 ]
               ]
             ], 
             "param": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFEFFFE18", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFEFFFE20", 
           "func_name": "fcrashint", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -26980,7 +26980,7 @@
             "booParam"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "fcrashint_0xFFEFFFE00"
+          "unique_hash": "fcrashint_0xFFEFFFE20"
         }
       ], 
       "stdout": ""
@@ -27557,18 +27557,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -27579,19 +27579,19 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "booParam": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFEFFFE30", 
               "boo", 
               [
                 "a", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFEFFFE30", 
                   "int", 
                   42
                 ]
@@ -27600,7 +27600,7 @@
                 "b", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFEFFFE34", 
                   "int", 
                   9876
                 ]
@@ -27609,64 +27609,16 @@
                 "c", 
                 [
                   "C_MULTIDIMENSIONAL_ARRAY", 
-                  "0xFFEFFFE18", 
+                  "0xFFEFFFE38", 
                   [
                     4, 
                     5
                   ], 
                   [
                     "C_DATA", 
-                    "0xFFEFFFE18", 
-                    "int", 
-                    12345
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE1C", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE20", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE24", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE28", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE2C", 
-                    "int", 
-                    54321
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE30", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE34", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
                     "0xFFEFFFE38", 
                     "int", 
-                    0
+                    12345
                   ], 
                   [
                     "C_DATA", 
@@ -27678,7 +27630,7 @@
                     "C_DATA", 
                     "0xFFEFFFE40", 
                     "int", 
-                    42
+                    0
                   ], 
                   [
                     "C_DATA", 
@@ -27696,7 +27648,7 @@
                     "C_DATA", 
                     "0xFFEFFFE4C", 
                     "int", 
-                    0
+                    54321
                   ], 
                   [
                     "C_DATA", 
@@ -27726,11 +27678,59 @@
                     "C_DATA", 
                     "0xFFEFFFE60", 
                     "int", 
-                    0
+                    42
                   ], 
                   [
                     "C_DATA", 
                     "0xFFEFFFE64", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE68", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE6C", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE70", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE74", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE78", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE7C", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE80", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE84", 
                     "int", 
                     0
                   ]
@@ -27740,34 +27740,10 @@
                 "d", 
                 [
                   "C_MULTIDIMENSIONAL_ARRAY", 
-                  "0xFFEFFFE68", 
+                  "0xFFEFFFE88", 
                   [
                     9, 
                     7
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE68", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE70", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE78", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE80", 
-                    "pointer", 
-                    "0x0"
                   ], 
                   [
                     "C_DATA", 
@@ -28122,18 +28098,42 @@
                     "0xFFF000058", 
                     "pointer", 
                     "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000060", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000068", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000070", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000078", 
+                    "pointer", 
+                    "0x0"
                   ]
                 ]
               ]
             ], 
             "param": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFEFFFE18", 
               "pointer", 
-              "0xFFF000060"
+              "0xFFF000080"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFEFFFE20", 
           "func_name": "fcrashint", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -28144,7 +28144,7 @@
             "booParam"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "fcrashint_0xFFEFFFE00"
+          "unique_hash": "fcrashint_0xFFEFFFE20"
         }
       ], 
       "stdout": ""
@@ -28721,18 +28721,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -28743,19 +28743,19 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "booParam": [
               "C_STRUCT", 
-              "0xFFEFFFE10", 
+              "0xFFEFFFE30", 
               "boo", 
               [
                 "a", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE10", 
+                  "0xFFEFFFE30", 
                   "int", 
                   42
                 ]
@@ -28764,7 +28764,7 @@
                 "b", 
                 [
                   "C_DATA", 
-                  "0xFFEFFFE14", 
+                  "0xFFEFFFE34", 
                   "int", 
                   9876
                 ]
@@ -28773,64 +28773,16 @@
                 "c", 
                 [
                   "C_MULTIDIMENSIONAL_ARRAY", 
-                  "0xFFEFFFE18", 
+                  "0xFFEFFFE38", 
                   [
                     4, 
                     5
                   ], 
                   [
                     "C_DATA", 
-                    "0xFFEFFFE18", 
-                    "int", 
-                    12345
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE1C", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE20", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE24", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE28", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE2C", 
-                    "int", 
-                    54321
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE30", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE34", 
-                    "int", 
-                    0
-                  ], 
-                  [
-                    "C_DATA", 
                     "0xFFEFFFE38", 
                     "int", 
-                    0
+                    12345
                   ], 
                   [
                     "C_DATA", 
@@ -28842,7 +28794,7 @@
                     "C_DATA", 
                     "0xFFEFFFE40", 
                     "int", 
-                    42
+                    0
                   ], 
                   [
                     "C_DATA", 
@@ -28860,7 +28812,7 @@
                     "C_DATA", 
                     "0xFFEFFFE4C", 
                     "int", 
-                    0
+                    54321
                   ], 
                   [
                     "C_DATA", 
@@ -28890,11 +28842,59 @@
                     "C_DATA", 
                     "0xFFEFFFE60", 
                     "int", 
-                    0
+                    42
                   ], 
                   [
                     "C_DATA", 
                     "0xFFEFFFE64", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE68", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE6C", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE70", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE74", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE78", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE7C", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE80", 
+                    "int", 
+                    0
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFEFFFE84", 
                     "int", 
                     0
                   ]
@@ -28904,34 +28904,10 @@
                 "d", 
                 [
                   "C_MULTIDIMENSIONAL_ARRAY", 
-                  "0xFFEFFFE68", 
+                  "0xFFEFFFE88", 
                   [
                     9, 
                     7
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE68", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE70", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE78", 
-                    "pointer", 
-                    "0x0"
-                  ], 
-                  [
-                    "C_DATA", 
-                    "0xFFEFFFE80", 
-                    "pointer", 
-                    "0x0"
                   ], 
                   [
                     "C_DATA", 
@@ -29286,18 +29262,42 @@
                     "0xFFF000058", 
                     "pointer", 
                     "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000060", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000068", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000070", 
+                    "pointer", 
+                    "0x0"
+                  ], 
+                  [
+                    "C_DATA", 
+                    "0xFFF000078", 
+                    "pointer", 
+                    "0x0"
                   ]
                 ]
               ]
             ], 
             "param": [
               "C_DATA", 
-              "0xFFEFFFDF8", 
+              "0xFFEFFFE18", 
               "pointer", 
-              "0xFFF000060"
+              "0xFFF000080"
             ]
           }, 
-          "frame_id": "0xFFEFFFE00", 
+          "frame_id": "0xFFEFFFE20", 
           "func_name": "fcrashint", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -29308,10 +29308,10 @@
             "booParam"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "fcrashint_0xFFEFFFE00"
+          "unique_hash": "fcrashint_0xFFEFFFE20"
         }
       ], 
-      "stdout": "fcrashint: &param=0xffefffdf8 &booParam=0xffefffe10, diff=24\n"
+      "stdout": "fcrashint: &param=0xffefffe18 &booParam=0xffefffe30, diff=24\n"
     }, 
     {
       "event": "step_line", 
@@ -29885,18 +29885,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -29907,10 +29907,10 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
-      "stdout": "fcrashint: &param=0xffefffdf8 &booParam=0xffefffe10, diff=24\n"
+      "stdout": "fcrashint: &param=0xffefffe18 &booParam=0xffefffe30, diff=24\n"
     }, 
     {
       "event": "step_line", 
@@ -30484,18 +30484,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -30506,10 +30506,10 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
-      "stdout": "fcrashint: &param=0xffefffdf8 &booParam=0xffefffe10, diff=24\n"
+      "stdout": "fcrashint: &param=0xffefffe18 &booParam=0xffefffe30, diff=24\n"
     }, 
     {
       "event": "return", 
@@ -31083,18 +31083,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000A0", 
+              "0xFFF0000C0", 
               "int", 
               3
             ], 
             "j": [
               "C_DATA", 
-              "0xFFF0000A4", 
+              "0xFFF0000C4", 
               "int", 
               4
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -31105,10 +31105,11 @@
             "j"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
-      "stdout": "fcrashint: &param=0xffefffdf8 &booParam=0xffefffe10, diff=24\n"
+      "stdout": "fcrashint: &param=0xffefffe18 &booParam=0xffefffe30, diff=24\n"
     }
   ]
 }
+

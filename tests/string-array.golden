@@ -1,5 +1,5 @@
 {
-  "code": "#include <stdlib.h>\n\nint main() {\n  char *stack_animals[] = {\n    \"Bear\", \"Cat\", \"Dog\"\n  };\n\n  char** heap_animals = malloc(10 * sizeof(*heap_animals));\n  heap_animals[1] = \"Dolphin\";\n  heap_animals[3] = \"Orca\";\n  heap_animals[5] = \"Whale\";\n\n  return 0;\n}\n", 
+  "code": "#include <stdlib.h>\n\nint main() {\n  char *stack_animals[] = {\n    \"Bear\", \"Cat\", \"Dog\"\n  };\n\n  char** heap_animals = malloc(10 * sizeof(*heap_animals));\n  heap_animals[1] = \"Dolphin\";\n  heap_animals[3] = \"Orca\";\n  heap_animals[5] = \"Whale\";\n\n  return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -1699,3 +1699,4 @@
     }
   ]
 }
+

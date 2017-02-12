@@ -1,5 +1,5 @@
 {
-  "code": "int main() {\n  int *x = new int;\n  int *x_array = new int[10];\n\n  x_array[1] = 1;\n  x_array[3] = 3;\n  x_array[5] = 5;\n\n  delete x;\n  delete[] x_array;\n  return 0;\n}\n", 
+  "code": "int main() {\n  int *x = new int;\n  int *x_array = new int[10];\n\n  x_array[1] = 1;\n  x_array[3] = 3;\n  x_array[5] = 5;\n\n  delete x;\n  delete[] x_array;\n  return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -734,3 +734,4 @@
     }
   ]
 }
+

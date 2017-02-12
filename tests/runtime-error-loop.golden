@@ -1,5 +1,5 @@
 {
-  "code": "int main() {\n  int i;\n  int* x = (int*)malloc(10*sizeof(*x));\n  for (i = 0; i < 20; i++)\n    x[i] = i * i;\n}\n", 
+  "code": "int main() {\n  int i;\n  int* x = (int*)malloc(10*sizeof(*x));\n  for (i = 0; i < 20; i++)\n    x[i] = i * i;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -13,18 +13,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000EC", 
+              "0xFFF0000FC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -35,7 +35,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -52,18 +52,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000EC", 
+              "0xFFF0000FC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -74,7 +74,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -156,18 +156,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -178,7 +178,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -260,18 +260,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               0
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -282,7 +282,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -364,18 +364,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               0
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -386,7 +386,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -468,18 +468,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               1
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -490,7 +490,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -572,18 +572,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               1
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -594,7 +594,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -676,18 +676,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               2
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -698,7 +698,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -780,18 +780,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               2
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -802,7 +802,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -884,18 +884,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               3
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -906,7 +906,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -988,18 +988,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               3
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1010,7 +1010,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1092,18 +1092,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               4
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1114,7 +1114,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1196,18 +1196,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               4
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1218,7 +1218,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1300,18 +1300,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               5
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1322,7 +1322,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1404,18 +1404,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               5
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1426,7 +1426,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1508,18 +1508,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               6
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1530,7 +1530,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1612,18 +1612,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               6
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1634,7 +1634,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1716,18 +1716,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               7
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1738,7 +1738,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1820,18 +1820,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               7
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1842,7 +1842,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1924,18 +1924,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               8
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1946,7 +1946,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2028,18 +2028,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               8
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2050,7 +2050,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2132,18 +2132,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               9
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2154,7 +2154,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2236,18 +2236,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               9
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2258,7 +2258,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2340,18 +2340,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               10
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2362,7 +2362,7 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2445,18 +2445,18 @@
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000F4", 
+              "0xFFF000104", 
               "int", 
               10
             ], 
             "x": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2467,10 +2467,11 @@
             "x"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
 }
+

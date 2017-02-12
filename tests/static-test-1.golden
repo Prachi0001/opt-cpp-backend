@@ -1,5 +1,5 @@
 {
-  "code": "void foo(int* a) { // a should point to x\n}\n\nint main() {\n  static int x[] = {1,2,3,4,5};\n  foo(x);\n}\n", 
+  "code": "void foo(int* a) { // a should point to x\n}\n\nint main() {\n  static int x[] = {1,2,3,4,5};\n  foo(x);\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -285,3 +285,4 @@
     }
   ]
 }
+

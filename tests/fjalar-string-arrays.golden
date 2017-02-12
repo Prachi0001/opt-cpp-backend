@@ -1,5 +1,5 @@
 {
-  "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <ctype.h>\n\nint f(char *arg, char **strings) {\n    return 12;\n}\n\nchar *uppercase (char *s) {\n    static char upcasestr[128];\n    int i;\n\n    for (i = 0; i < strlen (s); i++)\n\tupcasestr[i] = toupper(s[i]);\n    upcasestr[i] = '\\0';\n\n    return (upcasestr);\n}\n\nint main()\n{\n    char *none = 0;\n    static char *strings[] = {\"apple\", \"banana\", \"carrot\", \"daikon\",\n\t\t\t      \"eggplant\", \"fig\", \"grape\", 0 };\n    f(strings[1], strings);\n\n    uppercase(\"huckleberry\");\n\n    return 0;\n}\n", 
+  "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <ctype.h>\n\nint f(char *arg, char **strings) {\n    return 12;\n}\n\nchar *uppercase (char *s) {\n    static char upcasestr[128];\n    int i;\n\n    for (i = 0; i < strlen (s); i++)\n\tupcasestr[i] = toupper(s[i]);\n    upcasestr[i] = '\\0';\n\n    return (upcasestr);\n}\n\nint main()\n{\n    char *none = 0;\n    static char *strings[] = {\"apple\", \"banana\", \"carrot\", \"daikon\",\n\t\t\t      \"eggplant\", \"fig\", \"grape\", 0 };\n    f(strings[1], strings);\n\n    uppercase(\"huckleberry\");\n\n    return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -318,7 +318,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F0", 
+              "0xFFF000100", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
@@ -375,7 +375,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -386,7 +386,7 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -708,7 +708,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
@@ -765,7 +765,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -776,7 +776,7 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1098,7 +1098,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -1155,7 +1155,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1166,7 +1166,7 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1488,7 +1488,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -1545,7 +1545,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1556,24 +1556,24 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "arg": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "strings": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "f", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1584,7 +1584,7 @@
             "strings"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "f_0xFFF0000E0"
+          "unique_hash": "f_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -1906,7 +1906,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -1963,7 +1963,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1974,24 +1974,24 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "arg": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x4006D6"
             ], 
             "strings": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "0x601060"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "f", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2002,7 +2002,7 @@
             "strings"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "f_0xFFF0000E0"
+          "unique_hash": "f_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -2324,7 +2324,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -2381,7 +2381,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2392,24 +2392,24 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "arg": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x4006D6"
             ], 
             "strings": [
               "C_DATA", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "pointer", 
               "0x601060"
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "f", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2420,7 +2420,7 @@
             "strings"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "f_0xFFF0000E0"
+          "unique_hash": "f_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -2742,7 +2742,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -2799,7 +2799,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2810,7 +2810,7 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3132,7 +3132,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -3189,7 +3189,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3200,19 +3200,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
@@ -3989,7 +3989,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4001,7 +4001,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -4399,7 +4399,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -4456,7 +4456,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -4467,19 +4467,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -5256,7 +5256,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5268,7 +5268,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -5666,7 +5666,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -5723,7 +5723,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -5734,19 +5734,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               0
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -6523,7 +6523,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -6535,7 +6535,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -6933,7 +6933,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -6990,7 +6990,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -7001,19 +7001,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               0
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -7790,7 +7790,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -7802,7 +7802,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -8200,7 +8200,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -8257,7 +8257,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -8268,19 +8268,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               1
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -9057,7 +9057,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -9069,7 +9069,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -9467,7 +9467,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -9524,7 +9524,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -9535,19 +9535,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               1
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -10324,7 +10324,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -10336,7 +10336,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -10734,7 +10734,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -10791,7 +10791,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -10802,19 +10802,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               2
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -11591,7 +11591,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -11603,7 +11603,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -12001,7 +12001,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -12058,7 +12058,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -12069,19 +12069,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               2
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -12858,7 +12858,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -12870,7 +12870,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -13268,7 +13268,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -13325,7 +13325,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -13336,19 +13336,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               3
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -14125,7 +14125,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -14137,7 +14137,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -14535,7 +14535,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -14592,7 +14592,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -14603,19 +14603,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               3
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -15392,7 +15392,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -15404,7 +15404,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -15802,7 +15802,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -15859,7 +15859,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -15870,19 +15870,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               4
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -16659,7 +16659,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -16671,7 +16671,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -17069,7 +17069,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -17126,7 +17126,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -17137,19 +17137,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               4
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -17926,7 +17926,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -17938,7 +17938,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -18336,7 +18336,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -18393,7 +18393,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -18404,19 +18404,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -19193,7 +19193,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -19205,7 +19205,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -19603,7 +19603,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -19660,7 +19660,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -19671,19 +19671,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               5
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -20460,7 +20460,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -20472,7 +20472,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -20870,7 +20870,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -20927,7 +20927,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -20938,19 +20938,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               6
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -21727,7 +21727,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -21739,7 +21739,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -22137,7 +22137,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -22194,7 +22194,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -22205,19 +22205,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               6
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -22994,7 +22994,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -23006,7 +23006,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -23404,7 +23404,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -23461,7 +23461,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -23472,19 +23472,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               7
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -24261,7 +24261,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -24273,7 +24273,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -24671,7 +24671,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -24728,7 +24728,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -24739,19 +24739,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               7
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -25528,7 +25528,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -25540,7 +25540,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -25938,7 +25938,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -25995,7 +25995,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -26006,19 +26006,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               8
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -26795,7 +26795,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -26807,7 +26807,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -27205,7 +27205,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -27262,7 +27262,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -27273,19 +27273,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               8
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -28062,7 +28062,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -28074,7 +28074,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -28472,7 +28472,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -28529,7 +28529,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -28540,19 +28540,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               9
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -29329,7 +29329,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -29341,7 +29341,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -29739,7 +29739,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -29796,7 +29796,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -29807,19 +29807,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               9
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -30596,7 +30596,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -30608,7 +30608,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -31006,7 +31006,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -31063,7 +31063,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -31074,19 +31074,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               10
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -31863,7 +31863,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -31875,7 +31875,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -32273,7 +32273,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -32330,7 +32330,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -32341,19 +32341,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               10
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -33130,7 +33130,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -33142,7 +33142,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -33540,7 +33540,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -33597,7 +33597,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -33608,19 +33608,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               11
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -34397,7 +34397,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -34409,7 +34409,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -34807,7 +34807,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -34864,7 +34864,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -34875,19 +34875,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               11
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -35664,7 +35664,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -35676,7 +35676,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -36074,7 +36074,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -36131,7 +36131,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -36142,19 +36142,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               11
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -36931,7 +36931,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -36943,7 +36943,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -37341,7 +37341,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -37398,7 +37398,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -37409,19 +37409,19 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "i": [
               "C_DATA", 
-              "0xFFF0000CC", 
+              "0xFFF0000DC", 
               "int", 
               11
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x4006C4"
             ], 
@@ -38198,7 +38198,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "uppercase", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -38210,7 +38210,7 @@
             "upcasestr (static 0x6010C0)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "uppercase_0xFFF0000E0"
+          "unique_hash": "uppercase_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -38532,7 +38532,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -38589,7 +38589,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -38600,7 +38600,7 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -38922,7 +38922,7 @@
           "encoded_locals": {
             "none": [
               "C_DATA", 
-              "0xFFF0000F8", 
+              "0xFFF000108", 
               "pointer", 
               "0x0"
             ], 
@@ -38979,7 +38979,7 @@
               ]
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -38990,10 +38990,11 @@
             "strings (static 0x601060)"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
 }
+

@@ -1,5 +1,5 @@
 {
-  "code": "static int x = 123;\nvoid foo() {\n  static int x=0;\n  x+=10;\n}\n\nint main() {\n  static int x = 456;\n  int y = 789;\n  foo();\n  foo();\n  foo();\n}\n", 
+  "code": "static int x = 123;\nvoid foo() {\n  static int x=0;\n  x+=10;\n}\n\nint main() {\n  static int x = 456;\n  int y = 789;\n  foo();\n  foo();\n  foo();\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -705,3 +705,4 @@
     }
   ]
 }
+

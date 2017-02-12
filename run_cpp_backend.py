@@ -18,6 +18,12 @@ if not DN:
 USER_PROGRAM = sys.argv[1] # string containing the program to be run
 LANG = sys.argv[2] # 'c' for C or 'cpp' for C++
 
+prettydump = False
+if len(sys.argv) > 3:
+    if sys.argv[3] == '--prettydump':
+        prettydump = True
+
+
 if LANG == 'c':
     CC = 'gcc'
     DIALECT = '-std=c11'
@@ -97,9 +103,15 @@ if gcc_retcode == 0:
     # TODO: integrate call into THIS SCRIPT since it's simply Python
     # code; no need to call it as an external script
     POSTPROCESS_EXE = os.path.join(DN, 'vg_to_opt_trace.py')
-    args = ['python', POSTPROCESS_EXE, '--jsondump', F_PATH]
+    args = ['python', POSTPROCESS_EXE]
+    if prettydump:
+        args.append('--prettydump')
+    else:
+        args.append('--jsondump')
     if end_of_trace_error_msg:
         args += ['--end-of-trace-error-msg', end_of_trace_error_msg]
+    args.append(F_PATH)
+
     postprocess_p = Popen(args, stdout=PIPE, stderr=PIPE)
     (postprocess_stdout, postprocess_stderr) = postprocess_p.communicate()
     postprocess_retcode = postprocess_p.returncode

@@ -1,5 +1,5 @@
 {
-  "code": "// from an actual bug report!\n#include <stdio.h>\n\nint main() {\n  printf(\"Hola\\n\");\n}\n", 
+  "code": "// from an actual bug report!\n#include <stdio.h>\n\nint main() {\n  printf(\"Hola\\n\");\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -11,7 +11,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -19,7 +19,7 @@
           "line": 4, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -34,7 +34,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000120", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -42,10 +42,11 @@
           "line": 6, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000120"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": "Hola\n"
     }
   ]
 }
+

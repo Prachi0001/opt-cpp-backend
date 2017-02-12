@@ -1,5 +1,5 @@
 {
-  "code": "typedef unsigned char BYTE;\ntypedef long long int LLI;\ntypedef int* INT_PTR;\ntypedef char* C_STRING;\n\nint main() {\n  LLI x = 1234567890;\n  BYTE y[5] = {10,20,30,40,50};\n  int foo = 42;\n  INT_PTR foo_ptr = &foo;\n  C_STRING name = \"Philip\\tGuo\\n\";\n}\n", 
+  "code": "typedef unsigned char BYTE;\ntypedef long long int LLI;\ntypedef int* INT_PTR;\ntypedef char* C_STRING;\n\nint main() {\n  LLI x = 1234567890;\n  BYTE y[5] = {10,20,30,40,50};\n  int foo = 42;\n  INT_PTR foo_ptr = &foo;\n  C_STRING name = \"Philip\\tGuo\\n\";\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -534,78 +534,78 @@
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x400644": [
+        "0x400654": [
           "C_ARRAY", 
-          "0x400644", 
+          "0x400654", 
           [
             "C_DATA", 
-            "0x400644", 
+            "0x400654", 
             "char", 
             "P"
           ], 
           [
             "C_DATA", 
-            "0x400645", 
+            "0x400655", 
             "char", 
             "h"
           ], 
           [
             "C_DATA", 
-            "0x400646", 
+            "0x400656", 
             "char", 
             "i"
           ], 
           [
             "C_DATA", 
-            "0x400647", 
+            "0x400657", 
             "char", 
             "l"
           ], 
           [
             "C_DATA", 
-            "0x400648", 
+            "0x400658", 
             "char", 
             "i"
           ], 
           [
             "C_DATA", 
-            "0x400649", 
+            "0x400659", 
             "char", 
             "p"
           ], 
           [
             "C_DATA", 
-            "0x40064A", 
+            "0x40065A", 
             "char", 
             "\t"
           ], 
           [
             "C_DATA", 
-            "0x40064B", 
+            "0x40065B", 
             "char", 
             "G"
           ], 
           [
             "C_DATA", 
-            "0x40064C", 
+            "0x40065C", 
             "char", 
             "u"
           ], 
           [
             "C_DATA", 
-            "0x40064D", 
+            "0x40065D", 
             "char", 
             "o"
           ], 
           [
             "C_DATA", 
-            "0x40064E", 
+            "0x40065E", 
             "char", 
             "\n"
           ], 
           [
             "C_DATA", 
-            "0x40064F", 
+            "0x40065F", 
             "char", 
             "\\0"
           ]
@@ -632,7 +632,7 @@
               "C_DATA", 
               "0xFFF0000F8", 
               "pointer", 
-              "0x400644"
+              "0x400654"
             ], 
             "x": [
               "C_DATA", 
@@ -699,78 +699,78 @@
       "func_name": "main", 
       "globals": {}, 
       "heap": {
-        "0x400644": [
+        "0x400654": [
           "C_ARRAY", 
-          "0x400644", 
+          "0x400654", 
           [
             "C_DATA", 
-            "0x400644", 
+            "0x400654", 
             "char", 
             "P"
           ], 
           [
             "C_DATA", 
-            "0x400645", 
+            "0x400655", 
             "char", 
             "h"
           ], 
           [
             "C_DATA", 
-            "0x400646", 
+            "0x400656", 
             "char", 
             "i"
           ], 
           [
             "C_DATA", 
-            "0x400647", 
+            "0x400657", 
             "char", 
             "l"
           ], 
           [
             "C_DATA", 
-            "0x400648", 
+            "0x400658", 
             "char", 
             "i"
           ], 
           [
             "C_DATA", 
-            "0x400649", 
+            "0x400659", 
             "char", 
             "p"
           ], 
           [
             "C_DATA", 
-            "0x40064A", 
+            "0x40065A", 
             "char", 
             "\t"
           ], 
           [
             "C_DATA", 
-            "0x40064B", 
+            "0x40065B", 
             "char", 
             "G"
           ], 
           [
             "C_DATA", 
-            "0x40064C", 
+            "0x40065C", 
             "char", 
             "u"
           ], 
           [
             "C_DATA", 
-            "0x40064D", 
+            "0x40065D", 
             "char", 
             "o"
           ], 
           [
             "C_DATA", 
-            "0x40064E", 
+            "0x40065E", 
             "char", 
             "\n"
           ], 
           [
             "C_DATA", 
-            "0x40064F", 
+            "0x40065F", 
             "char", 
             "\\0"
           ]
@@ -797,7 +797,7 @@
               "C_DATA", 
               "0xFFF0000F8", 
               "pointer", 
-              "0x400644"
+              "0x400654"
             ], 
             "x": [
               "C_DATA", 
@@ -861,3 +861,4 @@
     }
   ]
 }
+

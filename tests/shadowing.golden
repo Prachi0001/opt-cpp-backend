@@ -1,5 +1,5 @@
 {
-  "code": "int x = 111;\nvoid main() {\n  int x = 222;\n  {\n    int x = 333;\n  }\n}\n", 
+  "code": "int x = 111;\nvoid main() {\n  int x = 222;\n  {\n    int x = 333;\n  }\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -127,3 +127,4 @@
     }
   ]
 }
+

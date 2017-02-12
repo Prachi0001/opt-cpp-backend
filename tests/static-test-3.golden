@@ -1,5 +1,5 @@
 {
-  "code": "void foo() {\n  static int wxyz = 42;\n}\n\nvoid main() {\n  foo();\n  static int wxyz = 12345;\n  if (1) {\n    static int wxyz = 54321;\n    printf(\"%d\\n\", wxyz);\n  }\n}\n", 
+  "code": "void foo() {\n  static int wxyz = 42;\n}\n\nvoid main() {\n  foo();\n  static int wxyz = 12345;\n  if (1) {\n    static int wxyz = 54321;\n    printf(\"%d\\n\", wxyz);\n  }\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -159,3 +159,4 @@
     }
   ]
 }
+

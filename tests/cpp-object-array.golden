@@ -1,5 +1,5 @@
 {
-  "code": "// From: http://www.cprogramming.com/tutorial/lesson12.html\n\n#include <iostream>\n\nclass Computer {\npublic:\n  Computer();\n  ~Computer();\n  void setspeed ( int p );\n  int readspeed();\nprotected:\n  int processorspeed;\n};\n\nComputer::Computer() {\n  processorspeed = 0;\n}\n\nComputer::~Computer() {\n  //Destructors do not accept arguments\n}\n\nvoid Computer::setspeed ( int p ) {\n  processorspeed = p;\n}\n\nint Computer::readspeed()  {\n  return processorspeed;\n}\n\nint main() {\n  Computer* heapComputeArray = new Computer[5];\n  heapComputeArray[1].setspeed(1);\n  heapComputeArray[3].setspeed(3);\n  heapComputeArray[5].setspeed(5);\n\n  delete[] heapComputeArray;\n  return 0;\n}\n", 
+  "code": "// From: http://www.cprogramming.com/tutorial/lesson12.html\n\n#include <iostream>\n\nclass Computer {\npublic:\n  Computer();\n  ~Computer();\n  void setspeed ( int p );\n  int readspeed();\nprotected:\n  int processorspeed;\n};\n\nComputer::Computer() {\n  processorspeed = 0;\n}\n\nComputer::~Computer() {\n  //Destructors do not accept arguments\n}\n\nvoid Computer::setspeed ( int p ) {\n  processorspeed = p;\n}\n\nint Computer::readspeed()  {\n  return processorspeed;\n}\n\nint main() {\n  Computer* heapComputeArray = new Computer[5];\n  heapComputeArray[1].setspeed(1);\n  heapComputeArray[3].setspeed(3);\n  heapComputeArray[5].setspeed(5);\n\n  delete[] heapComputeArray;\n  return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -11,7 +11,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -19,7 +19,7 @@
           "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -34,7 +34,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -42,7 +42,7 @@
           "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -59,12 +59,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -74,11 +74,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -86,7 +86,7 @@
           "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -103,12 +103,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -118,11 +118,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -130,7 +130,7 @@
           "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -147,12 +147,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -162,11 +162,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -174,7 +174,7 @@
           "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -191,12 +191,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -206,7 +206,7 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -223,12 +223,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -238,11 +238,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -250,7 +250,7 @@
           "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -267,12 +267,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -282,11 +282,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -294,7 +294,7 @@
           "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -311,12 +311,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -326,11 +326,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -338,7 +338,7 @@
           "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -355,12 +355,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -370,7 +370,7 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -387,12 +387,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -402,11 +402,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -414,7 +414,7 @@
           "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -431,12 +431,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -446,11 +446,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -458,7 +458,7 @@
           "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -475,12 +475,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -490,11 +490,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -502,7 +502,7 @@
           "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -519,12 +519,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -534,7 +534,7 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -551,12 +551,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -566,11 +566,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -578,7 +578,7 @@
           "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -595,12 +595,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -610,11 +610,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -622,7 +622,7 @@
           "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -639,12 +639,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -654,11 +654,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -666,7 +666,7 @@
           "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -683,12 +683,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -698,7 +698,7 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -715,12 +715,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -730,11 +730,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -742,7 +742,7 @@
           "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -759,12 +759,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -774,11 +774,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -786,7 +786,7 @@
           "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -803,12 +803,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -818,11 +818,11 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -830,7 +830,7 @@
           "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -950,12 +950,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -965,7 +965,7 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1085,12 +1085,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1100,24 +1100,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1128,7 +1128,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1248,12 +1248,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1263,24 +1263,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E04C"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1291,7 +1291,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1411,12 +1411,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1426,24 +1426,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               1
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E04C"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1454,7 +1454,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1574,12 +1574,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1589,7 +1589,7 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1709,12 +1709,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1724,24 +1724,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1752,7 +1752,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1872,12 +1872,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1887,24 +1887,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E054"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1915,7 +1915,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2035,12 +2035,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2050,24 +2050,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               3
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E054"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2078,7 +2078,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2198,12 +2198,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2213,7 +2213,7 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2333,12 +2333,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2348,24 +2348,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2376,7 +2376,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2496,12 +2496,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2511,24 +2511,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               5
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E05C"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2539,7 +2539,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2660,12 +2660,12 @@
           "encoded_locals": {
             "heapComputeArray": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x5C1E048"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2675,24 +2675,24 @@
             "heapComputeArray"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               5
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E05C"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2703,10 +2703,11 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
     }
   ]
 }
+

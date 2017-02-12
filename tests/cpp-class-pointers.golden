@@ -1,5 +1,5 @@
 {
-  "code": "// From: http://www.cprogramming.com/tutorial/lesson12.html\n\n#include <iostream>\n\nclass Computer {\npublic:\n  Computer();\n  ~Computer();\n  void setspeed ( int p );\n  int readspeed();\nprotected:\n  int processorspeed;\n};\n\nComputer::Computer() {\n  processorspeed = 0;\n}\n\nComputer::~Computer() {\n  //Destructors do not accept arguments\n}\n\nvoid Computer::setspeed ( int p ) {\n  processorspeed = p;\n}\n\nint Computer::readspeed()  {\n  return processorspeed;\n}\n\nint main() {\n  Computer compute;  \n  compute.setspeed(100); \n  int s = compute.readspeed();\n\n  Computer* pCompute = &compute;\n  pCompute->setspeed(5000);\n  s = pCompute->readspeed();\n\n  Computer* heapCompute = new Computer;\n  heapCompute->setspeed(30000);\n  s = heapCompute->readspeed();\n\n  delete heapCompute;\n  return 0;\n}\n", 
+  "code": "// From: http://www.cprogramming.com/tutorial/lesson12.html\n\n#include <iostream>\n\nclass Computer {\npublic:\n  Computer();\n  ~Computer();\n  void setspeed ( int p );\n  int readspeed();\nprotected:\n  int processorspeed;\n};\n\nComputer::Computer() {\n  processorspeed = 0;\n}\n\nComputer::~Computer() {\n  //Destructors do not accept arguments\n}\n\nvoid Computer::setspeed ( int p ) {\n  processorspeed = p;\n}\n\nint Computer::readspeed()  {\n  return processorspeed;\n}\n\nint main() {\n  Computer compute;  \n  compute.setspeed(100); \n  int s = compute.readspeed();\n\n  Computer* pCompute = &compute;\n  pCompute->setspeed(5000);\n  s = pCompute->readspeed();\n\n  Computer* heapCompute = new Computer;\n  heapCompute->setspeed(30000);\n  s = heapCompute->readspeed();\n\n  delete heapCompute;\n  return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -11,7 +11,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -19,7 +19,7 @@
           "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -34,7 +34,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -42,7 +42,7 @@
           "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -59,13 +59,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -73,24 +73,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -103,11 +103,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -115,7 +115,7 @@
           "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -132,13 +132,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   "<UNINITIALIZED>"
                 ]
@@ -146,24 +146,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -176,11 +176,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -188,7 +188,7 @@
           "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -205,13 +205,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
@@ -219,24 +219,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -249,11 +249,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -261,7 +261,7 @@
           "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -278,13 +278,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
@@ -292,24 +292,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -322,7 +322,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -339,13 +339,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
@@ -353,24 +353,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -383,24 +383,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -411,7 +411,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -428,13 +428,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   0
                 ]
@@ -442,24 +442,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -472,24 +472,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               100
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -500,7 +500,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -517,13 +517,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -531,24 +531,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -561,24 +561,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               100
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -589,7 +589,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -606,13 +606,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -620,24 +620,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -650,7 +650,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -667,13 +667,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -681,24 +681,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -711,18 +711,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -732,7 +732,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -749,13 +749,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -763,24 +763,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -793,18 +793,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -814,7 +814,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -831,13 +831,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -845,24 +845,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -875,18 +875,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -896,7 +896,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -913,13 +913,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -927,24 +927,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -957,7 +957,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -974,13 +974,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -988,24 +988,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1018,7 +1018,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1035,13 +1035,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -1049,24 +1049,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1079,24 +1079,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1107,7 +1107,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1124,13 +1124,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   100
                 ]
@@ -1138,24 +1138,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1168,24 +1168,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               5000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1196,7 +1196,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1213,13 +1213,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1227,24 +1227,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1257,24 +1257,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               5000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1285,7 +1285,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1302,13 +1302,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1316,24 +1316,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1346,7 +1346,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1363,13 +1363,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1377,24 +1377,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1407,18 +1407,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1428,7 +1428,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1445,13 +1445,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1459,24 +1459,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1489,18 +1489,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1510,7 +1510,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1527,13 +1527,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1541,24 +1541,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               100
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1571,18 +1571,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1592,7 +1592,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1609,13 +1609,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1623,24 +1623,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1653,7 +1653,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1670,13 +1670,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1684,24 +1684,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1714,11 +1714,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1726,7 +1726,7 @@
           "line": 15, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1743,13 +1743,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1757,24 +1757,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1787,11 +1787,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1799,7 +1799,7 @@
           "line": 16, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1816,13 +1816,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1830,24 +1830,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1860,11 +1860,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1872,7 +1872,7 @@
           "line": 17, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -1908,13 +1908,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -1922,24 +1922,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1952,7 +1952,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1988,13 +1988,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2002,24 +2002,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2032,24 +2032,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               "<UNINITIALIZED>"
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2060,7 +2060,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2096,13 +2096,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2110,24 +2110,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2140,24 +2140,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               30000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2168,7 +2168,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2204,13 +2204,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2218,24 +2218,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2248,24 +2248,24 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "p": [
               "C_DATA", 
-              "0xFFF0000B4", 
+              "0xFFF0000C4", 
               "int", 
               30000
             ], 
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::setspeed(int)", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2276,7 +2276,7 @@
             "p"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::setspeed(int)_0xFFF0000C0"
+          "unique_hash": "Computer::setspeed(int)_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2312,13 +2312,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2326,24 +2326,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2356,7 +2356,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2392,13 +2392,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2406,24 +2406,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2436,18 +2436,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2457,7 +2457,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2493,13 +2493,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2507,24 +2507,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2537,18 +2537,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2558,7 +2558,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2594,13 +2594,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2608,24 +2608,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               5000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2638,18 +2638,18 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "this": [
               "C_DATA", 
-              "0xFFF0000B8", 
+              "0xFFF0000C8", 
               "pointer", 
               "0x5C1E040"
             ]
           }, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::readspeed()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2659,7 +2659,7 @@
             "this"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::readspeed()_0xFFF0000C0"
+          "unique_hash": "Computer::readspeed()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2695,13 +2695,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2709,24 +2709,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2739,7 +2739,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2775,13 +2775,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2789,24 +2789,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2819,11 +2819,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2831,7 +2831,7 @@
           "line": 19, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2867,13 +2867,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2881,24 +2881,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2911,11 +2911,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2923,7 +2923,7 @@
           "line": 21, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -2945,13 +2945,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -2959,24 +2959,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2989,7 +2989,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3011,13 +3011,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -3025,24 +3025,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3055,11 +3055,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3067,7 +3067,7 @@
           "line": 19, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -3089,13 +3089,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -3103,24 +3103,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3133,11 +3133,11 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000C0", 
+          "frame_id": "0xFFF0000D0", 
           "func_name": "Computer::~Computer()", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3145,7 +3145,7 @@
           "line": 21, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "Computer::~Computer()_0xFFF0000C0"
+          "unique_hash": "Computer::~Computer()_0xFFF0000D0"
         }
       ], 
       "stdout": ""
@@ -3167,13 +3167,13 @@
           "encoded_locals": {
             "compute": [
               "C_STRUCT", 
-              "0xFFF0000D0", 
+              "0xFFF0000E0", 
               "Computer", 
               [
                 "processorspeed", 
                 [
                   "C_DATA", 
-                  "0xFFF0000D0", 
+                  "0xFFF0000E0", 
                   "int", 
                   5000
                 ]
@@ -3181,24 +3181,24 @@
             ], 
             "heapCompute": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF0000F8", 
               "pointer", 
               "0x5C1E040"
             ], 
             "pCompute": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF0000F0", 
               "pointer", 
-              "0xFFF0000D0"
+              "0xFFF0000E0"
             ], 
             "s": [
               "C_DATA", 
-              "0xFFF0000DC", 
+              "0xFFF0000EC", 
               "int", 
               30000
             ]
           }, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3211,7 +3211,7 @@
             "heapCompute"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3226,7 +3226,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF000100", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3234,10 +3234,11 @@
           "line": 46, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF000100"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
 }
+

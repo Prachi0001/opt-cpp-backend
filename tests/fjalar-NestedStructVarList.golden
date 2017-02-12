@@ -1,5 +1,5 @@
 {
-  "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n#include <stdlib.h>\n\n#define NUM_COUNTERS 10\n\ntypedef struct _counter {\n  int a;\n} counter;\n\ncounter* counters;\n\nint sum = 0;\n\n// The invariant sum = sum(counter.a[]) should\n// hold at every call to check()\nvoid check() {\n}\n\nint main() {\n  counters = calloc(1, NUM_COUNTERS*sizeof(counter));\n  check();\n\n  counters[0].a++;\n  sum++;\n  check();\n\n  counters[5].a++;\n  sum++;\n  check();\n\n  counters[9].a = 100;\n  sum += 100;\n  check();\n\n  counters[0].a+= 2;\n  sum+= 2;\n  check();\n\n  return 0;\n}\n\n", 
+  "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n#include <stdio.h>\n#include <stdlib.h>\n\n#define NUM_COUNTERS 10\n\ntypedef struct _counter {\n  int a;\n} counter;\n\ncounter* counters;\n\nint sum = 0;\n\n// The invariant sum = sum(counter.a[]) should\n// hold at every call to check()\nvoid check() {\n}\n\nint main() {\n  counters = calloc(1, NUM_COUNTERS*sizeof(counter));\n  check();\n\n  counters[0].a++;\n  sum++;\n  check();\n\n  counters[5].a++;\n  sum++;\n  check();\n\n  counters[9].a = 100;\n  sum += 100;\n  check();\n\n  counters[0].a+= 2;\n  sum+= 2;\n  check();\n\n  return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -27,7 +27,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -35,7 +35,7 @@
           "line": 22, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -211,7 +211,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -219,7 +219,7 @@
           "line": 23, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -395,7 +395,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -403,11 +403,11 @@
           "line": 24, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "check", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -415,7 +415,7 @@
           "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "check_0xFFF0000E0"
+          "unique_hash": "check_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -591,7 +591,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -599,7 +599,7 @@
           "line": 26, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -775,7 +775,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -783,7 +783,7 @@
           "line": 27, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -959,7 +959,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -967,7 +967,7 @@
           "line": 27, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1143,7 +1143,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1151,11 +1151,11 @@
           "line": 28, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "check", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1163,7 +1163,7 @@
           "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "check_0xFFF0000E0"
+          "unique_hash": "check_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -1339,7 +1339,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1347,7 +1347,7 @@
           "line": 30, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1523,7 +1523,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1531,7 +1531,7 @@
           "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1707,7 +1707,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1715,7 +1715,7 @@
           "line": 31, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1891,7 +1891,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -1899,11 +1899,11 @@
           "line": 32, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "check", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1911,7 +1911,7 @@
           "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "check_0xFFF0000E0"
+          "unique_hash": "check_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2087,7 +2087,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2095,7 +2095,7 @@
           "line": 34, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2271,7 +2271,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2279,7 +2279,7 @@
           "line": 35, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2455,7 +2455,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2463,7 +2463,7 @@
           "line": 35, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2639,7 +2639,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -2647,11 +2647,11 @@
           "line": 36, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "check", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2659,7 +2659,7 @@
           "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "check_0xFFF0000E0"
+          "unique_hash": "check_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -2835,7 +2835,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2843,7 +2843,7 @@
           "line": 38, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3019,7 +3019,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3027,7 +3027,7 @@
           "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3203,7 +3203,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3211,7 +3211,7 @@
           "line": 39, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3387,7 +3387,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3395,11 +3395,11 @@
           "line": 40, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000E0", 
+          "frame_id": "0xFFF000100", 
           "func_name": "check", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3407,7 +3407,7 @@
           "line": 20, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "check_0xFFF0000E0"
+          "unique_hash": "check_0xFFF000100"
         }
       ], 
       "stdout": ""
@@ -3583,7 +3583,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3591,7 +3591,7 @@
           "line": 42, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3767,7 +3767,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {}, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3775,10 +3775,11 @@
           "line": 43, 
           "ordered_varnames": [], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
 }
+

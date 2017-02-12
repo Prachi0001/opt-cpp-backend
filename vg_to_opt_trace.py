@@ -353,7 +353,13 @@ if __name__ == '__main__':
 
         # make the last statement a faux 'return', presumably from main
         if success:
-            final_execution_points[-1]['event'] = 'return'
+            if options.end_of_trace_error_msg:
+                # make last statement an exception if end_of_trace_error_msg passed in
+                final_execution_points[-1]['event'] = 'exception'
+                final_execution_points[-1]['exception_msg'] = options.end_of_trace_error_msg
+            else:
+                # make last statement a faux 'return', presumably from main
+                final_execution_points[-1]['event'] = 'return'
 
 
     # kludgy: don't do to_delete for return events, since if we do this,
@@ -444,13 +450,6 @@ void *x = foo(); // <-- there is an extraneous step here AFTER foo returns but
         final_execution_points = final_execution_points[:MAX_STEPS]
         final_execution_points[-1]['event'] = 'instruction_limit_reached'
         final_execution_points[-1]['exception_msg'] = 'Stopped after running ' + str(MAX_STEPS) + ' steps. Please shorten your code,\nsince Python Tutor is not designed to handle long-running code.'
-    #elif options.end_of_trace_error_msg:
-    #    # make last statement an exception if end_of_trace_error_msg passed in
-    #    final_execution_points[-1]['event'] = 'exception'
-    #    final_execution_points[-1]['exception_msg'] = options.end_of_trace_error_msg
-    #else:
-    #    # make last statement a faux 'return', presumably from main
-    #    final_execution_points[-1]['event'] = 'return'
 
 
     cod = open(fn).read()

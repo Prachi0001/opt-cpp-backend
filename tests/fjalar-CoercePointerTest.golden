@@ -1,5 +1,5 @@
 {
-  "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n// Test of the Kvasir .disambig option for coercing pointers into\n// types different than their declared types.  Useful for handling\n// C faux-polymorphism\n\n#include <stdlib.h>\n#include <string.h>\n\ntypedef struct {\n  int foo_int;\n  char* foo_str;\n  double foo_double;\n  void* foo_baz; // This should be observed as type baz\n} foo;\n\nstruct bar {\n  int bar_int;\n};\n\ntypedef struct {\n  int baz_int;\n  char baz_str[10];\n} baz;\n\nvoid normal_view(foo* f) {}\n\n// Observe f as a pointer to type foo\nvoid view_foo(void* f) {}\n// Observe b as a pointer to type bar\nvoid view_bar(void* b) {}\n\nvoid view_foo_and_bar(void* f, void* b) {}\n\n// We need to have this here so that Kvasir recognizes that some\n// variable has type baz so that it creates an entry for it in\n// DaikonTypesTable.  We need to fix this in the future.\nbaz junk;\n\n// Observe bar_as_foo as a pointer to type foo\nvoid view_bar_as_foo(struct bar* bar_as_foo) {}\n\nint main() {\n  foo* f = (foo*)malloc(sizeof(*f));\n  struct bar* b = (struct bar*)malloc(sizeof(*b));\n\n  f->foo_int = 42;\n  f->foo_str = (char*)strdup(\"f->foo_str\");\n  f->foo_double = 2.718;\n  f->foo_baz = (void*)malloc(sizeof(baz));\n  ((baz*)(f->foo_baz))->baz_int = 103083;\n  strcpy(((baz*)(f->foo_baz))->baz_str, \"TEN_BYTES\");\n\n  b->bar_int = 123456;\n\n  normal_view(f);\n  view_foo(f);\n  view_bar(b);\n  view_foo_and_bar(f, b);\n  view_bar_as_foo((struct bar*)f);\n\n  return 0;\n}\n", 
+  "code": "// From the test suite of https://github.com/codespecs/daikon\n//   daikon/tests/kvasir-tests/\n\n// Test of the Kvasir .disambig option for coercing pointers into\n// types different than their declared types.  Useful for handling\n// C faux-polymorphism\n\n#include <stdlib.h>\n#include <string.h>\n\ntypedef struct {\n  int foo_int;\n  char* foo_str;\n  double foo_double;\n  void* foo_baz; // This should be observed as type baz\n} foo;\n\nstruct bar {\n  int bar_int;\n};\n\ntypedef struct {\n  int baz_int;\n  char baz_str[10];\n} baz;\n\nvoid normal_view(foo* f) {}\n\n// Observe f as a pointer to type foo\nvoid view_foo(void* f) {}\n// Observe b as a pointer to type bar\nvoid view_bar(void* b) {}\n\nvoid view_foo_and_bar(void* f, void* b) {}\n\n// We need to have this here so that Kvasir recognizes that some\n// variable has type baz so that it creates an entry for it in\n// DaikonTypesTable.  We need to fix this in the future.\nbaz junk;\n\n// Observe bar_as_foo as a pointer to type foo\nvoid view_bar_as_foo(struct bar* bar_as_foo) {}\n\nint main() {\n  foo* f = (foo*)malloc(sizeof(*f));\n  struct bar* b = (struct bar*)malloc(sizeof(*b));\n\n  f->foo_int = 42;\n  f->foo_str = (char*)strdup(\"f->foo_str\");\n  f->foo_double = 2.718;\n  f->foo_baz = (void*)malloc(sizeof(baz));\n  ((baz*)(f->foo_baz))->baz_int = 103083;\n  strcpy(((baz*)(f->foo_baz))->baz_str, \"TEN_BYTES\");\n\n  b->bar_int = 123456;\n\n  normal_view(f);\n  view_foo(f);\n  view_bar(b);\n  view_foo_and_bar(f, b);\n  view_bar_as_foo((struct bar*)f);\n\n  return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -97,18 +97,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -119,7 +119,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -220,18 +220,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000D8", 
+              "0xFFF0000F8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -242,7 +242,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -389,18 +389,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -411,7 +411,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -576,18 +576,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -598,7 +598,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -763,18 +763,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -785,7 +785,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1020,18 +1020,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1042,7 +1042,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1277,18 +1277,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1299,7 +1299,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1634,18 +1634,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -1656,7 +1656,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -1991,18 +1991,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2013,7 +2013,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2348,18 +2348,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2370,7 +2370,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -2705,18 +2705,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -2727,7 +2727,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -3062,18 +3062,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3084,18 +3084,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "f": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "normal_view", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3105,7 +3105,7 @@
             "f"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "normal_view_0xFFF0000D0"
+          "unique_hash": "normal_view_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -3440,18 +3440,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -3462,18 +3462,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "f": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "normal_view", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3483,7 +3483,7 @@
             "f"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "normal_view_0xFFF0000D0"
+          "unique_hash": "normal_view_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -3818,18 +3818,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -3840,7 +3840,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -4175,18 +4175,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -4197,18 +4197,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "f": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4218,7 +4218,7 @@
             "f"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_foo_0xFFF0000D0"
+          "unique_hash": "view_foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -4534,18 +4534,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -4556,18 +4556,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "f": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4577,7 +4577,7 @@
             "f"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_foo_0xFFF0000D0"
+          "unique_hash": "view_foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -4912,18 +4912,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -4934,7 +4934,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -5269,18 +5269,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -5291,18 +5291,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_bar", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5312,7 +5312,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_bar_0xFFF0000D0"
+          "unique_hash": "view_bar_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -5657,18 +5657,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -5679,18 +5679,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE0A0"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_bar", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -5700,7 +5700,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_bar_0xFFF0000D0"
+          "unique_hash": "view_bar_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -6035,18 +6035,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -6057,7 +6057,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -6392,18 +6392,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -6414,24 +6414,24 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000C0", 
+              "0xFFF0000E0", 
               "pointer", 
               "<UNINITIALIZED>"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_foo_and_bar", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -6442,7 +6442,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_foo_and_bar_0xFFF0000D0"
+          "unique_hash": "view_foo_and_bar_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -6768,18 +6768,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -6790,24 +6790,24 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000C0", 
+              "0xFFF0000E0", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_foo_and_bar", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -6818,7 +6818,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_foo_and_bar_0xFFF0000D0"
+          "unique_hash": "view_foo_and_bar_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -7153,18 +7153,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -7175,7 +7175,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -7510,18 +7510,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -7532,18 +7532,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "bar_as_foo": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "<UNINITIALIZED>"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_bar_as_foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -7553,7 +7553,7 @@
             "bar_as_foo"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_bar_as_foo_0xFFF0000D0"
+          "unique_hash": "view_bar_as_foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -7789,18 +7789,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": false, 
           "is_parent": false, 
@@ -7811,18 +7811,18 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }, 
         {
           "encoded_locals": {
             "bar_as_foo": [
               "C_DATA", 
-              "0xFFF0000C8", 
+              "0xFFF0000E8", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000D0", 
+          "frame_id": "0xFFF0000F0", 
           "func_name": "view_bar_as_foo", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -7832,7 +7832,7 @@
             "bar_as_foo"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "view_bar_as_foo_0xFFF0000D0"
+          "unique_hash": "view_bar_as_foo_0xFFF0000F0"
         }
       ], 
       "stdout": ""
@@ -8167,18 +8167,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -8189,7 +8189,7 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
@@ -8524,18 +8524,18 @@
           "encoded_locals": {
             "b": [
               "C_DATA", 
-              "0xFFF0000E8", 
+              "0xFFF000108", 
               "pointer", 
               "0x53FE0A0"
             ], 
             "f": [
               "C_DATA", 
-              "0xFFF0000E0", 
+              "0xFFF000100", 
               "pointer", 
               "0x53FE040"
             ]
           }, 
-          "frame_id": "0xFFF0000F0", 
+          "frame_id": "0xFFF000110", 
           "func_name": "main", 
           "is_highlighted": true, 
           "is_parent": false, 
@@ -8546,10 +8546,11 @@
             "b"
           ], 
           "parent_frame_id_list": [], 
-          "unique_hash": "main_0xFFF0000F0"
+          "unique_hash": "main_0xFFF000110"
         }
       ], 
       "stdout": ""
     }
   ]
 }
+

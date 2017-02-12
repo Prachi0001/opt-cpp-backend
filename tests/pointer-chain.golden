@@ -1,5 +1,5 @@
 {
-  "code": "int main() {\n  // inception?!?\n  int x = 42;\n  int *y = &x;\n  int **z = &y;\n  int ***wtf = &z;\n}\n", 
+  "code": "int main() {\n  // inception?!?\n  int x = 42;\n  int *y = &x;\n  int **z = &y;\n  int ***wtf = &z;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -268,3 +268,4 @@
     }
   ]
 }
+

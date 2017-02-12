@@ -1,5 +1,5 @@
 {
-  "code": "#include <stdlib.h>\n#include<string.h>\n\nint main() {\n    char sentences[][100] = {\"abc is a word\",\"he he\",\"   \",\"d ab   \",\"  x\",\"asd324\",\"\",\"a\"};\n    char ans[][100] = { \"word\", \"he\",\"\",\"ab\",\"x\",\"asd324\",\"\",\"a\"};\n    return 0;\n}\n", 
+  "code": "#include <stdlib.h>\n#include<string.h>\n\nint main() {\n    char sentences[][100] = {\"abc is a word\",\"he he\",\"   \",\"d ab   \",\"  x\",\"asd324\",\"\",\"a\"};\n    char ans[][100] = { \"word\", \"he\",\"\",\"ab\",\"x\",\"asd324\",\"\",\"a\"};\n    return 0;\n}", 
   "trace": [
     {
       "event": "step_line", 
@@ -48218,3 +48218,4 @@
     }
   ]
 }
+
