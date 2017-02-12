@@ -720,9 +720,47 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
          //VG_(printf)("&&");
          break;
       case Te_TyEnum:
-         vg_assert(0); // unhandled
-         //VG_(printf)("enum %s", ent->Te.TyEnum.name ? ent->Te.TyEnum.name
-         //                                           : "<anonymous>" );
+         // right now print enums as integers, but in the future, try to
+         // pretty-print their symbolic names somehow
+
+         // (lots of unfortunate copy-paste from Te_TyBase case above)
+
+         // record that this block has been rendered
+         if (!VG_(OSetWord_Contains)(encoded_addrs, (UWord)data_addr)) {
+           VG_(OSetWord_Insert)(encoded_addrs, (UWord)data_addr);
+         }
+
+         VG_(fprintf)(trace_fp,
+                     "{\"addr\":\"%p\", \"kind\":\"base\", \"type\":\"%s\", \"size\":%u, \"val\":",
+                     (void*)data_addr,
+                     ent->Te.TyEnum.name ? ent->Te.TyEnum.name : "anonymous enum",
+                     ent->Te.TyEnum.szB);
+
+         // check whether this memory has been allocated and/or initialized
+         res = is_mem_defined_func(data_addr, ent->Te.TyEnum.szB,
+                                       &bad_addr, &otag);
+         if (res == 6 /* MC_AddrErr enum value */) {
+           VG_(fprintf)(trace_fp, "\"<UNALLOCATED>\"}");
+           return; // early!
+         } else if (res == 7 /* MC_ValueErr enum value */) {
+           VG_(fprintf)(trace_fp, "\"<UNINITIALIZED>\"}");
+           return; // early!
+         } else {
+           tl_assert(res == 5 /* MC_Ok enum value */);
+         }
+
+         if (ent->Te.TyEnum.szB <= sizeof(int)) {
+           VG_(fprintf)(trace_fp, "%d", *((int*)data_addr));
+         } else if (ent->Te.TyEnum.szB == sizeof(long int)) {
+           VG_(fprintf)(trace_fp, "%ld", *((long int*)data_addr));
+         } else if (ent->Te.TyEnum.szB == sizeof(long long int)) {
+           VG_(fprintf)(trace_fp, "%lld", *((long long int*)data_addr));
+         } else {
+           // what other stuff is here?!?
+           vg_assert(0);
+         }
+
+         VG_(fprintf)(trace_fp, "}");
          break;
       case Te_TyStOrUn:
          //VG_(printf)("%s %s",
