@@ -502,7 +502,7 @@ void ML_(pg_pp_varinfo)( const XArray* /* of TyEnt */ tyents,
              VG_(fprintf)(trace_fp, "%f", *((double*)data_addr));
            } else if (ent->Te.TyBase.szB == sizeof(long double)) {
              // TODO: doesn't currently work for some reason :(
-             // long doubles are shown as uninit
+             // long doubles are shown as uninit or junky values :(
              VG_(fprintf)(trace_fp, "%Lf", *((long double*)data_addr));
            } else {
              // what other stuff is here?!?

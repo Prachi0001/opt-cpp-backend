@@ -1185,12 +1185,13 @@ void emit_string(SB *out, const char *str)
   char *b;
   
   // modified by pgbovine to remove the original assertion and instead to simply
-  // print out an unknown symbol like "??" for non-UTF8-encodable strings:
+  // print out an unknown symbol like "???" for non-UTF8-encodable strings:
   //vg_assert(utf8_validate(str));
   if (!utf8_validate(str)) {
     sb_need(out, 14);
     b = out->cur;
     *b++ = '"';
+    *b++ = '?';
     *b++ = '?';
     *b++ = '?';
     *b++ = '"';

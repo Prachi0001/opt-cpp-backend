@@ -68,6 +68,12 @@ def process_record(lines):
 
     rec = '\n'.join(regular_lines)
     try:
+        # sometimes floating-point values print as:
+        # "val":******
+        # when they're weird values like overflow and NaN. in those
+        # cases, replace with "val": null so as not to crash the json
+        # parser
+        rec = rec.replace('"val":******', '"val":null')
         obj = json.loads(rec)
     except ValueError:
         print >> sys.stderr, "Ugh, bad record!", rec
