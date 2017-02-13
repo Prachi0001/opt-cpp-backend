@@ -1184,7 +1184,19 @@ void emit_string(SB *out, const char *str)
   const char *s = str;
   char *b;
   
-  vg_assert(utf8_validate(str));
+  // modified by pgbovine to remove the original assertion and instead to simply
+  // print out an unknown symbol like "??" for non-UTF8-encodable strings:
+  //vg_assert(utf8_validate(str));
+  if (!utf8_validate(str)) {
+    sb_need(out, 14);
+    b = out->cur;
+    *b++ = '"';
+    *b++ = '?';
+    *b++ = '?';
+    *b++ = '"';
+    out->cur = b;
+    return; // exit early!!!
+  }
   
   /*
    * 14 bytes is enough space to write up to two
