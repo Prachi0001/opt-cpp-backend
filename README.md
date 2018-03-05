@@ -1,6 +1,8 @@
 # opt-cpp-backend
 
-**As of 2018-03-04, this repo is deprecated and no longer maintained. Its contents have been [moved into here](https://github.com/pgbovine/OnlinePythonTutor/tree/master/v4-cokapi/backends/c_cpp)**
+**As of 2018-03-04, this repo is deprecated and no longer maintained. Its contents have been [moved into here](https://github.com/pgbovine/OnlinePythonTutor/tree/master/v4-cokapi/backends/c_cpp)**.
+
+**However, I am still using this [repo's issue tracker](https://github.com/pgbovine/opt-cpp-backend/issues) to track old legacy C/C++ backend bugs for the time being.**
 
 This is the repo for the C/C++ backend for Online Python Tutor (http://pythontutor.com/)
 
